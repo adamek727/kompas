@@ -20,114 +20,126 @@
     "system": { "min": "Establishment", "max": "Bunt" }
   },
   "questions": [
-    { "id": "q1", "text": "Bogatsi powinni płacić znacznie wyższe podatki.", "weights": { "economic": -1 } },
-    { "id": "q2", "text": "Program 800+ to ważne wsparcie dla rodzin, które powinno być kontynuowane.", "weights": { "economic": -0.7 } },
-    { "id": "q3", "text": "Prywatyzacja lat 90. wyrządziła Polsce więcej szkód niż korzyści.", "weights": { "economic": -0.7, "system": 0.4 } },
-    { "id": "q4", "text": "Minimalna płaca powinna być znacznie wyższa, nawet jeśli wzrośnie bezrobocie.", "weights": { "economic": -0.8 } },
-    { "id": "q5", "text": "Służba zdrowia powinna pozostać przede wszystkim w rękach państwa.", "weights": { "economic": -0.9 } },
-    { "id": "q6", "text": "Wolny rynek najlepiej reguluje gospodarkę — państwo powinno się wycofać.", "weights": { "economic": 1 } },
-    { "id": "q7", "text": "Niskie podatki i mniejsze wydatki państwowe są kluczem do dobrobytu.", "weights": { "economic": 0.9 } },
-    { "id": "q8", "text": "Przedsiębiorcy tworzą bogactwo — regulacje i podatki im w tym przeszkadzają.", "weights": { "economic": 0.8 } },
-    { "id": "q9", "text": "Państwo powinno budować więcej mieszkań komunalnych dla obywateli.", "weights": { "economic": -0.8 } },
-    { "id": "q10", "text": "System emerytalny powinien opierać się na solidarności pokoleń, nie na prywatnym oszczędzaniu.", "weights": { "economic": -0.7 } },
-    { "id": "q11", "text": "Węgiel i górnictwo powinny być chronione — to część polskiej tożsamości i bezpieczeństwo energetyczne.", "weights": { "economic": -0.3, "social": 0.5, "system": 0.3 } },
-    { "id": "q12", "text": "Zielona energia i odejście od węgla to dobry kierunek dla Polski.", "weights": { "economic": -0.3, "social": -0.6 } },
-    { "id": "q13", "text": "Tradycyjna rodzina — matka, ojciec, dzieci — jest fundamentem zdrowego społeczeństwa.", "weights": { "social": 1 } },
-    { "id": "q14", "text": "Małżeństwa osób tej samej płci powinny być legalne w Polsce.", "weights": { "social": -1 } },
-    { "id": "q15", "text": "Prawo do aborcji powinno być dostępne bez ograniczeń w pierwszym trymestrze.", "weights": { "social": -1 } },
-    { "id": "q16", "text": "Zakaz aborcji chroni ludzkie życie i jest słuszny.", "weights": { "social": 0.9 } },
-    { "id": "q17", "text": "Szkoły powinny bardziej kształtować postawy patriotyczne i miłość do ojczyzny.", "weights": { "social": 0.7 } },
-    { "id": "q18", "text": "Kościół katolicki ma zbyt duży wpływ na politykę w Polsce.", "weights": { "social": -0.9 } },
-    { "id": "q19", "text": "Wartości chrześcijańskie powinny kształtować polskie prawodawstwo.", "weights": { "social": 0.9 } },
-    { "id": "q20", "text": "Polska powinna przyjmować uchodźców i migrantów z otwartością.", "weights": { "social": -0.9 } },
-    { "id": "q21", "text": "Polska przyjmuje zbyt wielu obcokrajowców — to zagraża naszej kulturze.", "weights": { "social": 0.8 } },
-    { "id": "q22", "text": "Równość płci to niezakończony projekt — kobiety nadal są dyskryminowane.", "weights": { "social": -0.8 } },
-    { "id": "q23", "text": "Legalizacja marihuany byłaby błędem.", "weights": { "social": 0.7 } },
-    { "id": "q24", "text": "Politycy służą przede wszystkim sobie, a nie obywatelom.", "weights": { "system": 0.9 } },
-    { "id": "q25", "text": "Członkostwo Polski w Unii Europejskiej jest korzystne dla kraju.", "weights": { "system": -1 } },
-    { "id": "q26", "text": "Polska powinna w przyszłości przyjąć euro.", "weights": { "system": -0.8 } },
-    { "id": "q27", "text": "Media w Polsce są uzależnione od grup interesów i nie można im ufać.", "weights": { "system": 0.8 } },
-    { "id": "q28", "text": "NATO jest niezbędne dla bezpieczeństwa Polski.", "weights": { "system": -0.9 } },
-    { "id": "q29", "text": "Polska powinna zaprzestać wysyłania broni na Ukrainę.", "weights": { "system": 0.6, "social": 0.3 } },
-    { "id": "q30", "text": "Elity z Warszawy nie rozumieją problemów zwykłych ludzi z prowincji.", "weights": { "system": 0.8 } },
-    { "id": "q31", "text": "Niezawisłość sądów i niezależnych instytucji jest fundamentem demokracji.", "weights": { "system": -0.9 } },
-    { "id": "q32", "text": "Reformy sądownictwa PiS były potrzebne, by ukrócić stary układ.", "weights": { "system": 0.8, "social": 0.3 } },
-    { "id": "q33", "text": "Regulacje unijne to zbyt duże obciążenie dla polskich firm i obywateli.", "weights": { "system": 0.7, "economic": 0.3 } },
-    { "id": "q34", "text": "Telewizja publiczna powinna być niezależna od rządu.", "weights": { "system": -0.7 } },
-    { "id": "q35", "text": "Wszystkie partie polityczne są takie same — i tak nie ma na kogo głosować.", "weights": { "system": 0.9 } },
-    { "id": "q36", "text": "Wielkie korporacje mają zbyt duży wpływ na politykę.", "weights": { "economic": -0.5, "system": 0.5 } },
-    { "id": "q37", "text": "Polska powinna być bardziej samodzielna w polityce zagranicznej, niezależna od Berlina i Brukseli.", "weights": { "system": 0.7, "social": 0.2 } },
-    { "id": "q38", "text": "Polityka klimatyczna UE niszczy polską gospodarkę.", "weights": { "system": 0.5, "social": 0.4 } }
+    { "id": "q1", "text": "Aborcja powinna być dostępna na życzenie kobiety do 12. tygodnia ciąży, bez podawania przyczyn.", "weights": { "social": -1 } },
+    { "id": "q2", "text": "Kompromis aborcyjny z 1993 roku był rozsądnym rozwiązaniem i powinien zostać przywrócony.", "weights": { "social": 0.5, "system": 0.3 } },
+    { "id": "q3", "text": "Państwo powinno finansować zabiegi in vitro ze środków publicznych.", "weights": { "economic": -0.5, "social": -0.7 } },
+    { "id": "q4", "text": "Lekcje religii nie powinny być organizowane w szkołach publicznych.", "weights": { "social": -0.9 } },
+    { "id": "q5", "text": "Kościół katolicki ma zbyt duży wpływ na polskie prawo i politykę.", "weights": { "social": -0.8, "system": 0.4 } },
+    { "id": "q6", "text": "Trybunał Konstytucyjny i KRS wymagają gruntownej reformy, by odzyskać niezależność od polityków.", "weights": { "system": -0.8 } },
+    { "id": "q7", "text": "Reformy wymiaru sprawiedliwości przeprowadzone przez PiS po 2015 roku były konieczne, by ukrócić stary układ sędziowski.", "weights": { "system": 0.8, "social": 0.3 } },
+    { "id": "q8", "text": "Telewizja publiczna powinna być całkowicie niezależna od aktualnie rządzących.", "weights": { "system": -0.8 } },
+    { "id": "q9", "text": "Budowa Centralnego Portu Komunikacyjnego to priorytet strategiczny dla Polski.", "weights": { "economic": 0.3, "system": 0.5 } },
+    { "id": "q10", "text": "Polska powinna jak najszybciej zbudować elektrownię jądrową.", "weights": { "economic": 0.2, "social": 0.4 } },
+    { "id": "q11", "text": "Program 800+ jest skutecznym wsparciem dla polskich rodzin i powinien być kontynuowany.", "weights": { "economic": -0.7 } },
+    { "id": "q12", "text": "Rząd powinien uruchomić program tanich kredytów hipotecznych, takich jak Kredyt 0%, by ułatwić Polakom zakup pierwszego mieszkania.", "weights": { "economic": -0.6 } },
+    { "id": "q13", "text": "Unijna polityka klimatyczna Zielonego Ładu zbyt mocno uderza w polskich rolników i powinna być zrewidowana.", "weights": { "economic": -0.2, "social": 0.5, "system": 0.5 } },
+    { "id": "q14", "text": "Polska powinna szybciej odchodzić od węgla i rozwijać odnawialne źródła energii, w tym farmy wiatrowe.", "weights": { "economic": -0.3, "social": -0.6 } },
+    { "id": "q15", "text": "Polska granica z Białorusią powinna być szczelnie zamknięta, a pushbacki migrantów są uzasadnione.", "weights": { "social": 0.8, "system": 0.3 } },
+    { "id": "q16", "text": "Polska powinna odmówić uczestnictwa w unijnym mechanizmie relokacji uchodźców.", "weights": { "social": 0.7, "system": 0.6 } },
+    { "id": "q17", "text": "Związki partnerskie osób tej samej płci powinny być uregulowane prawnie w Polsce.", "weights": { "social": -0.9 } },
+    { "id": "q18", "text": "Prawa osób LGBT są w Polsce należycie chronione i nie wymagają dodatkowego ustawodawstwa.", "weights": { "social": 0.6 } },
+    { "id": "q19", "text": "Posiadanie małych ilości marihuany na własny użytek powinno być zdekryminalizowane.", "weights": { "social": -0.7 } },
+    { "id": "q20", "text": "Składka zdrowotna dla przedsiębiorców powinna wrócić do ryczałtowego systemu sprzed Polskiego Ładu.", "weights": { "economic": 0.7 } },
+    { "id": "q21", "text": "Płaca minimalna powinna być znacznie wyższa, nawet jeśli wzrosną koszty pracy dla firm.", "weights": { "economic": -0.8 } },
+    { "id": "q22", "text": "Wiek emerytalny powinien zostać podniesiony — dłuższa praca to wyższe świadczenia.", "weights": { "economic": 0.6, "social": -0.3 } },
+    { "id": "q23", "text": "Lustracja i rozliczenie agentów służb PRL nie zostały dokończone i wciąż są potrzebne.", "weights": { "social": 0.5, "system": 0.6 } },
+    { "id": "q24", "text": "Polska powinna dążyć do przyjęcia euro w perspektywie najbliższych lat.", "weights": { "system": -0.8 } },
+    { "id": "q25", "text": "Polska powinna zwiększyć obecność wojsk USA i NATO na swoim terytorium.", "weights": { "system": -0.6, "social": 0.3 } },
+    { "id": "q26", "text": "Polska powinna zaprzestać wysyłania broni na Ukrainę.", "weights": { "system": 0.7, "social": 0.3 } },
+    { "id": "q27", "text": "Unijne regulacje to zbyt duże obciążenie dla polskich przedsiębiorców — Polska powinna odzyskać więcej suwerenności.", "weights": { "system": 0.7, "economic": 0.4 } },
+    { "id": "q28", "text": "Służba zdrowia powinna pozostać publiczna — prywatyzacja ochrony zdrowia to zły kierunek.", "weights": { "economic": -0.9 } },
+    { "id": "q29", "text": "Bogaci Polacy powinni płacić znacznie wyższe podatki dochodowe niż dziś.", "weights": { "economic": -0.9 } },
+    { "id": "q30", "text": "Obecne elity polityczne w Warszawie nie rozumieją problemów zwykłych obywateli z mniejszych miast i wsi.", "weights": { "system": 0.8, "social": 0.2 } }
   ],
   "personas": [
     {
       "id": "pisowiec",
       "name": "Pisowiec",
       "blurb": "Bóg, honor, ojczyzna — i 800+ na konto pierwszego każdego miesiąca.",
-      "coords": { "economic": -0.3, "social": 0.85, "system": 0.4 }
+      "coords": { "economic": -0.3, "social": 0.85, "system": 0.4 },
+      "party": "PiS",
+      "politician": "Jarosław Kaczyński"
     },
     {
       "id": "tulskista",
       "name": "Tuskista",
       "blurb": "Europa, praworządność i wiara, że dobre rządzenie wystarczy, by naprawić Polskę.",
-      "coords": { "economic": 0.2, "social": -0.4, "system": -0.7 }
+      "coords": { "economic": 0.2, "social": -0.4, "system": -0.7 },
+      "party": "KO / PO",
+      "politician": "Donald Tusk"
     },
     {
       "id": "konfederatka",
       "name": "Konfederatka",
       "blurb": "Zero podatków, zero regulacji, zero UE — wolność albo śmierć (gospodarcza).",
-      "coords": { "economic": 0.9, "social": 0.5, "system": 0.9 }
+      "coords": { "economic": 0.9, "social": 0.5, "system": 0.9 },
+      "party": "Konfederacja",
+      "politician": "Sławomir Mentzen"
     },
     {
       "id": "lewicowiec",
       "name": "Lewicowiec",
       "blurb": "Aborcja, prawa LGBT, klimat — i solidny podatek od bogaczy na to wszystko.",
-      "coords": { "economic": -0.7, "social": -0.85, "system": -0.3 }
+      "coords": { "economic": -0.7, "social": -0.85, "system": -0.3 },
+      "party": "Lewica",
+      "politician": "Adrian Zandberg"
     },
     {
       "id": "ludowiec",
       "name": "Ludowiec",
       "blurb": "Wieś, rolnik, rodzina i dotacje unijne — tak, te europejskie też.",
-      "coords": { "economic": -0.3, "social": 0.4, "system": -0.1 }
+      "coords": { "economic": -0.3, "social": 0.4, "system": -0.1 },
+      "party": "PSL / Trzecia Droga",
+      "politician": "Władysław Kosiniak-Kamysz"
     },
     {
       "id": "wolnorynkowy_liberal",
       "name": "Liberał wolnorynkowy",
       "blurb": "Płaski podatek, mała biurokracja, wielka wolność — ale nikomu nic nie damy za darmo.",
-      "coords": { "economic": 0.85, "social": 0.1, "system": 0.1 }
+      "coords": { "economic": 0.85, "social": 0.1, "system": 0.1 },
+      "party": "KO / PO",
+      "politician": "Radosław Sikorski"
     },
     {
       "id": "narodowy_katolik",
       "name": "Narodowy katolik",
       "blurb": "Polska Chrystusem narodów — i niech ktoś spróbuje z tym polemizować.",
-      "coords": { "economic": -0.1, "social": 0.9, "system": 0.5 }
+      "coords": { "economic": -0.1, "social": 0.9, "system": 0.5 },
+      "party": "PiS",
+      "politician": "Zbigniew Ziobro"
     },
     {
       "id": "eurokrata_miejski",
       "name": "Eurokrata miejski",
       "blurb": "Rower, flat white i niezachwiana wiara w instytucje — unijne oczywiście.",
-      "coords": { "economic": 0.3, "social": -0.7, "system": -0.85 }
+      "coords": { "economic": 0.3, "social": -0.7, "system": -0.85 },
+      "party": "Polska 2050",
+      "politician": "Szymon Hołownia"
     },
     {
       "id": "patriota_socjalny",
       "name": "Patriota socjalny",
       "blurb": "Nasz naród, nasz socjal, nasze granice. Bruksela niech się nie wtrąca.",
-      "coords": { "economic": -0.5, "social": 0.65, "system": 0.85 }
+      "coords": { "economic": -0.5, "social": 0.65, "system": 0.85 },
+      "party": "Konfederacja",
+      "politician": "Krzysztof Bosak"
     },
     {
       "id": "zielona_aktywistka",
       "name": "Zielona aktywistka",
       "blurb": "Klimat, prawa kobiet i przekonanie, że każdy protest można wygrać.",
-      "coords": { "economic": -0.5, "social": -0.9, "system": 0.2 }
+      "coords": { "economic": -0.5, "social": -0.9, "system": 0.2 },
+      "party": "Lewica",
+      "politician": "Robert Biedroń"
     }
   ],
   "views": {
     "compass": { "x": "economic", "y": "social" },
     "triangle": {
       "poles": [
-        { "label": "Liberał", "coords": { "economic": 0.7, "social": -0.5, "system": -0.1 } },
-        { "label": "Konserwatysta", "coords": { "economic": 0.2, "social": 0.8, "system": -0.1 } },
-        { "label": "Socjalista", "coords": { "economic": -0.7, "social": 0.0, "system": 0.0 } }
+        { "label": "Liberał", "coords": { "economic": 0.7, "social": -0.5, "system": -0.1 }, "color": "#E1A200" },
+        { "label": "Konserwatysta", "coords": { "economic": 0.2, "social": 0.8, "system": -0.1 }, "color": "#2563EB" },
+        { "label": "Socjalista", "coords": { "economic": -0.7, "social": 0.0, "system": 0.0 }, "color": "#E5484D" }
       ]
     },
     "horseshoe": { "axis": "economic", "radical": "system" }
