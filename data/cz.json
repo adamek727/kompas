@@ -1,5 +1,5 @@
 {
-  "meta": { "id": "cz", "name": "Česko", "lang": "cs", "flag": "🇨🇿" },
+  "meta": { "id": "cz", "name": "Česko", "lang": "cs", "flag": "🇨🇿", "calibration": "Party positions calibrated from the Chapel Hill Expert Survey 2024 (lrecon / galtan / antielite_salience); a game, not sociology." },
   "ui": {
     "title": "Politický kompas",
     "tagline": "Hra, ne věda.",
@@ -24,61 +24,51 @@
   },
   "questions": [
     { "id": "q1", "text": "Věk odchodu do důchodu by měl být zákonem zastropován na 65 letech, bez ohledu na demografický vývoj.", "weights": { "economic": -0.8 } },
-    { "id": "q2", "text": "Konsolidační balíček vlády — zvýšení DPH a škrty ve výdajích — byl správný krok ke snížení deficitu.", "weights": { "economic": 0.7, "system": -0.4 } },
-    { "id": "q3", "text": "Korespondenční volba ze zahraničí by měla být v Česku povolena.", "weights": { "system": -0.7 } },
-    { "id": "q4", "text": "Elektronická evidence tržeb (EET) by se měla plně obnovit a rozšířit na všechny podnikatele.", "weights": { "economic": -0.6, "system": -0.3 } },
-    { "id": "q5", "text": "Stát by měl výrazně omezit možnost opakovaných exekucí na jedno dlužníkovo oddlužení.", "weights": { "economic": -0.5, "social": -0.4 } },
-    { "id": "q6", "text": "Česká vláda musí aktivně řešit dostupnost bydlení — například výstavbou obecních nájemních bytů.", "weights": { "economic": -0.9 } },
-    { "id": "q7", "text": "Stát by měl vybudovat nové jaderné bloky v Dukovanech a Temelíně i za cenu státních záruk.", "weights": { "economic": -0.4, "social": 0.3 } },
-    { "id": "q8", "text": "Požadavky EU Green Deal (klimatická neutralita do 2050) škodí české průmyslové konkurenceschopnosti.", "weights": { "economic": 0.4, "system": 0.6 } },
-    { "id": "q9", "text": "Prodej nových aut se spalovacím motorem by měl být v EU zakázán od roku 2035.", "weights": { "social": -0.7, "economic": -0.3 } },
-    { "id": "q10", "text": "Manželství by mělo být v Česku umožněno i párům stejného pohlaví.", "weights": { "social": -1.0 } },
-    { "id": "q11", "text": "Adopce dětí stejnopohlavními páry by měla být v Česku povolena.", "weights": { "social": -0.9 } },
-    { "id": "q12", "text": "Eutanazie by měla být v Česku legalizována pro nevyléčitelně nemocné.", "weights": { "social": -0.8 } },
-    { "id": "q13", "text": "Rekreační užívání marihuany by mělo být v Česku legalizováno.", "weights": { "social": -0.8 } },
-    { "id": "q14", "text": "Česko by mělo přijímat více žadatelů o azyl z válečných oblastí.", "weights": { "social": -0.7, "system": -0.3 } },
-    { "id": "q15", "text": "Česká muniční iniciativa na podporu Ukrajiny je správná zahraniční politika.", "weights": { "system": -0.8, "social": -0.3 } },
-    { "id": "q16", "text": "Náboženská sdružení by měla vrátit státní restituce a přestat dostávat příspěvky z veřejných rozpočtů.", "weights": { "economic": -0.3, "social": -0.5, "system": 0.4 } },
+    { "id": "q2", "text": "Česká vláda musí aktivně řešit dostupnost bydlení — například výstavbou obecních nájemních bytů.", "weights": { "economic": -0.9 } },
+    { "id": "q3", "text": "Stát by měl vybudovat nové jaderné bloky v Dukovanech a Temelíně i za cenu státních záruk.", "weights": { "economic": -0.4, "social": 0.3 } },
+    { "id": "q4", "text": "Požadavky EU Green Deal (klimatická neutralita do 2050) škodí české průmyslové konkurenceschopnosti.", "weights": { "economic": 0.7, "system": 0.4 } },
+    { "id": "q5", "text": "Sociální dávky jsou v Česku příliš štědré a odrazují část lidí od práce.", "weights": { "economic": 0.8 } },
+    { "id": "q6", "text": "Progresivní zdanění příjmů — čím víc vyděláš, tím vyšší procento odvedeneš — je spravedlivé.", "weights": { "economic": -0.9 } },
+    { "id": "q7", "text": "Privatizace zdravotních pojišťoven a zavedení tržní konkurence by zlepšilo kvalitu české zdravotní péče.", "weights": { "economic": 0.8 } },
+    { "id": "q8", "text": "Manželství by mělo být v Česku umožněno i párům stejného pohlaví.", "weights": { "social": -1.0 } },
+    { "id": "q9", "text": "Adopce dětí stejnopohlavními páry by měla být v Česku povolena.", "weights": { "social": -0.9 } },
+    { "id": "q10", "text": "Eutanazie by měla být v Česku legalizována pro nevyléčitelně nemocné.", "weights": { "social": -0.8 } },
+    { "id": "q11", "text": "Rekreační užívání marihuany by mělo být v Česku legalizováno.", "weights": { "social": -0.8 } },
+    { "id": "q12", "text": "Česko by mělo přijímat více žadatelů o azyl z válečných oblastí.", "weights": { "social": -0.7, "system": -0.3 } },
+    { "id": "q13", "text": "Inkluze žáků se speciálními potřebami do běžných tříd snižuje kvalitu vzdělávání pro ostatní děti.", "weights": { "social": 0.6, "economic": 0.2 } },
+    { "id": "q14", "text": "Romská komunita se potýká se systémovou diskriminací, která vyžaduje aktivní státní opatření.", "weights": { "social": -0.7, "economic": -0.2 } },
+    { "id": "q15", "text": "Korespondenční volba ze zahraničí by měla být v Česku povolena.", "weights": { "system": -0.7 } },
+    { "id": "q16", "text": "Česká muniční iniciativa na podporu Ukrajiny je správná zahraniční politika.", "weights": { "system": -0.8, "social": -0.3 } },
     { "id": "q17", "text": "Česká televize a Český rozhlas jsou důležitou zárukou nezávislé žurnalistiky a nesmí být privatizovány.", "weights": { "system": -0.7 } },
     { "id": "q18", "text": "Podnikání premiéra nebo ministra v odvětvích, kde stát rozděluje dotace, je střetem zájmů a mělo by být zákonem zakázáno.", "weights": { "system": -0.8 } },
-    { "id": "q19", "text": "Inkluze žáků se speciálními potřebami do běžných tříd snižuje kvalitu vzdělávání pro ostatní děti.", "weights": { "social": 0.6, "economic": 0.2 } },
-    { "id": "q20", "text": "Krátkodobé pronájmy (Airbnb) by měly být v obcích přísněji regulovány, aby se uvolnily byty pro trvalé bydlení.", "weights": { "economic": -0.6, "system": -0.3 } },
-    { "id": "q21", "text": "Česko by mělo zavést závazné celostátní referendum, jehož výsledek je pro parlament závazný.", "weights": { "system": 0.7 } },
-    { "id": "q22", "text": "Česko by mělo v dohledné době přijmout euro.", "weights": { "system": -0.7, "economic": 0.3 } },
-    { "id": "q23", "text": "Romská komunita se potýká se systémovou diskriminací, která vyžaduje aktivní státní opatření.", "weights": { "social": -0.7, "economic": -0.2 } },
-    { "id": "q24", "text": "Genderové kvóty ve vedení firem a ve volených orgánech jsou nutné k dosažení rovnosti.", "weights": { "social": -0.8 } },
-    { "id": "q25", "text": "Sociální dávky jsou v Česku příliš štědré a odrazují část lidí od práce.", "weights": { "economic": 0.8 } },
-    { "id": "q26", "text": "Progresivní zdanění příjmů — čím víc vyděláš, tím vyšší procento odvedeneš — je spravedlivé.", "weights": { "economic": -0.9 } },
-    { "id": "q27", "text": "Privatizace zdravotních pojišťoven a zavedení tržní konkurence by zlepšilo kvalitu české zdravotní péče.", "weights": { "economic": 0.8 } },
-    { "id": "q28", "text": "Česká republika by měla posílit svou roli v EU a aktivněji přispívat k evropské integraci.", "weights": { "system": -0.9 } },
-    { "id": "q29", "text": "Politici a státní úředníci by měli mít zákonem stanovenou povinnost zveřejňovat veškerý svůj majetek.", "weights": { "system": -0.6, "social": -0.2 } },
-    { "id": "q30", "text": "Média vlastněná oligarchy představují větší hrozbu pro demokracii než státní regulace tisku.", "weights": { "system": 0.6, "economic": -0.3 } }
+    { "id": "q19", "text": "Česko by mělo zavést závazné celostátní referendum, jehož výsledek je pro parlament závazný.", "weights": { "system": 0.7 } },
+    { "id": "q20", "text": "Česká republika by měla posílit svou roli v EU a aktivněji přispívat k evropské integraci.", "weights": { "system": -0.9 } }
   ],
   "personas": [
     {
       "id": "dezolat",
       "name": "Dezolát",
       "blurb": "Všichni lžou, EU podvádí, já mám pravdu — a YouTube to potvrdí.",
-      "coords": { "economic": -0.1, "social": 0.3, "system": 0.9 },
+      "coords": { "economic": -0.179, "social": 0.888, "system": 0.08 },
       "party": "SPD",
       "politicians": [
         {
           "name": "Tomio Okamura",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tomio_Okamura_portr%C3%A9t_%28cropped%29.jpg/330px-Tomio_Okamura_portr%C3%A9t_%28cropped%29.jpg",
           "bio": "Tomio Okamura je český politik japonsko-moravského původu narozený v roce 1972. Je zakladatelem a předsedou hnutí SPD (Svoboda a přímá demokracie), které zastupuje v Poslanecké sněmovně od roku 2013. Je znám svými euroskeptickými postoji, kritikou migrace a požadavky na přímou demokracii včetně závazného referenda.",
-          "coords": { "economic": -0.05, "social": 0.35, "system": 0.95 }
+          "coords": { "economic": -0.129, "social": 0.938, "system": 0.13 }
         },
         {
           "name": "Jan Hrnčíř",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Jan_Hrn%C4%8D%C3%AD%C5%99_2019.jpg/330px-Jan_Hrn%C4%8D%C3%AD%C5%99_2019.jpg",
           "bio": "Jan Hrnčíř je český politik a poslanec Poslanecké sněmovny za hnutí SPD. Je místopředsedou SPD a jedním z klíčových tváří hnutí v oblasti sociální politiky a bezpečnosti. Opakovaně kritizoval přistěhovaleckou politiku EU a prosazoval přísnější kontrolu hranic.",
-          "coords": { "economic": -0.15, "social": 0.4, "system": 0.85 }
+          "coords": { "economic": -0.229, "social": 0.988, "system": 0.03 }
         },
         {
           "name": "Jaroslav Foldyna",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Praha%2C_Nov%C3%A9_M%C4%9Bsto%2C_V%C3%A1clavsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD%2C_Kosovo_je_Srbsko_2010%2C_Jaroslav_Foldyna_%28cropped%29.JPG/330px-Praha%2C_Nov%C3%A9_M%C4%9Bsto%2C_V%C3%A1clavsk%C3%A9_n%C3%A1m%C4%9Bst%C3%AD%2C_Kosovo_je_Srbsko_2010%2C_Jaroslav_Foldyna_%28cropped%29.JPG",
           "bio": "Jaroslav Foldyna je český politik, který působil v ČSSD a posléze přestoupil do SPD, za které zasedá v Poslanecké sněmovně. Je znám svými konzervativními sociálními postoji a kritikou politiky EU v oblasti migrace a Green Dealu. Prosazuje silný národní stát a ochranu tradičních hodnot.",
-          "coords": { "economic": -0.2, "social": 0.25, "system": 0.8 }
+          "coords": { "economic": -0.279, "social": 0.838, "system": -0.02 }
         }
       ]
     },
@@ -86,26 +76,26 @@
       "id": "babisovec",
       "name": "Babišovec",
       "blurb": "Politiku přenechám odborníkům — nejlépe těm, co ji spravují jako firmu.",
-      "coords": { "economic": 0.2, "social": 0.2, "system": 0.5 },
+      "coords": { "economic": -0.24, "social": 0.39, "system": -0.153 },
       "party": "ANO",
       "politicians": [
         {
           "name": "Andrej Babiš",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Andrej_Babi%C5%A1_2025_%28cropped%29.jpg/330px-Andrej_Babi%C5%A1_2025_%28cropped%29.jpg",
           "bio": "Andrej Babiš je slovensko-český miliardář a politik, zakladatel a předseda hnutí ANO 2011. Byl premiérem České republiky v letech 2017–2021 a znovu se stal předsedou vlády po volbách 2025. Je majitelem mediálního a potravinářského konglomerátu Agrofert a čelil opakovaným obviněním ze střetu zájmů.",
-          "coords": { "economic": 0.25, "social": 0.25, "system": 0.55 }
+          "coords": { "economic": -0.19, "social": 0.44, "system": -0.103 }
         },
         {
           "name": "Alena Schillerová",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Schillerov%C3%A1_Raku%C5%A1an_2023_%28cropped%29.jpg/330px-Schillerov%C3%A1_Raku%C5%A1an_2023_%28cropped%29.jpg",
           "bio": "Alena Schillerová je česká politička a ekonomka, předsedkyně poslaneckého klubu ANO v Poslanecké sněmovně. Působila jako ministryně financí v Babišově vládě v letech 2018–2021 a prosazovala pragmatickou fiskální politiku. Je jednou z nejvýraznějších tváří ANO a potenciální nástupkyní Babiše v čele hnutí.",
-          "coords": { "economic": 0.15, "social": 0.15, "system": 0.4 }
+          "coords": { "economic": -0.29, "social": 0.34, "system": -0.253 }
         },
         {
           "name": "Radek Vondráček",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Radek_Vondr%C3%A1%C4%8Dek_2019_%28cropped%29.jpg/330px-Radek_Vondr%C3%A1%C4%8Dek_2019_%28cropped%29.jpg",
           "bio": "Radek Vondráček je český politik a právník, člen hnutí ANO a předseda Poslanecké sněmovny od roku 2025. V minulosti zastával funkci předsedy sněmovny v letech 2017–2021. Je považován za loajálního Babišova spolupracovníka s důrazem na parlamentní procedury.",
-          "coords": { "economic": 0.2, "social": 0.3, "system": 0.5 }
+          "coords": { "economic": -0.24, "social": 0.49, "system": -0.153 }
         }
       ]
     },
@@ -113,26 +103,26 @@
       "id": "kavárník",
       "name": "Kavárník",
       "blurb": "Oat milk latte, Piráti a víra, že se svět dá vysvětlit infografikou.",
-      "coords": { "economic": -0.5, "social": -0.7, "system": -0.5 },
+      "coords": { "economic": -0.113, "social": -0.683, "system": -0.788 },
       "party": "Piráti",
       "politicians": [
         {
           "name": "Zdeněk Hřib",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Zden%C4%9Bk_H%C5%99ib_%28Nov_2024%29_%28cropped%29.jpg/330px-Zden%C4%9Bk_H%C5%99ib_%28Nov_2024%29_%28cropped%29.jpg",
           "bio": "Zdeněk Hřib je český politik, lékař a člen České pirátské strany. Byl primátorem hlavního města Prahy v letech 2018–2022 a prosazoval otevřenou správu, transparentnost a digitalizaci městských služeb. Je znám podporou lidských práv a silnou proukrajinskou a proevropskou orientací.",
-          "coords": { "economic": -0.5, "social": -0.65, "system": -0.55 }
+          "coords": { "economic": -0.113, "social": -0.633, "system": -0.838 }
         },
         {
           "name": "Jakub Michálek",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jakub_Mich%C3%A1lek_4_November_2020.jpg/330px-Jakub_Mich%C3%A1lek_4_November_2020.jpg",
           "bio": "Jakub Michálek je český politik a předseda poslaneckého klubu Pirátů v Poslanecké sněmovně. Dlouhodobě se věnuje tématům transparentnosti, protikorupčním opatřením a digitální transformaci státní správy. Je jedním z nejvýznamnějších poslanců Pirátů a aktivním kritikem střetů zájmů v politice.",
-          "coords": { "economic": -0.45, "social": -0.75, "system": -0.45 }
+          "coords": { "economic": -0.063, "social": -0.733, "system": -0.738 }
         },
         {
           "name": "Olga Richterová",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olga_Richterov%C3%A1_2023.jpg/330px-Olga_Richterov%C3%A1_2023.jpg",
           "bio": "Olga Richterová je česká politička a poslankyně za Českou pirátskou stranu, specializující se na sociální politiku, zdravotnictví a práva menšin. Aktivně prosazuje inkluzi, zlepšení přístupu k sociálním službám a transparentní veřejné finance. Je místopředsedkyní sněmovního výboru pro sociální politiku.",
-          "coords": { "economic": -0.6, "social": -0.7, "system": -0.5 }
+          "coords": { "economic": -0.213, "social": -0.683, "system": -0.788 }
         }
       ]
     },
@@ -140,26 +130,26 @@
       "id": "rovnostar",
       "name": "Rovnostář",
       "blurb": "Stát nás nezajistil dost. Kapitál si bere příliš. Tohle nejde jinak.",
-      "coords": { "economic": -0.8, "social": -0.2, "system": 0.3 },
+      "coords": { "economic": -0.849, "social": 0.6, "system": 0.187 },
       "party": "Stačilo!",
       "politicians": [
         {
           "name": "Kateřina Konečná",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/1719413916595_20240626_KONECNA_Katerina_CZ_008.jpg/330px-1719413916595_20240626_KONECNA_Katerina_CZ_008.jpg",
           "bio": "Kateřina Konečná je česká politička a lídryně koalice Stačilo!, která vznikla jako alternativa levého středu s euroskeptickými prvky. Dříve působila jako poslankyně za KSČM a europoslankyně. Je znána svou kritikou NATO, odporem k dodávkám zbraní na Ukrajinu a důrazem na sociální spravedlnost.",
-          "coords": { "economic": -0.8, "social": -0.1, "system": 0.35 }
+          "coords": { "economic": -0.849, "social": 0.7, "system": 0.237 }
         },
         {
           "name": "Marta Semelová",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Marta_Semelov%C3%A1_2014-09-29_3752.jpg/330px-Marta_Semelov%C3%A1_2014-09-29_3752.jpg",
           "bio": "Marta Semelová je česká politička a dlouholetá členka KSČM, za kterou opakovaně zasedala v Poslanecké sněmovně. Je jednou ze zakladatelek Klubu českého pohraničí a zastává otevřeně komunistické postoje. Prosazuje znárodnění klíčových odvětví ekonomiky a odmítá západní bezpečnostní integraci.",
-          "coords": { "economic": -0.95, "social": -0.05, "system": 0.5 }
+          "coords": { "economic": -0.999, "social": 0.75, "system": 0.387 }
         },
         {
           "name": "Jiří Dolejš",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ji%C5%99%C3%AD_Dolej%C5%A1.jpg/330px-Ji%C5%99%C3%AD_Dolej%C5%A1.jpg",
           "bio": "Jiří Dolejš je český ekonom a politik, bývalý poslanec za KSČM a člen ekonomické komise strany. Zabýval se alternativami k neoliberální hospodářské politice a prosazoval progresivní zdanění a posílení veřejného sektoru. Působí jako analytik levicových ekonomických alternativ v rámci koalice Stačilo!.",
-          "coords": { "economic": -0.75, "social": -0.3, "system": 0.2 }
+          "coords": { "economic": -0.799, "social": 0.5, "system": 0.087 }
         }
       ]
     },
@@ -167,26 +157,26 @@
       "id": "konzervativec",
       "name": "Pragmatická konzerva",
       "blurb": "Nízké daně, pořádek na ulicích, rodina jako základ. Nuda? Možná. Ale funguje to.",
-      "coords": { "economic": 0.7, "social": 0.5, "system": -0.3 },
+      "coords": { "economic": 0.449, "social": 0.302, "system": -0.388 },
       "party": "ODS",
       "politicians": [
         {
           "name": "Petr Fiala",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Czechia_PM_Petr_Fiala_2025_portrait.jpg/330px-Czechia_PM_Petr_Fiala_2025_portrait.jpg",
           "bio": "Petr Fiala je český politik, předseda ODS a bývalý premiér České republiky v letech 2021–2025. Akademik a politolog, zastává konzervativní liberální postoje — nízké daně, silné záruky právního státu a proevropská a proatlantická orientace. Pod jeho vedením Česko výrazně podpořilo Ukrajinu po ruské invazi.",
-          "coords": { "economic": 0.7, "social": 0.45, "system": -0.35 }
+          "coords": { "economic": 0.449, "social": 0.252, "system": -0.438 }
         },
         {
           "name": "Martin Kupka",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Martin_Kupka_2022.jpg/330px-Martin_Kupka_2022.jpg",
           "bio": "Martin Kupka je český politik a člen ODS, který byl ministrem dopravy v Fialově vládě v letech 2021–2025. Prosazoval modernizaci dopravní infrastruktury a digitalizaci státní správy. Je považován za jednoho z mladších pragmatických lídrů ODS s důrazem na efektivitu a investice.",
-          "coords": { "economic": 0.65, "social": 0.4, "system": -0.25 }
+          "coords": { "economic": 0.399, "social": 0.202, "system": -0.338 }
         },
         {
           "name": "Alexandr Vondra",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/1718698127115_20240617_VONDRA_Alexandr_CZ_007.jpg/330px-1718698127115_20240617_VONDRA_Alexandr_CZ_007.jpg",
           "bio": "Alexandr Vondra je český politik, diplomat a europoslanec za ODS. Byl ministrem zahraničí a obrany, aktivně se podílel na přistoupení ČR k NATO. Je výrazným hlasem konzervativního atlantismu a silným kritikem ruské agrese na Ukrajině.",
-          "coords": { "economic": 0.75, "social": 0.55, "system": -0.3 }
+          "coords": { "economic": 0.499, "social": 0.352, "system": -0.388 }
         }
       ]
     },
@@ -194,26 +184,26 @@
       "id": "zeleny_liberal",
       "name": "Zelený liberál",
       "blurb": "Elektromobil, solární panely a pevné přesvědčení, že ostatní žijí špatně.",
-      "coords": { "economic": 0.3, "social": -0.8, "system": -0.4 },
+      "coords": { "economic": -0.113, "social": -0.683, "system": -0.788 },
       "party": "Piráti",
       "politicians": [
         {
           "name": "Ivan Bartoš",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ivan_Barto%C5%A1_16_December_2021.jpg/330px-Ivan_Barto%C5%A1_16_December_2021.jpg",
           "bio": "Ivan Bartoš je předseda České pirátské strany a byl ministrem pro místní rozvoj a digitalizaci ve vládě Petra Fialy v letech 2021–2024. Je jedním ze zakladatelů Pirátů a propagátorem otevřeného softwaru, digitálních práv a liberálních hodnot. Rezignoval na ministerský post uprostřed kritiky za průběh digitalizace stavebního řízení.",
-          "coords": { "economic": 0.3, "social": -0.8, "system": -0.4 }
+          "coords": { "economic": -0.113, "social": -0.683, "system": -0.788 }
         },
         {
           "name": "Olga Richterová",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olga_Richterov%C3%A1_2023.jpg/330px-Olga_Richterov%C3%A1_2023.jpg",
           "bio": "Olga Richterová je česká politička a poslankyně za Českou pirátskou stranu, specializující se na sociální politiku, zdravotnictví a práva menšin. Aktivně prosazuje inkluzi, zlepšení přístupu k sociálním službám a transparentní veřejné finance. Je místopředsedkyní sněmovního výboru pro sociální politiku.",
-          "coords": { "economic": 0.2, "social": -0.75, "system": -0.45 }
+          "coords": { "economic": -0.213, "social": -0.633, "system": -0.838 }
         },
         {
           "name": "Jakub Michálek",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jakub_Mich%C3%A1lek_4_November_2020.jpg/330px-Jakub_Mich%C3%A1lek_4_November_2020.jpg",
           "bio": "Jakub Michálek je český politik a předseda poslaneckého klubu Pirátů v Poslanecké sněmovně. Dlouhodobě se věnuje tématům transparentnosti, protikorupčním opatřením a digitální transformaci státní správy. Je jedním z nejvýznamnějších poslanců Pirátů a aktivním kritikem střetů zájmů v politice.",
-          "coords": { "economic": 0.35, "social": -0.85, "system": -0.35 }
+          "coords": { "economic": -0.063, "social": -0.733, "system": -0.738 }
         }
       ]
     },
@@ -221,26 +211,26 @@
       "id": "vlastenec_socan",
       "name": "Vlastenec socan",
       "blurb": "Národ především, sociální stát pro naše lidi, Brusel ven.",
-      "coords": { "economic": -0.4, "social": 0.7, "system": 0.7 },
+      "coords": { "economic": -0.179, "social": 0.888, "system": 0.08 },
       "party": "SPD",
       "politicians": [
         {
           "name": "Radim Fiala",
           "photo": null,
           "bio": "Radim Fiala je český politik a místopředseda hnutí SPD (Svoboda a přímá demokracie). Je poslancem Poslanecké sněmovny a jedním z nejviditelnějších tváří hnutí v hospodářských a sociálních otázkách. Prosazuje ochranu českých pracovníků před levnou zahraniční konkurencí a odmítá přerozdělování v rámci EU.",
-          "coords": { "economic": -0.4, "social": 0.7, "system": 0.75 }
+          "coords": { "economic": -0.179, "social": 0.888, "system": 0.13 }
         },
         {
           "name": "Tomio Okamura",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tomio_Okamura_portr%C3%A9t_%28cropped%29.jpg/330px-Tomio_Okamura_portr%C3%A9t_%28cropped%29.jpg",
           "bio": "Tomio Okamura je český politik japonsko-moravského původu narozený v roce 1972. Je zakladatelem a předsedou hnutí SPD (Svoboda a přímá demokracie), které zastupuje v Poslanecké sněmovně od roku 2013. Je znám svými euroskeptickými postoji, kritikou migrace a požadavky na přímou demokracii včetně závazného referenda.",
-          "coords": { "economic": -0.35, "social": 0.65, "system": 0.9 }
+          "coords": { "economic": -0.129, "social": 0.838, "system": 0.28 }
         },
         {
           "name": "Jan Hrnčíř",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Jan_Hrn%C4%8D%C3%AD%C5%99_2019.jpg/330px-Jan_Hrn%C4%8D%C3%AD%C5%99_2019.jpg",
           "bio": "Jan Hrnčíř je český politik a poslanec Poslanecké sněmovny za hnutí SPD. Je místopředsedou SPD a jedním z klíčových tváří hnutí v oblasti sociální politiky a bezpečnosti. Opakovaně kritizoval přistěhovaleckou politiku EU a prosazoval přísnější kontrolu hranic.",
-          "coords": { "economic": -0.45, "social": 0.75, "system": 0.65 }
+          "coords": { "economic": -0.229, "social": 0.938, "system": 0.03 }
         }
       ]
     },
@@ -248,26 +238,26 @@
       "id": "slunickovy_byznysmen",
       "name": "Sluníčkový byznysmen",
       "blurb": "Diversity & inclusion ve firmě, Bruselu nadšeně tleskám, ČNB sleduji každé ráno.",
-      "coords": { "economic": 0.6, "social": -0.4, "system": -0.6 },
+      "coords": { "economic": 0.17, "social": -0.19, "system": -0.647 },
       "party": "STAN",
       "politicians": [
         {
           "name": "Vít Rakušan",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/V%C3%ADt_Raku%C5%A1an_2023_Praha.jpg/330px-V%C3%ADt_Raku%C5%A1an_2023_Praha.jpg",
           "bio": "Vít Rakušan je český politik a předseda hnutí Starostové a nezávislí (STAN). Byl ministrem vnitra ve vládě Petra Fialy v letech 2021–2025 a prosazoval digitalizaci státu, reformu policie a proevropský kurz. Je považován za liberálně-konzervativního politika s důrazem na bezpečnost a fungující veřejnou správu.",
-          "coords": { "economic": 0.6, "social": -0.35, "system": -0.65 }
+          "coords": { "economic": 0.17, "social": -0.14, "system": -0.697 }
         },
         {
           "name": "Danuše Nerudová",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/1718282851735_20240611_NERUDOVA_Danuse_CZ_008.jpg/330px-1718282851735_20240611_NERUDOVA_Danuse_CZ_008.jpg",
           "bio": "Danuše Nerudová je česká ekonomka, rektorka Mendelovy univerzity a europoslankyně zvolená na kandidátce STAN. Kandidovala v prezidentských volbách 2023 a proslula prosazováním rodinné politiky, rovnosti žen a mužů a evropské integrace. Jako europoslankyně se zaměřuje na hospodářskou politiku a zelené investice.",
-          "coords": { "economic": 0.55, "social": -0.5, "system": -0.55 }
+          "coords": { "economic": 0.12, "social": -0.29, "system": -0.597 }
         },
         {
           "name": "Jan Farský",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Member_of_the_European_Parliament_Jan_Farsk%C3%BD.jpg/330px-Member_of_the_European_Parliament_Jan_Farsk%C3%BD.jpg",
           "bio": "Jan Farský je český politik a europoslanec za STAN, dříve poslanec Poslanecké sněmovny a předseda poslaneckého klubu. Je zastáncem proevropského směru, reformy zdravotnictví a vzdělávání. Jako europoslanec se věnuje tématům digitální ekonomiky, zdraví a regionálního rozvoje.",
-          "coords": { "economic": 0.65, "social": -0.4, "system": -0.6 }
+          "coords": { "economic": 0.22, "social": -0.19, "system": -0.647 }
         }
       ]
     },
@@ -275,26 +265,26 @@
       "id": "lidovec",
       "name": "Lidovec",
       "blurb": "Kostel v neděli, rodina v pátek, stát v pondělí — a všechno má své místo.",
-      "coords": { "economic": 0.1, "social": 0.8, "system": -0.2 },
+      "coords": { "economic": 0.073, "social": 0.57, "system": -0.565 },
       "party": "KDU-ČSL",
       "politicians": [
         {
           "name": "Marek Výborný",
           "photo": null,
           "bio": "Marek Výborný je český politik a předseda KDU-ČSL od roku 2022. Byl ministrem zemědělství ve vládě Petra Fialy v letech 2021–2025 a prosazoval podporu rodinných farem, potravinové soběstačnosti a venkova. Jako křesťanský demokrat zastává tradiční rodinné hodnoty při zachování sociálně tržního hospodářství.",
-          "coords": { "economic": 0.1, "social": 0.8, "system": -0.2 }
+          "coords": { "economic": 0.073, "social": 0.57, "system": -0.565 }
         },
         {
           "name": "Marian Jurečka",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Marian_Jurecka_-_portrait.jpg/330px-Marian_Jurecka_-_portrait.jpg",
           "bio": "Marian Jurečka je český politik a místopředseda KDU-ČSL, který byl ministrem práce a sociálních věcí ve vládě Petra Fialy. Dlouhodobě se věnuje sociální politice, podpoře rodin s dětmi a zemědělství. Je považován za jednoho z nejvýraznějších politiků KDU-ČSL a zastává pevné křesťanskodemokratické hodnoty.",
-          "coords": { "economic": 0.05, "social": 0.85, "system": -0.15 }
+          "coords": { "economic": 0.023, "social": 0.62, "system": -0.515 }
         },
         {
           "name": "Tomáš Zdechovský",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/1718798537845_20240618_ZDECHOVSKY_Tomas_CZ_005.jpg/330px-1718798537845_20240618_ZDECHOVSKY_Tomas_CZ_005.jpg",
           "bio": "Tomáš Zdechovský je český politik a europoslanec za KDU-ČSL, který v Evropském parlamentu působí od roku 2014. Zaměřuje se na sociální politiku, zemědělství a ochranu křesťanských hodnot v evropském kontextu. Je aktivním hlasem české lidové strany v evropských institucích a zastává pevně proevropský i konzervativní postoj.",
-          "coords": { "economic": 0.15, "social": 0.75, "system": -0.25 }
+          "coords": { "economic": 0.123, "social": 0.52, "system": -0.615 }
         }
       ]
     }

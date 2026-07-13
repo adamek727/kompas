@@ -128,6 +128,7 @@ export function resultHTML(scores, pack, view, answers) {
         ${top.map(t => `<p class="method-q"><span class="method-dir">${t.contribution < 0 ? '←' : '→'}</span> ${t.question.text}</p>`).join('')}
       </div>`;
     }).join('')}
+    ${pack.meta?.calibration ? `<p class="method-calib">${pack.meta.calibration}</p>` : ''}
   </details>` : '';
 
   const credit = parties.some(p => p.photo) || pol?.photo || nearby.some(t => t.politician.photo)
