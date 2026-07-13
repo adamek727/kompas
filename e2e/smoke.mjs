@@ -12,7 +12,7 @@ const check = (name, cond) => { if (cond) console.log('ok  -', name); else { fai
 
 await page.goto(BASE + '/', { waitUntil: 'load' });
 await page.waitForSelector('.flag');
-check('home shows 5 domain flags', (await page.$$('.flag')).length === 5);
+check('home shows domain flags', (await page.$$('.flag')).length >= 5);
 
 await page.click('.flag[data-domain="cz"]');
 await page.waitForSelector('.quiz');

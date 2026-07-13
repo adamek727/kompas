@@ -9,6 +9,8 @@ const DOMAINS = [
   { id: 'eu', flag: '🇪🇺', name: 'EU', enabled: true },
   { id: 'us', flag: '🇺🇸', name: 'USA', enabled: true },
   { id: 'uk', flag: '🇬🇧', name: 'UK', enabled: true },
+  { id: 'ua', flag: '🇺🇦', name: 'Україна', enabled: true },
+  { id: 'fr', flag: '🇫🇷', name: 'France', enabled: true },
 ];
 
 const HOME_UI = {
@@ -22,6 +24,8 @@ const SHARE_UI = {
   cs: { share: 'Sdílet', copied: 'Zkopírováno!' },
   pl: { share: 'Udostępnij', copied: 'Skopiowano!' },
   en: { share: 'Share', copied: 'Copied!' },
+  uk: { share: 'Поділитися', copied: 'Скопійовано!' },
+  fr: { share: 'Partager', copied: 'Copié !' },
 };
 
 const app = document.getElementById('app');
