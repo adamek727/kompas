@@ -36,3 +36,23 @@ test('triangleSVG renders svg, a polygon, three labels and a marker', () => {
   assert.ok(svg.includes('>A<') && svg.includes('>B<') && svg.includes('>C<'));
   assert.ok(svg.includes('class="marker"'));
 });
+
+import { horseshoeSVG } from '../js/views/horseshoe.js';
+
+const hsPack = {
+  axes: { economic: { min: 'L', max: 'R' }, system: {} },
+  views: { horseshoe: { axis: 'economic', radical: 'system' } },
+};
+
+test('horseshoeSVG renders an arc path and a marker', () => {
+  const svg = horseshoeSVG({ economic: 0, system: 0 }, hsPack, 320);
+  assert.ok(svg.includes('<path'));
+  assert.ok(svg.includes('class="marker"'));
+});
+
+test('horseshoeSVG marker for center sits above marker for an extreme', () => {
+  const center = horseshoeSVG({ economic: 0, system: 0 }, hsPack, 320);
+  const left = horseshoeSVG({ economic: -1, system: 0 }, hsPack, 320);
+  const cy = n => Number(n.match(/class="marker"[^>]*cy="([0-9.]+)"/)[1]);
+  assert.ok(cy(center) < cy(left));
+});
