@@ -91,3 +91,30 @@ export function validatePack(pack) {
     errors.push('views.triangle must have exactly 3 poles');
   return errors;
 }
+
+export function matchPercent(dist, axisCount) {
+  const maxDist = Math.sqrt(4 * axisCount);
+  return Math.max(0, Math.min(100, Math.round(100 * (1 - dist / maxDist))));
+}
+
+export function rankParties(scores, personas, axisNames) {
+  return personas
+    .map(p => {
+      const d = distance(scores, p.coords, axisNames);
+      return { persona: p, dist: d, pct: matchPercent(d, axisNames.length) };
+    })
+    .sort((a, b) => a.dist - b.dist);
+}
+
+export function rankPoliticians(scores, personas, axisNames, limit = 3) {
+  const all = [];
+  for (const p of personas)
+    for (const pol of p.politicians || [])
+      all.push({ politician: pol, party: p, dist: distance(scores, pol.coords, axisNames) });
+  all.sort((a, b) => a.dist - b.dist);
+  return all.slice(0, limit).map(x => ({ ...x, pct: matchPercent(x.dist, axisNames.length) }));
+}
+
+export function isCentrist(scores, axisNames, threshold = 0.2) {
+  return axisNames.every(n => Math.abs(scores[n] ?? 0) < threshold);
+}

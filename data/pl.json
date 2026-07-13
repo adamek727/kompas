@@ -11,6 +11,9 @@
     "result": "Twój wynik",
     "match": "Najbliżej ci do",
     "alsoClose": "Blisko masz też do",
+    "ranking": "Dopasowanie do partii",
+    "nearby": "Najbliżsi politycy",
+    "centrist": "Jesteś blisko centrum — bez wyraźnego przechyłu.",
     "views": { "compass": "Kompas", "triangle": "Trójkąt", "horseshoe": "Podkowa" }
   },
   "scale": { "points": 5, "labels": ["Zdecydowanie nie", "Raczej nie", "Nie wiem", "Raczej tak", "Zdecydowanie tak"] },
