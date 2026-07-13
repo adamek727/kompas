@@ -18,6 +18,7 @@ const HOME_UI = {
   tagline: 'A game, not science.',
   pickDomain: 'Choose your arena',
   comingSoon: 'Coming soon',
+  note: 'Content current as of July 2026',
 };
 
 const SHARE_UI = {

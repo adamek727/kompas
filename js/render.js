@@ -18,6 +18,7 @@ export function homeHTML(domains, ui) {
     <p class="tagline">${ui.tagline}</p>
     <p class="pick">${ui.pickDomain}</p>
     <div class="flags">${flags}</div>
+    ${ui.note ? `<p class="home-note">${ui.note}</p>` : ''}
   </section>`;
 }
 
