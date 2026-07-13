@@ -58,9 +58,7 @@ export function resultHTML(scores, pack, view) {
     matched: p.id === party.id,
   }));
 
-  const svg = view === 'compass'
-    ? compassSVG(scores, pack, 320, { parties })
-    : (VIEWS[view] || compassSVG)(scores, pack);
+  const svg = (VIEWS[view] || compassSVG)(scores, pack, undefined, { parties });
 
   const tabs = Object.keys(VIEWS).map(v =>
     `<button class="tab${v === view ? ' active' : ''}" data-view="${v}">${pack.ui.views[v]}</button>`
