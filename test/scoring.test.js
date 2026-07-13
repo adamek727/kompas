@@ -97,3 +97,13 @@ test('validatePack flags a persona missing an axis coord', () => {
   bad.personas[0].coords = { economic: 0 };
   assert.ok(validatePack(bad).some(e => e.includes('social')));
 });
+
+import { axisNamesFromPack } from '../js/scoring.js';
+
+test('axisNamesFromPack returns declared axis names', () => {
+  assert.deepEqual(axisNamesFromPack({ axes: { economic: {}, social: {} } }), ['economic', 'social']);
+});
+
+test('axisNamesFromPack returns [] when pack has no axes', () => {
+  assert.deepEqual(axisNamesFromPack({}), []);
+});
