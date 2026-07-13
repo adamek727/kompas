@@ -11,6 +11,9 @@
     "result": "Your result",
     "match": "Closest to",
     "alsoClose": "Also close to",
+    "ranking": "Party match",
+    "nearby": "Closest politicians",
+    "centrist": "You are near the center — no strong lean.",
     "views": { "compass": "Compass", "triangle": "Triangle", "horseshoe": "Horseshoe" }
   },
   "scale": { "points": 5, "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"] },

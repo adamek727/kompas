@@ -4,7 +4,7 @@
     "title": "Political compass", "tagline": "A game, not science.",
     "pickDomain": "Choose your arena", "comingSoon": "Coming soon",
     "start": "Start", "back": "Back", "restart": "Restart",
-    "result": "Your result", "match": "Closest to", "alsoClose": "Also close to",
+    "result": "Your result", "match": "Closest to", "alsoClose": "Also close to", "ranking": "Party match", "nearby": "Closest politicians", "centrist": "You are near the centre — no strong lean.",
     "views": { "compass": "Compass", "triangle": "Triangle", "horseshoe": "Horseshoe" }
   },
   "scale": { "points": 5, "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"] },
