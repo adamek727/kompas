@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "node --test",
-    "test:e2e": "node test/e2e/smoke.mjs",
+    "test:e2e": "node e2e/smoke.mjs",
     "serve": "python3 -m http.server 8000"
   },
   "devDependencies": {
