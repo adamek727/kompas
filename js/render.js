@@ -9,8 +9,10 @@ export function homeHTML(domains, ui) {
   return `<section class="home">
     <svg class="home-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
       <circle cx="32" cy="32" r="27" stroke="currentColor" stroke-width="3"/>
-      <path d="M32 13 L39 33 L32 29 L25 33 Z" fill="currentColor"/>
-      <path d="M32 51 L25 31 L32 35 L39 31 Z" fill="#c3cfe6"/>
+      <g class="needle">
+        <path d="M32 13 L39 33 L32 29 L25 33 Z" fill="currentColor"/>
+        <path d="M32 51 L25 31 L32 35 L39 31 Z" fill="#c3cfe6"/>
+      </g>
     </svg>
     <h1>${ui.title}</h1>
     <p class="tagline">${ui.tagline}</p>
