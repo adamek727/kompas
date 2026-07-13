@@ -149,3 +149,30 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing:
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* ---------- Round 3: 5 domains, politician avatars, party map ---------- */
+.flags { grid-template-columns: repeat(auto-fit, minmax(74px, 1fr)); max-width: 470px; margin-left: auto; margin-right: auto; }
+.flag:nth-child(5) { animation-delay: .25s; }
+.flag .disc { width: 76px; height: 76px; font-size: 36px; }
+
+.persona-head { display: flex; align-items: center; gap: 16px; }
+.avatar { width: 66px; height: 66px; flex: 0 0 auto; border-radius: 50%; overflow: hidden; position: relative; background: var(--bg); border: 3px solid var(--f, var(--accent-family)); display: grid; place-items: center; box-shadow: var(--shadow-sm); }
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.avatar .mono { display: none; font-family: var(--font-display); font-weight: 800; font-size: 22px; color: var(--f, var(--accent-family)); }
+.avatar.noimg img { display: none; }
+.avatar.noimg .mono { display: block; }
+.pid { min-width: 0; }
+.pid .matchlabel { margin: 0 0 4px; }
+.pid h3 { font-size: 26px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; align-items: center; }
+.party-chip { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; padding: 3px 10px; border-radius: 99px; background: var(--bg); border: 1px solid var(--line); }
+.pol { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.pol-name { font-weight: 700; font-size: 16px; margin: 0 0 6px; }
+.pol-bio { color: var(--muted); font-size: 13.5px; line-height: 1.55; margin: 0; }
+
+.party-dot { stroke: #fff; stroke-width: 2; }
+.party-mono { fill: #fff; font-size: 9px; font-weight: 700; font-family: var(--font-body); }
+.party-ring { stroke-width: 2.5; }
+.party-ring.matched { stroke-width: 4; }
+.marker.you { stroke-width: 3.5; }
+.credit { text-align: center; color: var(--muted); font-size: 11px; opacity: .75; margin: 14px 0 4px; }
