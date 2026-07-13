@@ -47,7 +47,7 @@ function axisBars(scores, pack) {
 function avatarHTML(pol, accent, size) {
   const cls = size === 'sm' ? 'near-av' : 'avatar';
   return `<div class="${cls}${pol.photo ? '' : ' noimg'}" style="--f:${accent}">
-        ${pol.photo ? `<img src="${pol.photo}" alt="${pol.name}" onerror="this.closest('.${cls}').classList.add('noimg')">` : ''}
+        ${pol.photo ? `<img src="${pol.photo}" alt="${pol.name}">` : ''}
         <span class="mono">${initials(pol.name)}</span>
       </div>`;
 }

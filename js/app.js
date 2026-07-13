@@ -28,9 +28,22 @@ const SHARE_UI = {
   fr: { share: 'Partager', copied: 'Copié !' },
 };
 
+const STATS_ENDPOINT = '';
+
 const app = document.getElementById('app');
 const live = document.getElementById('live');
 const state = { pack: null, answers: {}, index: 0, view: 'compass', screen: 'home' };
+
+if (window.top !== window.self) {
+  try { window.top.location = window.location.href; } catch (_) { /* framed cross-origin */ }
+}
+app.addEventListener('error', (e) => {
+  const img = e.target;
+  if (img && img.tagName === 'IMG') {
+    const av = img.closest('.avatar, .near-av');
+    if (av) av.classList.add('noimg');
+  }
+}, true);
 
 function renderHome() {
   state.screen = 'home';
@@ -95,11 +108,21 @@ function renderQuiz() {
   );
 }
 
+function sendStats() {
+  if (!STATS_ENDPOINT) return;
+  try {
+    const pack = state.pack;
+    const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
+    const body = JSON.stringify({ v: 1, domain: pack.meta.id, answers: encodeAnswers(pack, state.answers), scores, ts: Date.now() });
+    fetch(STATS_ENDPOINT, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' }, body });
+  } catch (_) {}
+}
+
 function answer(value) {
   const pack = state.pack;
   state.answers[pack.questions[state.index].id] = value;
   if (state.index < pack.questions.length - 1) { state.index++; renderQuiz(); }
-  else renderResult();
+  else { sendStats(); renderResult(); }
 }
 
 function renderResult() {
