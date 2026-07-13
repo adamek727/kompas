@@ -127,6 +127,9 @@ function renderResult() {
   const shareBtn = app.querySelector('.share');
   if (shareBtn) shareBtn.addEventListener('click', async () => {
     const url = location.origin + location.pathname + shareHash(pack.meta.id, digits);
+    if (navigator.share) {
+      try { await navigator.share({ title: document.title, text: HOME_UI.title, url }); return; } catch (_) { /* cancelled or unsupported */ }
+    }
     try { await navigator.clipboard.writeText(url); } catch (_) { /* clipboard unavailable */ }
     if (shareLabel) { shareLabel.textContent = sl.copied; setTimeout(() => { shareLabel.textContent = sl.share; }, 1600); }
   });
