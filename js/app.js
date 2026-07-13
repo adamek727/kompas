@@ -5,15 +5,15 @@ import { homeHTML, quizHTML } from './render.js';
 const DOMAINS = [
   { id: 'cz', flag: '🇨🇿', name: 'Česko', enabled: true },
   { id: 'pl', flag: '🇵🇱', name: 'Polska', enabled: true },
-  { id: 'eu', flag: '🇪🇺', name: 'EU', enabled: false },
-  { id: 'us', flag: '🇺🇸', name: 'USA', enabled: false },
+  { id: 'eu', flag: '🇪🇺', name: 'EU', enabled: true },
+  { id: 'us', flag: '🇺🇸', name: 'USA', enabled: true },
 ];
 
 const HOME_UI = {
-  title: 'Politický kompas',
-  tagline: 'Hra, ne věda.',
-  pickDomain: 'Vyber si zemi',
-  comingSoon: 'Už brzy',
+  title: 'Political Compass',
+  tagline: 'A game, not science.',
+  pickDomain: 'Choose your arena',
+  comingSoon: 'Coming soon',
 };
 
 const app = document.getElementById('app');
@@ -33,7 +33,7 @@ async function loadDomain(id) {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     pack = await res.json();
   } catch (e) {
-    app.innerHTML = `<pre class="error">Nepodařilo se načíst „${id}" (${e.message})</pre>`;
+    app.innerHTML = `<pre class="error">Could not load "${id}" (${e.message})</pre>`;
     return;
   }
   const errors = validatePack(pack);

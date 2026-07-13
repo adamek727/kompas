@@ -1,0 +1,259 @@
+{
+  "meta": { "id": "eu", "name": "European Union", "lang": "en", "flag": "🇪🇺" },
+  "ui": {
+    "title": "Political compass", "tagline": "A game, not science.",
+    "pickDomain": "Choose your arena", "comingSoon": "Coming soon",
+    "start": "Start", "back": "Back", "restart": "Restart",
+    "result": "Your result", "match": "Closest to", "alsoClose": "Also close to",
+    "views": { "compass": "Compass", "triangle": "Triangle", "horseshoe": "Horseshoe" }
+  },
+  "scale": { "points": 5, "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"] },
+  "axes": {
+    "economic": { "min": "Solidarity & regulation", "max": "Free market" },
+    "social": { "min": "Progressive & open", "max": "National & traditional" },
+    "system": { "min": "More Europe (federal)", "max": "Sovereign nations" }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "text": "The EU should become a true federal state — with its own constitution, directly elected government and supreme law over member states.",
+      "weights": { "system": -1.0 }
+    },
+    {
+      "id": "q2",
+      "text": "Ukraine should be fast-tracked to full EU membership as soon as its war with Russia ends.",
+      "weights": { "system": -0.6, "social": -0.4 }
+    },
+    {
+      "id": "q3",
+      "text": "The EU should field its own standing army, independent of NATO, with troops under direct EU command.",
+      "weights": { "system": -0.8 }
+    },
+    {
+      "id": "q4",
+      "text": "Member states should be allowed to issue joint EU bonds (eurobonds) to finance shared investment and crises.",
+      "weights": { "economic": -0.7, "system": -0.5 }
+    },
+    {
+      "id": "q5",
+      "text": "National vetoes in foreign and security policy should be replaced by qualified-majority voting so one country cannot block the rest.",
+      "weights": { "system": -0.8 }
+    },
+    {
+      "id": "q6",
+      "text": "There should be a permanent EU fiscal transfer mechanism — richer regions automatically subsidising poorer ones.",
+      "weights": { "economic": -0.8, "system": -0.4 }
+    },
+    {
+      "id": "q7",
+      "text": "Asylum seekers should be distributed across EU member states through a binding mandatory quota system.",
+      "weights": { "social": -0.5, "system": -0.6 }
+    },
+    {
+      "id": "q8",
+      "text": "The EU's Green Deal and its 2050 climate-neutrality target should be implemented in full, even if it raises energy costs in the short term.",
+      "weights": { "economic": -0.5, "social": -0.4 }
+    },
+    {
+      "id": "q9",
+      "text": "Frontex should be strengthened and given powers to independently turn back boats crossing the EU's external maritime borders.",
+      "weights": { "social": 0.7, "system": 0.3 }
+    },
+    {
+      "id": "q10",
+      "text": "Citizens of all EU member states should directly elect the President of the European Commission.",
+      "weights": { "system": -0.9 }
+    },
+    {
+      "id": "q11",
+      "text": "EU membership should be conditional on maintaining independent courts and free media — countries that backslide should lose voting rights.",
+      "weights": { "system": -0.5, "social": -0.3 }
+    },
+    {
+      "id": "q12",
+      "text": "The Western Balkans — Serbia, Bosnia, Kosovo and others — should be given a credible and fast path to EU membership.",
+      "weights": { "system": -0.5, "social": -0.3 }
+    },
+    {
+      "id": "q13",
+      "text": "The Common Agricultural Policy should be radically cut and its subsidies redirected from large landowners to climate-friendly small farms.",
+      "weights": { "economic": 0.3, "social": -0.4 }
+    },
+    {
+      "id": "q14",
+      "text": "The EU should introduce its own direct tax — for example, a digital services tax — to fund the EU budget without relying on member-state contributions.",
+      "weights": { "economic": -0.6, "system": -0.7 }
+    },
+    {
+      "id": "q15",
+      "text": "European strategic autonomy — building our own defence and tech industries — matters more than keeping costs low by depending on US companies and NATO.",
+      "weights": { "economic": -0.4, "system": -0.5 }
+    },
+    {
+      "id": "q16",
+      "text": "The EU should speak with a single voice in foreign policy, replacing the current patchwork of 27 national positions.",
+      "weights": { "system": -0.8 }
+    },
+    {
+      "id": "q17",
+      "text": "English should be recognised as the EU's common working language, even after Brexit.",
+      "weights": { "social": -0.3, "system": -0.2 }
+    },
+    {
+      "id": "q18",
+      "text": "All EU member states should be required to adopt the euro within a fixed timeframe.",
+      "weights": { "economic": 0.2, "system": -0.8 }
+    },
+    {
+      "id": "q19",
+      "text": "The principle of subsidiarity — decisions taken as close to citizens as possible — should take precedence over deeper EU integration.",
+      "weights": { "system": 0.8 }
+    },
+    {
+      "id": "q20",
+      "text": "The EU should tightly regulate US Big Tech — Meta, Google, Apple — including breaking up platforms that abuse their market position.",
+      "weights": { "economic": -0.7, "social": -0.2 }
+    },
+    {
+      "id": "q21",
+      "text": "EU structural funds should be withheld from member states that violate the rule of law or democratic standards.",
+      "weights": { "system": -0.5, "social": -0.3 }
+    },
+    {
+      "id": "q22",
+      "text": "The EU single market should be deepened — removing remaining barriers in services, capital and the digital economy — even if that limits national regulation.",
+      "weights": { "economic": 0.6, "system": -0.3 }
+    },
+    {
+      "id": "q23",
+      "text": "The EU should prioritise physical external border security and returns of irregular migrants over humanitarian obligations.",
+      "weights": { "social": 0.8, "system": 0.3 }
+    },
+    {
+      "id": "q24",
+      "text": "Climate and environmental rules should be set exclusively at EU level — member states should no longer be able to opt out or go slower.",
+      "weights": { "social": -0.4, "system": -0.7 }
+    },
+    {
+      "id": "q25",
+      "text": "EU competition rules that block state aid should be relaxed so European industrial champions can be built to compete with China and the US.",
+      "weights": { "economic": -0.5, "system": 0.2 }
+    },
+    {
+      "id": "q26",
+      "text": "The EU Parliament should have the exclusive right to initiate legislation — the Commission should no longer hold that monopoly.",
+      "weights": { "system": -0.7 }
+    },
+    {
+      "id": "q27",
+      "text": "A common EU minimum wage — set as a share of each country's median wage — is good for workers and the single market.",
+      "weights": { "economic": -0.7, "system": -0.4 }
+    },
+    {
+      "id": "q28",
+      "text": "The EU's internal free movement of people is a fundamental right that should never be suspended, even during crises.",
+      "weights": { "social": -0.5, "system": -0.3 }
+    },
+    {
+      "id": "q29",
+      "text": "EU member states should be free to make their own trade deals with third countries, rather than leaving all trade policy to Brussels.",
+      "weights": { "economic": 0.4, "system": 0.7 }
+    },
+    {
+      "id": "q30",
+      "text": "Reducing net-zero emissions targets is justified to protect European industrial competitiveness and working-class jobs.",
+      "weights": { "economic": 0.5, "social": 0.4 }
+    }
+  ],
+  "personas": [
+    {
+      "id": "federalist",
+      "name": "The Federalist",
+      "blurb": "Has memorised the Spinelli Manifesto and brings it up at dinner parties. Wants a United States of Europe by Tuesday.",
+      "party": "Renew Europe",
+      "politician": "Guy Verhofstadt",
+      "coords": { "economic": 0.2, "social": -0.6, "system": -0.9 }
+    },
+    {
+      "id": "christian_democrat",
+      "name": "The Christian Democrat",
+      "blurb": "Believes in a strong Europe, sound money, and the family — roughly in that order. Comfortable with compromise.",
+      "party": "European People's Party (EPP)",
+      "politician": "Ursula von der Leyen",
+      "coords": { "economic": 0.3, "social": 0.3, "system": -0.4 }
+    },
+    {
+      "id": "social_democrat",
+      "name": "The Social Democrat",
+      "blurb": "Wants Europe to be a social superpower — solidarity with everyone, austerity for no one.",
+      "party": "Progressive Alliance of Socialists and Democrats (S&D)",
+      "politician": "Pedro Sánchez",
+      "coords": { "economic": -0.6, "social": -0.3, "system": -0.5 }
+    },
+    {
+      "id": "liberal_centrist",
+      "name": "The Liberal Centrist",
+      "blurb": "Pro-market, pro-EU, pro-himself. Thinks big reforms are just around the corner — they have been for eight years.",
+      "party": "Renew Europe",
+      "politician": "Emmanuel Macron",
+      "coords": { "economic": 0.5, "social": -0.3, "system": -0.6 }
+    },
+    {
+      "id": "green",
+      "name": "The Green",
+      "blurb": "Would like to save the planet by 2030 but will settle for a binding climate law and more bike lanes in Brussels.",
+      "party": "Greens/European Free Alliance",
+      "politician": "Terry Reintke",
+      "coords": { "economic": -0.5, "social": -0.7, "system": -0.6 }
+    },
+    {
+      "id": "left",
+      "name": "The Radical Left",
+      "blurb": "Sceptical of both Brussels bureaucrats and free-market dogma. Europe, yes — but only if it works for the workers.",
+      "party": "The Left (GUE/NGL)",
+      "politician": "Manon Aubry",
+      "coords": { "economic": -0.9, "social": -0.5, "system": 0.3 }
+    },
+    {
+      "id": "national_conservative",
+      "name": "The National Conservative",
+      "blurb": "Proud European — on her own terms. Wants a Europe of nations, not a nation called Europe.",
+      "party": "European Conservatives and Reformists (ECR)",
+      "politician": "Giorgia Meloni",
+      "coords": { "economic": 0.2, "social": 0.7, "system": 0.6 }
+    },
+    {
+      "id": "sovereigntist",
+      "name": "The Sovereigntist",
+      "blurb": "Believes Brussels is a swamp, globalists are in charge, and his nation's destiny should not be decided by unelected bureaucrats.",
+      "party": "Patriots for Europe (PfE)",
+      "politician": "Viktor Orbán",
+      "coords": { "economic": -0.1, "social": 0.8, "system": 0.9 }
+    },
+    {
+      "id": "technocrat",
+      "name": "The Technocrat",
+      "blurb": "Has read every impact assessment the Commission ever published. Believes in evidence, expertise, and very long footnotes.",
+      "party": "European People's Party (EPP)",
+      "politician": "Mario Draghi",
+      "coords": { "economic": 0.4, "social": -0.1, "system": -0.3 }
+    },
+    {
+      "id": "far_right_populist",
+      "name": "The Far-Right Populist",
+      "blurb": "Wants to put the nation back in the European project — borders, culture and all. Schengen is a choice, not a sacrament.",
+      "party": "Europe of Sovereign Nations (ESN)",
+      "politician": "Stanisław Tyszka",
+      "coords": { "economic": 0.0, "social": 0.9, "system": 0.9 }
+    }
+  ],
+  "views": {
+    "compass": { "x": "economic", "y": "social" },
+    "triangle": { "poles": [
+      { "label": "Liberal", "color": "#E1A200", "coords": { "economic": 0.6, "social": -0.6, "system": -0.3 } },
+      { "label": "Conservative", "color": "#2563EB", "coords": { "economic": 0.3, "social": 0.7, "system": 0.4 } },
+      { "label": "Socialist", "color": "#E5484D", "coords": { "economic": -0.7, "social": -0.2, "system": -0.3 } }
+    ] },
+    "horseshoe": { "axis": "economic", "radical": "system" }
+  }
+}
