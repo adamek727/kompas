@@ -108,7 +108,7 @@ function renderResult() {
     t.addEventListener('click', () => { state.view = t.dataset.view; renderResult(); })
   );
   app.querySelector('.restart').addEventListener('click', renderHome);
-  app.querySelectorAll('.compass .party-hit').forEach(el =>
+  app.querySelectorAll('.party-hit').forEach(el =>
     el.addEventListener('click', () => {
       const row = app.querySelector(`.rank-row[data-party="${el.dataset.party}"]`);
       if (!row) return;
