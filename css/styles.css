@@ -1,0 +1,5 @@
+:root { --bg:#12141c; --fg:#e8eaf0; --accent:#5b8cff; --muted:#8a90a6; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+#app { max-width: 640px; margin: 0 auto; padding: 24px; min-height: 100vh; }
+button { font: inherit; cursor: pointer; }
