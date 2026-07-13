@@ -18,9 +18,11 @@ const HOME_UI = {
 };
 
 const app = document.getElementById('app');
-const state = { pack: null, answers: {}, index: 0, view: 'compass' };
+const live = document.getElementById('live');
+const state = { pack: null, answers: {}, index: 0, view: 'compass', screen: 'home' };
 
 function renderHome() {
+  state.screen = 'home';
   app.innerHTML = homeHTML(DOMAINS, HOME_UI);
   app.querySelectorAll('.flag:not([disabled])').forEach(btn =>
     btn.addEventListener('click', () => loadDomain(btn.dataset.domain))
@@ -52,7 +54,9 @@ async function loadDomain(id) {
 
 function renderQuiz() {
   const pack = state.pack;
+  state.screen = 'quiz';
   app.innerHTML = quizHTML(pack, state.index, state.answers);
+  if (live) live.textContent = `${state.index + 1} / ${pack.questions.length}: ${pack.questions[state.index].text}`;
 
   app.querySelectorAll('.answer').forEach(btn =>
     btn.addEventListener('click', () => answer(Number(btn.dataset.value)))
@@ -73,14 +77,38 @@ function answer(value) {
 
 function renderResult() {
   const pack = state.pack;
+  state.screen = 'result';
   const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
   app.innerHTML = resultHTML(scores, pack, state.view);
   app.querySelectorAll('.tab').forEach(t =>
     t.addEventListener('click', () => { state.view = t.dataset.view; renderResult(); })
   );
   app.querySelector('.restart').addEventListener('click', renderHome);
+  app.querySelectorAll('.compass .party-hit').forEach(el =>
+    el.addEventListener('click', () => {
+      const row = app.querySelector(`.rank-row[data-party="${el.dataset.party}"]`);
+      if (!row) return;
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      row.classList.remove('flash');
+      void row.offsetWidth;
+      row.classList.add('flash');
+    })
+  );
 }
 
+function onKey(e) {
+  if (state.screen !== 'quiz' || !state.pack) return;
+  const n = Number(e.key);
+  if (Number.isInteger(n) && n >= 1 && n <= state.pack.scale.points) {
+    e.preventDefault();
+    answer(n);
+  } else if (e.key === 'Backspace' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    if (state.index > 0) { state.index--; renderQuiz(); }
+  }
+}
+
+document.addEventListener('keydown', onKey);
 renderHome();
 
 export { state, renderHome, renderQuiz, renderResult };

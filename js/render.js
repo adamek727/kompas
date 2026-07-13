@@ -36,7 +36,7 @@ export function quizHTML(pack, index, answers) {
   const answersHtml = pack.scale.labels.map((label, i) => {
     const value = i + 1;
     const sel = chosen === value ? ' selected' : '';
-    return `<button class="answer${sel}" data-value="${value}">${label}</button>`;
+    return `<button class="answer${sel}" data-value="${value}"><span class="key">${value}</span><span class="answer-label">${label}</span></button>`;
   }).join('\n');
   return `<section class="quiz">
     <div class="progress"><div class="progress-fill" style="width:${(((index + 1) / total) * 100).toFixed(1)}%"></div></div>

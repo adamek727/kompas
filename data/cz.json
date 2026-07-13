@@ -11,6 +11,9 @@
     "result": "Tvůj výsledek",
     "match": "Nejblíž máš k",
     "alsoClose": "Blízko máš i k",
+    "ranking": "Shoda se stranami",
+    "nearby": "Nejbližší politici",
+    "centrist": "Jsi blízko středu — bez výrazného náklonu.",
     "views": { "compass": "Kompas", "triangle": "Trojúhelník", "horseshoe": "Podkova" }
   },
   "scale": { "points": 5, "labels": ["Rozhodně ne", "Spíš ne", "Nevím", "Spíš ano", "Rozhodně ano"] },
