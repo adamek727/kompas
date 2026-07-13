@@ -56,3 +56,24 @@ test('horseshoeSVG marker for center sits above marker for an extreme', () => {
   const cy = n => Number(n.match(/class="marker"[^>]*cy="([0-9.]+)"/)[1]);
   assert.ok(cy(center) < cy(left));
 });
+
+test('compassSVG renders the axis labels from the pack', () => {
+  const svg = compassSVG({ economic: 0, social: 0 }, pack, 320);
+  assert.ok(svg.includes('>L<') && svg.includes('>R<'));
+  assert.ok(svg.includes('>F<') && svg.includes('>O<'));
+});
+
+test('compassSVG puts marker at left edge for economic=-1', () => {
+  const svg = compassSVG({ economic: -1, social: 0 }, pack, 320);
+  assert.ok(svg.includes('cx="0.0"'));
+});
+
+test('triangleSVG pulls the marker to a pole when scores match it', () => {
+  const svg = triangleSVG({ economic: 1, social: 0 }, triPack, 300);
+  assert.ok(svg.includes('cx="40.0"') && svg.includes('cy="260.0"'));
+});
+
+test('horseshoeSVG renders the axis min and max labels', () => {
+  const svg = horseshoeSVG({ economic: 0, system: 0 }, hsPack, 320);
+  assert.ok(svg.includes('>L<') && svg.includes('>R<'));
+});

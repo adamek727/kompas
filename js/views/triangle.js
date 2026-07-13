@@ -13,7 +13,7 @@ export function triangleSVG(scores, pack, size = 300) {
   const p = trianglePoint(w, verts);
   const poly = verts.map(v => `${v.x},${v.y}`).join(' ');
   const labels = verts.map((v, i) =>
-    `<text x="${v.x}" y="${v.y + (i === 2 ? -8 : 18)}" text-anchor="middle" class="axlabel">${poles[i].label}</text>`
+    `<text x="${v.x}" y="${v.y + (i === 2 ? -14 : 18)}" text-anchor="middle" class="axlabel">${poles[i].label}</text>`
   ).join('\n  ');
   return `<svg viewBox="0 0 ${size} ${size}" class="viz triangle" role="img">
   <polygon points="${poly}" class="tri"/>
