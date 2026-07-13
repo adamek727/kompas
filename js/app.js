@@ -174,6 +174,16 @@ function onKey(e) {
   }
 }
 
+function pointNeedle(e) {
+  const mark = document.querySelector('.home-mark');
+  if (!mark) return;
+  const needle = mark.querySelector('.needle');
+  if (!needle) return;
+  const r = mark.getBoundingClientRect();
+  const deg = Math.atan2(e.clientY - (r.top + r.height / 2), e.clientX - (r.left + r.width / 2)) * 180 / Math.PI + 90;
+  needle.style.transform = `rotate(${deg}deg)`;
+}
+document.addEventListener('mousemove', pointNeedle);
 document.addEventListener('keydown', onKey);
 
 const shared = parseHash(location.hash);
