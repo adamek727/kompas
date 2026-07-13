@@ -1,0 +1,375 @@
+{
+  "meta": {
+    "id": "fr",
+    "name": "France",
+    "lang": "fr",
+    "flag": "🇫🇷",
+    "calibration": "Positions calibrées d'après le Chapel Hill Expert Survey (lrecon / galtan / anti-élite) ; un jeu, pas une science."
+  },
+  "ui": {
+    "title": "Compas politique",
+    "tagline": "un jeu, pas une science",
+    "pickDomain": "Choisissez un pays",
+    "comingSoon": "Bientôt disponible",
+    "start": "Commencer",
+    "back": "Retour",
+    "restart": "Recommencer",
+    "result": "Votre résultat",
+    "match": "Vous êtes le plus proche de",
+    "alsoClose": "Vous êtes aussi proche de",
+    "ranking": "Correspondance par parti",
+    "nearby": "Politiciens les plus proches",
+    "centrist": "Vous êtes proche du centre — sans penchant marqué.",
+    "views": {
+      "compass": "Compas",
+      "triangle": "Triangle",
+      "horseshoe": "Fer à cheval"
+    }
+  },
+  "scale": {
+    "points": 5,
+    "labels": [
+      "Pas du tout d'accord",
+      "Plutôt pas d'accord",
+      "Sans opinion",
+      "Plutôt d'accord",
+      "Tout à fait d'accord"
+    ]
+  },
+  "axes": {
+    "economic": { "min": "État et redistribution", "max": "Marché et liberté" },
+    "social": { "min": "Progressiste et libéral", "max": "Traditionnel et national-conservateur" },
+    "system": { "min": "Establishment et pro-UE", "max": "Anti-establishment et eurosceptique" }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "text": "L'âge légal de départ à la retraite doit être ramené à 60 ans, même si cela implique des dépenses publiques supplémentaires.",
+      "weights": { "economic": -0.8, "system": 0.3 }
+    },
+    {
+      "id": "q2",
+      "text": "La durée légale du travail de 35 heures par semaine est une conquête sociale qu'il faut défendre contre toute remise en cause.",
+      "weights": { "economic": -0.7 }
+    },
+    {
+      "id": "q3",
+      "text": "Le RSA et les minima sociaux doivent être augmentés de façon significative pour lutter contre la pauvreté.",
+      "weights": { "economic": -0.8 }
+    },
+    {
+      "id": "q4",
+      "text": "Il faut rétablir l'ISF (impôt sur la fortune) pour que les plus riches contribuent davantage au financement de l'État.",
+      "weights": { "economic": -0.85 }
+    },
+    {
+      "id": "q5",
+      "text": "L'État doit nationaliser les entreprises stratégiques (énergie, eau, transport) plutôt que de les privatiser.",
+      "weights": { "economic": -0.9 }
+    },
+    {
+      "id": "q6",
+      "text": "La France doit réduire fortement l'immigration régulière et supprimer l'Aide médicale d'État (AME) pour les sans-papiers.",
+      "weights": { "social": 0.85, "system": 0.4 }
+    },
+    {
+      "id": "q7",
+      "text": "Le port du voile islamique doit être interdit dans tous les espaces publics, y compris les universités.",
+      "weights": { "social": 0.7, "system": 0.2 }
+    },
+    {
+      "id": "q8",
+      "text": "Il faut accroître les moyens de la police et adopter des peines plus sévères pour lutter contre la délinquance.",
+      "weights": { "social": 0.7 }
+    },
+    {
+      "id": "q9",
+      "text": "Les peines planchers doivent être rétablies et les remises de peine automatiques supprimées.",
+      "weights": { "social": 0.75 }
+    },
+    {
+      "id": "q10",
+      "text": "La PMA doit être ouverte à toutes les femmes et la GPA doit être légalisée en France.",
+      "weights": { "social": -0.8 }
+    },
+    {
+      "id": "q11",
+      "text": "La France doit prolonger la durée de vie de ses centrales nucléaires et en construire de nouvelles pour garantir son indépendance énergétique.",
+      "weights": { "economic": 0.3, "social": 0.4 }
+    },
+    {
+      "id": "q12",
+      "text": "La France doit transférer davantage de compétences à l'Union européenne pour renforcer la souveraineté européenne.",
+      "weights": { "system": -0.85 }
+    },
+    {
+      "id": "q13",
+      "text": "La France devrait organiser un référendum sur son appartenance à l'Union européenne ou sur la sortie de l'euro.",
+      "weights": { "system": 0.9 }
+    },
+    {
+      "id": "q14",
+      "text": "Il faut instaurer le référendum d'initiative citoyenne (RIC) pour que les Français puissent légiférer directement.",
+      "weights": { "system": 0.7 }
+    },
+    {
+      "id": "q15",
+      "text": "La Ve République est obsolète : il faut passer à la proportionnelle et réduire les pouvoirs du président.",
+      "weights": { "system": 0.65, "social": -0.3 }
+    },
+    {
+      "id": "q16",
+      "text": "Il faut décentraliser massivement les pouvoirs de l'État vers les régions et les collectivités locales.",
+      "weights": { "system": 0.4, "economic": 0.4 }
+    },
+    {
+      "id": "q17",
+      "text": "La PAC (Politique agricole commune) doit être réformée pour protéger davantage les agriculteurs français face à la concurrence internationale.",
+      "weights": { "economic": -0.4, "system": 0.5 }
+    },
+    {
+      "id": "q18",
+      "text": "Le SMIC doit être relevé à 1 600 euros nets par mois immédiatement, même si cela alourdit les charges des entreprises.",
+      "weights": { "economic": -0.8 }
+    },
+    {
+      "id": "q19",
+      "text": "La France doit rester dans l'OTAN et soutenir militairement l'Ukraine contre la Russie.",
+      "weights": { "system": -0.7, "social": -0.2 }
+    },
+    {
+      "id": "q20",
+      "text": "Les énergies renouvelables doivent remplacer progressivement le nucléaire dans le mix électrique français.",
+      "weights": { "economic": -0.3, "social": -0.6 }
+    }
+  ],
+  "personas": [
+    {
+      "id": "insoumis",
+      "name": "L'Insoumis",
+      "blurb": "Le peuple contre les oligarques — et la planète contre Total.",
+      "party": "LFI",
+      "coords": { "economic": -0.70, "social": -0.64, "system": 0.60 },
+      "politicians": [
+        {
+          "name": "Jean-Luc Mélenchon",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/M%C3%A9lenchon_2027_-_55261894422_%28cropped%29.jpg/330px-M%C3%A9lenchon_2027_-_55261894422_%28cropped%29.jpg",
+          "bio": "Jean-Luc Mélenchon est le fondateur de La France insoumise, mouvement créé en 2016 après son départ du Parti socialiste. Il a été candidat à l'élection présidentielle en 2012, 2017 et 2022, atteignant 22 % des voix au premier tour en 2022. Tribun aux convictions républicaines et écosocialistes, il a longtemps porté le projet de VIe République et de rupture avec les traités européens.",
+          "coords": { "economic": -0.75, "social": -0.60, "system": 0.65 }
+        },
+        {
+          "name": "Manuel Bompard",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bompard_MEP_2019.jpg/330px-Bompard_MEP_2019.jpg",
+          "bio": "Manuel Bompard est coordinateur national de La France insoumise depuis 2022, succédant à Adrien Quatennens dans cette fonction. Ancien eurodéputé (2019–2022), il est député des Bouches-du-Rhône depuis 2022. Proche collaborateur de Mélenchon, il incarne la ligne dure du mouvement sur les questions institutionnelles et économiques.",
+          "coords": { "economic": -0.70, "social": -0.62, "system": 0.62 }
+        },
+        {
+          "name": "Mathilde Panot",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mathilde_Panot%2C_d%C3%A9put%C3%A9e_du_Val-de-Marne_%28cropped%29.jpg/330px-Mathilde_Panot%2C_d%C3%A9put%C3%A9e_du_Val-de-Marne_%28cropped%29.jpg",
+          "bio": "Mathilde Panot est présidente du groupe La France insoumise à l'Assemblée nationale depuis 2020, rôle qu'elle a conservé lors des législatures suivantes. Députée du Val-de-Marne, elle s'est imposée comme l'une des principales figures parlementaires du mouvement. Défenseure du droit à l'avortement et des droits sociaux, elle a mené de nombreux combats en commission des affaires sociales.",
+          "coords": { "economic": -0.68, "social": -0.68, "system": 0.55 }
+        }
+      ]
+    },
+    {
+      "id": "socialiste",
+      "name": "Le Rose délavé",
+      "blurb": "Social-démocrate convaincu que l'Europe peut encore être de gauche.",
+      "party": "PS",
+      "coords": { "economic": -0.36, "social": -0.50, "system": -0.40 },
+      "politicians": [
+        {
+          "name": "Olivier Faure",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OF_MATIGNON_-_MAXIME_CLAM_%28cropped%29.png/330px-OF_MATIGNON_-_MAXIME_CLAM_%28cropped%29.png",
+          "bio": "Olivier Faure est premier secrétaire du Parti socialiste depuis 2018, ayant succédé à Jean-Christophe Cambadélis après la déroute de 2017. Député de Seine-et-Marne, il a engagé le PS dans une stratégie de coalition avec la gauche radicale au sein du Nouveau Front populaire. Ancien proche de Manuel Valls reconverti en partisan de l'union des gauches, il défend une ligne social-écologiste.",
+          "coords": { "economic": -0.38, "social": -0.52, "system": -0.38 }
+        },
+        {
+          "name": "François Hollande",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Fran%C3%A7ois_Hollande_November_2015.jpg/330px-Fran%C3%A7ois_Hollande_November_2015.jpg",
+          "bio": "François Hollande a été président de la République française de 2012 à 2017, succédant à Nicolas Sarkozy. Son quinquennat fut marqué par le mariage pour tous (2013), les attentats de 2015 et une réforme du travail controversée portée par Manuel Valls. Revenu à l'Assemblée nationale comme député de Corrèze en 2024, il représente l'aile sociale-démocrate modérée du PS.",
+          "coords": { "economic": -0.28, "social": -0.44, "system": -0.50 }
+        },
+        {
+          "name": "Carole Delga",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Delga-Toulouse-Occitanie_%28cropped%29.jpg/330px-Delga-Toulouse-Occitanie_%28cropped%29.jpg",
+          "bio": "Carole Delga est présidente de la Région Occitanie depuis 2015, réélue avec un score élevé en 2021 face au Rassemblement national. Elle représente l'aile territoriale et pragmatique du Parti socialiste, attachée à la gestion des services publics régionaux. Partisane d'un socialisme de gouvernement, elle s'est parfois distinguée d'Olivier Faure sur la stratégie d'alliance avec LFI.",
+          "coords": { "economic": -0.34, "social": -0.46, "system": -0.44 }
+        }
+      ]
+    },
+    {
+      "id": "ecolo",
+      "name": "La Verte convaincue",
+      "blurb": "La planète d'abord, les droits toujours — et le nucléaire jamais.",
+      "party": "EELV / Les Écologistes",
+      "coords": { "economic": -0.44, "social": -0.76, "system": -0.10 },
+      "politicians": [
+        {
+          "name": "Marine Tondelier",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/20210819_tondelier.m-cr3.jpg/330px-20210819_tondelier.m-cr3.jpg",
+          "bio": "Marine Tondelier est secrétaire nationale des Écologistes depuis décembre 2022, élue après la refondation d'EELV. Conseillère municipale puis régionale dans les Hauts-de-France, elle est connue pour son travail sur la pollution de l'air à Noeux-les-Mines. Militante antinucléaire et féministe, elle incarne le renouveau d'un écologisme ancré dans les territoires populaires.",
+          "coords": { "economic": -0.46, "social": -0.78, "system": -0.08 }
+        },
+        {
+          "name": "Yannick Jadot",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Member_of_the_European_Parliament_Yannick_Jadot.jpg/330px-Member_of_the_European_Parliament_Yannick_Jadot.jpg",
+          "bio": "Yannick Jadot est eurodéputé écologiste depuis 2009 et figure majeure de la campagne européenne des Verts. Candidat à l'élection présidentielle de 2022, il a obtenu 4,6 % des voix, un score en deçà des espoirs de son camp. Ancien directeur des campagnes de Greenpeace France, il est l'un des plus ardents défenseurs de la sortie du nucléaire et de la transition vers les renouvelables.",
+          "coords": { "economic": -0.42, "social": -0.74, "system": -0.14 }
+        },
+        {
+          "name": "Sandrine Rousseau",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sandrine_Rousseau_20210819_%28cropped%29.jpg/330px-Sandrine_Rousseau_20210819_%28cropped%29.jpg",
+          "bio": "Sandrine Rousseau est députée de Paris depuis 2022 et figure du courant le plus radical des Écologistes sur les questions de genre et de décolonialisme. Économiste de formation, elle a enseigné à l'université de Lille avant de se lancer en politique. Candidate à la primaire écologiste en 2021, elle défend un écologisme social et féministe qui va au-delà des seules questions environnementales.",
+          "coords": { "economic": -0.48, "social": -0.82, "system": 0.05 }
+        }
+      ]
+    },
+    {
+      "id": "macroniste",
+      "name": "Le Centriste assumé",
+      "blurb": "Ni gauche ni droite — mais surtout pro-business et pro-Europe.",
+      "party": "Renaissance / Ensemble",
+      "coords": { "economic": 0.16, "social": -0.10, "system": -0.60 },
+      "politicians": [
+        {
+          "name": "Emmanuel Macron",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Emmanuel_Macron_2025_%28cropped%29.jpg/330px-Emmanuel_Macron_2025_%28cropped%29.jpg",
+          "bio": "Emmanuel Macron est président de la République française depuis mai 2017, réélu en 2022 face à Marine Le Pen. Ancien ministre de l'Économie sous François Hollande, il a fondé le mouvement En Marche ! en 2016, rebaptisé Renaissance. Son second mandat a été marqué par la réforme des retraites de 2023 et les élections législatives anticipées de 2024 provoquées par la victoire du RN aux européennes.",
+          "coords": { "economic": 0.20, "social": -0.06, "system": -0.65 }
+        },
+        {
+          "name": "Gabriel Attal",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Gabriel_Attal_2025_%283x4_cropped%29.jpg/330px-Gabriel_Attal_2025_%283x4_cropped%29.jpg",
+          "bio": "Gabriel Attal a été Premier ministre de janvier à septembre 2024, devenant à 34 ans le plus jeune chef de gouvernement de la Ve République. Ancien ministre de l'Éducation nationale, il a conduit la politique du gouvernement sur la laïcité à l'école et la lutte contre le harcèlement. Élu député des Hauts-de-Seine, il préside le groupe Ensemble pour la République à l'Assemblée nationale.",
+          "coords": { "economic": 0.14, "social": -0.12, "system": -0.58 }
+        },
+        {
+          "name": "François Bayrou",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bayrou_Matignon_%28cropped%29.jpg/330px-Bayrou_Matignon_%28cropped%29.jpg",
+          "bio": "François Bayrou est Premier ministre depuis décembre 2024 et président fondateur du MoDem (Mouvement démocrate). Trois fois candidat à la présidentielle (2002, 2007, 2012), il est une figure historique du centre politique français, attaché à la réconciliation et au dialogue entre les forces politiques. Secrétaire général de l'Élysée avant sa nomination à Matignon, il incarne la volonté de stabilité institutionnelle dans un contexte d'Assemblée fragmentée.",
+          "coords": { "economic": 0.10, "social": -0.04, "system": -0.52 }
+        }
+      ]
+    },
+    {
+      "id": "modemiste",
+      "name": "Le Troisième voie",
+      "blurb": "Humaniste, européen et convaincu que le centre est une philosophie, pas un calcul.",
+      "party": "MoDem",
+      "coords": { "economic": 0.10, "social": -0.04, "system": -0.50 },
+      "politicians": [
+        {
+          "name": "François Bayrou",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bayrou_Matignon_%28cropped%29.jpg/330px-Bayrou_Matignon_%28cropped%29.jpg",
+          "bio": "François Bayrou dirige le MoDem depuis sa fondation en 2007, après la dissolution de l'UDF dont il était président. Agrégé de lettres et ancien ministre de l'Éducation nationale (1993–1997), il a bâti un courant centriste indépendant avant de rejoindre la coalition présidentielle en 2017. Nommé Premier ministre en décembre 2024, il est le premier chef de gouvernement MoDem sous la Ve République.",
+          "coords": { "economic": 0.10, "social": -0.04, "system": -0.52 }
+        },
+        {
+          "name": "Marc Fesneau",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Marc_Fesneau_2024_%28cropped%29.jpg/330px-Marc_Fesneau_2024_%28cropped%29.jpg",
+          "bio": "Marc Fesneau est député du Loir-et-Cher et figure de proue du MoDem en dehors de François Bayrou. Il a été ministre délégué aux Relations avec le Parlement puis ministre de l'Agriculture de 2022 à 2024, gérant les crises agricoles liées à la PAC et aux normes environnementales. Proche des milieux ruraux, il incarne l'aile pragmatique et territoriale du mouvement centriste.",
+          "coords": { "economic": 0.14, "social": 0.02, "system": -0.48 }
+        },
+        {
+          "name": "Isabelle Florennes",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Isabelle_Florennes%2C_s%C3%A9natrice_des_Hauts-de-Seine.jpg/330px-Isabelle_Florennes%2C_s%C3%A9natrice_des_Hauts-de-Seine.jpg",
+          "bio": "Isabelle Florennes est députée des Hauts-de-Seine et vice-présidente de l'Assemblée nationale pour le groupe MoDem. Avocate de formation, elle s'est spécialisée dans les questions de justice et de libertés publiques au sein du groupe parlementaire. Elle représente l'engagement du MoDem pour l'État de droit et la coopération européenne en matière judiciaire.",
+          "coords": { "economic": 0.08, "social": -0.08, "system": -0.50 }
+        }
+      ]
+    },
+    {
+      "id": "republicain",
+      "name": "Le Gaulliste nostalgique",
+      "blurb": "Libre-échangiste le matin, souverainiste le soir — et toujours anti-Macron.",
+      "party": "LR",
+      "coords": { "economic": 0.40, "social": 0.50, "system": -0.20 },
+      "politicians": [
+        {
+          "name": "Laurent Wauquiez",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Laurent_Wauquiez_2021_%283x4_cropped%29.jpg",
+          "bio": "Laurent Wauquiez préside le groupe LR à l'Assemblée nationale depuis 2024 après avoir quitté la présidence de la région Auvergne-Rhône-Alpes. Ancien président des Républicains (2017–2019), il incarne l'aile droitière du parti, se réclamant d'une ligne sécuritaire et restrictive sur l'immigration. Énarque et ancien élève de l'ENS, il aspire à rassembler la droite classique face à la concurrence du RN.",
+          "coords": { "economic": 0.42, "social": 0.58, "system": -0.16 }
+        },
+        {
+          "name": "Valérie Pécresse",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Val%C3%A9rie_P%C3%A9cresse_%282022%29_%28cropped_2%29.jpg/330px-Val%C3%A9rie_P%C3%A9cresse_%282022%29_%28cropped_2%29.jpg",
+          "bio": "Valérie Pécresse est présidente du Conseil régional d'Île-de-France depuis 2015 et candidate LR à la présidentielle de 2022, où elle a obtenu 4,8 % des voix. Ancienne ministre du Budget et de l'Enseignement supérieur sous Sarkozy, elle défend une droite de gouvernement libérale et soucieuse de rigueur budgétaire. Elle dirige la plus grande région française avec un budget de près de 6 milliards d'euros.",
+          "coords": { "economic": 0.44, "social": 0.44, "system": -0.26 }
+        },
+        {
+          "name": "Bruno Retailleau",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg/330px-Bruno_Retailleau_-_Ministre_de_l%27Int%C3%A9rieur_fran%C3%A7ais_%28cropped%29.jpg",
+          "bio": "Bruno Retailleau est ministre de l'Intérieur depuis 2024 et sénateur de Vendée, représentant l'aile la plus conservatrice des Républicains. Ancien président du groupe LR au Sénat, il a multiplié les propositions de loi sécuritaires et migratoires, parfois à la limite de la Constitution selon le Conseil d'État. Catholique pratiquant, il oppose une vision traditionaliste des valeurs à l'individualisme libéral.",
+          "coords": { "economic": 0.38, "social": 0.62, "system": -0.12 }
+        }
+      ]
+    },
+    {
+      "id": "frontiste",
+      "name": "La Mariniste",
+      "blurb": "La France d'abord — les frontières fermées, le pouvoir d'achat relevé.",
+      "party": "RN",
+      "coords": { "economic": 0.10, "social": 0.70, "system": 0.60 },
+      "politicians": [
+        {
+          "name": "Marine Le Pen",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Marine_Le_Pen_2025_%283x4_cropped%29.jpg/330px-Marine_Le_Pen_2025_%283x4_cropped%29.jpg",
+          "bio": "Marine Le Pen est présidente déléguée du Rassemblement national et sa figure historique depuis qu'elle a pris la tête du Front national en 2011. Candidate à trois présidentielles (2012, 2017, 2022), elle a atteint 41,5 % des voix au second tour de 2022 face à Emmanuel Macron. Condamnée en mars 2025 pour détournement de fonds publics, une décision susceptible de l'empêcher de se présenter à la présidentielle de 2027.",
+          "coords": { "economic": 0.08, "social": 0.72, "system": 0.62 }
+        },
+        {
+          "name": "Jordan Bardella",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/MEP_Jordan_Bardella.jpg/330px-MEP_Jordan_Bardella.jpg",
+          "bio": "Jordan Bardella est président du Rassemblement national depuis 2022, élu à 27 ans pour succéder à Marine Le Pen. Tête de liste aux élections européennes de 2024, il a conduit le RN à sa meilleure performance historique avec 31,4 % des voix. Eurodéputé depuis 2019, il représente la nouvelle génération du parti, attaché à une image dédiabolisée tout en maintenant des positions fermes sur l'immigration.",
+          "coords": { "economic": 0.10, "social": 0.68, "system": 0.60 }
+        },
+        {
+          "name": "Éric Ciotti",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/%C3%89ric_Ciotti%2C_EPP_Summit%2C_23_March%2C_Brussels_%2852765298047%29_%28cropped%29.jpg/330px-%C3%89ric_Ciotti%2C_EPP_Summit%2C_23_March%2C_Brussels_%2852765298047%29_%28cropped%29.jpg",
+          "bio": "Éric Ciotti est député des Alpes-Maritimes et ancien président des Républicains, exclu de ce parti en 2024 après avoir conclu un accord électoral avec le Rassemblement national. Cette alliance a provoqué une scission au sein de LR et conduit une partie des cadres du parti vers un rapprochement avec le RN. Élu sur des listes communes RN-Ciotti aux législatives de 2024, il siège désormais dans un groupe proche de la majorité lepéniste.",
+          "coords": { "economic": 0.30, "social": 0.76, "system": 0.50 }
+        }
+      ]
+    },
+    {
+      "id": "zemouriste",
+      "name": "Le Reconquistador",
+      "blurb": "Catholique, identitaire et convaincu que Marine Le Pen est trop douce.",
+      "party": "Reconquête",
+      "coords": { "economic": 0.30, "social": 0.90, "system": 0.70 },
+      "politicians": [
+        {
+          "name": "Éric Zemmour",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg/330px-Portrait_d%27%C3%89ric_Zemmour%2C_avril_2022.jpg",
+          "bio": "Éric Zemmour est président-fondateur de Reconquête, parti créé en 2021 pour sa candidature à l'élection présidentielle de 2022, où il a obtenu 7,1 % des voix. Ancien journaliste et polémiste du Figaro, condamné plusieurs fois pour provocation à la discrimination raciale, il défend un programme nationaliste et catholique intransigeant. Eurodéputé depuis 2024, il dirige un parti qui peine à s'implanter durablement dans le paysage électoral.",
+          "coords": { "economic": 0.32, "social": 0.92, "system": 0.72 }
+        },
+        {
+          "name": "Marion Maréchal",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Marion_Mar%C3%A9chal_MEP_%282024%29.jpg/330px-Marion_Mar%C3%A9chal_MEP_%282024%29.jpg",
+          "bio": "Marion Maréchal est eurodéputée et vice-présidente de Reconquête, petite-fille de Jean-Marie Le Pen et nièce de Marine Le Pen. Ancienne députée du Vaucluse (2012–2017) sous les couleurs du Front national, elle avait quitté la politique avant de rejoindre Zemmour en 2021. Directrice de l'ISSEP, école de sciences politiques catholique et conservatrice à Lyon, elle représente l'aile identitaire et intellectuelle de l'extrême droite française.",
+          "coords": { "economic": 0.28, "social": 0.92, "system": 0.68 }
+        },
+        {
+          "name": "Stéphane Ravier",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/St%C3%A9phane_Ravier%2C_mars_2022_%2852104088648%29.jpg/330px-St%C3%A9phane_Ravier%2C_mars_2022_%2852104088648%29.jpg",
+          "bio": "Stéphane Ravier est sénateur des Bouches-du-Rhône sous l'étiquette Reconquête, après avoir siégé comme élu RN pendant de nombreuses années. Ancien maire de secteur à Marseille, il est l'un des rares élus nationaux du parti à disposer d'un ancrage territorial solide. Ardent défenseur d'une politique sécuritaire et d'une immigration zéro, il représente la base militante du mouvement zemourien dans le sud de la France.",
+          "coords": { "economic": 0.28, "social": 0.90, "system": 0.70 }
+        }
+      ]
+    }
+  ],
+  "views": {
+    "compass": { "x": "economic", "y": "social" },
+    "horseshoe": { "axis": "economic", "radical": "system" },
+    "triangle": {
+      "poles": [
+        { "label": "Libéral", "color": "#E1A200", "coords": { "economic": 1, "social": -1, "system": -1 } },
+        { "label": "Conservateur", "color": "#2563EB", "coords": { "economic": 1, "social": 1, "system": 1 } },
+        { "label": "Socialiste", "color": "#E5484D", "coords": { "economic": -1, "social": -1, "system": 0 } }
+      ]
+    }
+  }
+}

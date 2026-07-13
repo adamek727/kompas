@@ -9,12 +9,16 @@ const METHOD = {
   cs: { title: 'Jak to funguje', note: 'Každá odpověď (1–5) posune osy podle váhy otázky. Nejvíc tě ovlivnily tyto otázky:' },
   pl: { title: 'Jak to działa', note: 'Każda odpowiedź (1–5) przesuwa osie zależnie od wagi pytania. Najbardziej wpłynęły te pytania:' },
   en: { title: 'How this works', note: 'Each answer (1–5) nudges the axes by the question’s weight. These shaped your result the most:' },
+  uk: { title: 'Як це працює', note: 'Кожна відповідь (1–5) зсуває осі за вагою запитання. Найбільше на тебе вплинули ці запитання:' },
+  fr: { title: 'Comment ça marche', note: 'Chaque réponse (1–5) décale les axes selon le poids de la question. Ces questions ont le plus compté :' },
 };
 
 const LEGEND = {
   cs: { socialist: 'Socialista', green: 'Zelený', conservative: 'Konzervativec', liberal: 'Liberál' },
   pl: { socialist: 'Socjalista', green: 'Zielony', conservative: 'Konserwatysta', liberal: 'Liberał' },
   en: { socialist: 'Socialist', green: 'Green', conservative: 'Conservative', liberal: 'Liberal' },
+  uk: { socialist: 'Соціаліст', green: 'Зелений', conservative: 'Консерватор', liberal: 'Ліберал' },
+  fr: { socialist: 'Socialiste', green: 'Écologiste', conservative: 'Conservateur', liberal: 'Libéral' },
 };
 
 function initials(s) {
@@ -43,7 +47,7 @@ function axisBars(scores, pack) {
 function avatarHTML(pol, accent, size) {
   const cls = size === 'sm' ? 'near-av' : 'avatar';
   return `<div class="${cls}${pol.photo ? '' : ' noimg'}" style="--f:${accent}">
-        ${pol.photo ? `<img src="${pol.photo}" alt="${pol.name}" onerror="this.closest('.${cls}').classList.add('noimg')">` : ''}
+        ${pol.photo ? `<img src="${pol.photo}" alt="${pol.name}">` : ''}
         <span class="mono">${initials(pol.name)}</span>
       </div>`;
 }
