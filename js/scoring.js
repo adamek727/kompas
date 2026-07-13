@@ -24,3 +24,19 @@ export function scoreAxes(answers, questions, axisNames) {
 export function axisNamesFromPack(pack) {
   return Object.keys(pack.axes || {});
 }
+
+export function distance(a, b, axisNames) {
+  let s = 0;
+  for (const n of axisNames) {
+    const d = (a[n] ?? 0) - (b[n] ?? 0);
+    s += d * d;
+  }
+  return Math.sqrt(s);
+}
+
+export function matchPersonas(scores, personas, axisNames) {
+  const ranked = personas
+    .map(p => ({ persona: p, dist: distance(scores, p.coords, axisNames) }))
+    .sort((x, y) => x.dist - y.dist);
+  return { top: ranked[0]?.persona, runnerUp: ranked[1]?.persona, ranked };
+}

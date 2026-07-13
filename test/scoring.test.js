@@ -22,3 +22,21 @@ test('scoreAxes returns 0 for axis with no weight', () => {
   const scores = scoreAxes({ q1: 5 }, [{ id: 'q1', weights: { economic: 1 } }], ['economic', 'social']);
   assert.equal(scores.social, 0);
 });
+
+import { distance, matchPersonas } from '../js/scoring.js';
+
+test('distance is Euclidean over named axes', () => {
+  const d = distance({ economic: 0, social: 0 }, { economic: 3, social: 4 }, ['economic', 'social']);
+  assert.equal(d, 5);
+});
+
+test('matchPersonas returns nearest as top and second as runnerUp', () => {
+  const personas = [
+    { id: 'far', coords: { economic: 1, social: 1 } },
+    { id: 'near', coords: { economic: 0.1, social: 0 } },
+    { id: 'mid', coords: { economic: 0.5, social: 0.5 } },
+  ];
+  const m = matchPersonas({ economic: 0, social: 0 }, personas, ['economic', 'social']);
+  assert.equal(m.top.id, 'near');
+  assert.equal(m.runnerUp.id, 'mid');
+});
