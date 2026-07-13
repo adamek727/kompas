@@ -200,3 +200,9 @@ button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
 .flag:focus-visible { outline: none; }
 .flag:focus-visible .disc { box-shadow: 0 0 0 3px var(--primary); border-color: transparent; }
 .bubble:focus-visible, .answer:focus-visible { outline-offset: 3px; }
+
+.you-pulse { fill: none; stroke: var(--accent-family); stroke-width: 2; animation: youpulse 1.9s ease-out infinite; }
+@keyframes youpulse { 0% { r: 9; opacity: .5; } 100% { r: 23; opacity: 0; } }
+.rank-row { border-radius: 8px; }
+.rank-row.flash { animation: rowflash 1.2s ease; }
+@keyframes rowflash { 0%, 100% { background: transparent; } 25% { background: var(--primary-weak); } }

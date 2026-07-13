@@ -84,6 +84,16 @@ function renderResult() {
     t.addEventListener('click', () => { state.view = t.dataset.view; renderResult(); })
   );
   app.querySelector('.restart').addEventListener('click', renderHome);
+  app.querySelectorAll('.compass .party-hit').forEach(el =>
+    el.addEventListener('click', () => {
+      const row = app.querySelector(`.rank-row[data-party="${el.dataset.party}"]`);
+      if (!row) return;
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      row.classList.remove('flash');
+      void row.offsetWidth;
+      row.classList.add('flash');
+    })
+  );
 }
 
 function onKey(e) {

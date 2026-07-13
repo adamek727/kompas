@@ -45,10 +45,11 @@ export function resultHTML(scores, pack, view) {
     ? matchPersonas(scores, party.politicians, axisNames).top
     : null;
   const centrist = isCentrist(scores, axisNames);
-  const ranking = rankParties(scores, pack.personas, axisNames).slice(0, 5);
+  const ranking = rankParties(scores, pack.personas, axisNames);
   const nearby = rankPoliticians(scores, pack.personas, axisNames, 3);
 
   const parties = pack.personas.map(p => ({
+    id: p.id,
     coords: p.coords,
     name: `${p.party || p.name}${p.politicians?.[0]?.name ? ' — ' + p.politicians[0].name : ''}`,
     photo: p.politicians?.[0]?.photo || null,
@@ -78,8 +79,8 @@ export function resultHTML(scores, pack, view) {
     <p class="section-title">${pack.ui.ranking || 'Party match'}</p>
     ${ranking.map(r => {
       const c = familyPole(r.persona.coords, pack, axisNames)?.color || 'var(--primary)';
-      return `<div class="rank-row${r.persona.id === party.id ? ' me' : ''}">
-        <span class="rank-name">${r.persona.party || r.persona.name}</span>
+      return `<div class="rank-row${r.persona.id === party.id ? ' me' : ''}" data-party="${r.persona.id}">
+        <span class="rank-name">${r.persona.name}</span>
         <div class="rank-track"><div class="rank-fill" style="width:${r.pct}%;background:${c}"></div></div>
         <span class="rank-pct">${r.pct}%</span>
       </div>`;
