@@ -132,6 +132,10 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; letter-spacing:
 
 .restart { width: 100%; margin-top: 24px; padding: 16px; border-radius: 14px; background: var(--ink); color: #fff; font-weight: 700; font-size: 15px; transition: transform .15s ease, opacity .15s ease; }
 .restart:hover { transform: translateY(-2px); opacity: .92; }
+.result-actions { display: flex; gap: 10px; margin-top: 24px; }
+.result-actions .restart { margin-top: 0; flex: 1; }
+.share { flex: 0 0 auto; padding: 0 20px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 700; font-size: 14px; white-space: nowrap; transition: border-color .15s ease, color .15s ease; }
+.share:hover { border-color: var(--primary); color: var(--primary); }
 
 /* ---------- SVG visualizations ---------- */
 .viz .marker { fill: var(--accent-family, var(--primary)); stroke: #fff; stroke-width: 3; filter: drop-shadow(0 2px 4px rgba(16, 29, 64, .25)); }

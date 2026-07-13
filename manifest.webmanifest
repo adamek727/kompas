@@ -1,0 +1,14 @@
+{
+  "name": "Political Compass",
+  "short_name": "Compass",
+  "description": "A data-driven political compass — a game, not science.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef1f8",
+  "theme_color": "#1f5cff",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

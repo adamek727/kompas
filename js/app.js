@@ -1,6 +1,7 @@
 import { validatePack, scoreAxes, axisNamesFromPack } from './scoring.js';
 import { resultHTML } from './result.js';
 import { homeHTML, quizHTML } from './render.js';
+import { encodeAnswers, decodeAnswers, parseHash, shareHash } from './share.js';
 
 const DOMAINS = [
   { id: 'cz', flag: '🇨🇿', name: 'Česko', enabled: true },
@@ -17,33 +18,43 @@ const HOME_UI = {
   comingSoon: 'Coming soon',
 };
 
+const SHARE_UI = {
+  cs: { share: 'Sdílet', copied: 'Zkopírováno!' },
+  pl: { share: 'Udostępnij', copied: 'Skopiowano!' },
+  en: { share: 'Share', copied: 'Copied!' },
+};
+
 const app = document.getElementById('app');
 const live = document.getElementById('live');
 const state = { pack: null, answers: {}, index: 0, view: 'compass', screen: 'home' };
 
 function renderHome() {
   state.screen = 'home';
+  document.title = HOME_UI.title;
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
   app.innerHTML = homeHTML(DOMAINS, HOME_UI);
   app.querySelectorAll('.flag:not([disabled])').forEach(btn =>
     btn.addEventListener('click', () => loadDomain(btn.dataset.domain))
   );
 }
 
-async function loadDomain(id) {
-  let pack;
+async function fetchPack(id) {
   try {
     const res = await fetch(`data/${id}.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    pack = await res.json();
+    const pack = await res.json();
+    const errors = validatePack(pack);
+    if (errors.length) { app.innerHTML = `<pre class="error">${errors.join('\n')}</pre>`; return null; }
+    return pack;
   } catch (e) {
     app.innerHTML = `<pre class="error">Could not load "${id}" (${e.message})</pre>`;
-    return;
+    return null;
   }
-  const errors = validatePack(pack);
-  if (errors.length) {
-    app.innerHTML = `<pre class="error">${errors.join('\n')}</pre>`;
-    return;
-  }
+}
+
+async function loadDomain(id) {
+  const pack = await fetchPack(id);
+  if (!pack) return;
   document.documentElement.lang = pack.meta.lang;
   state.pack = pack;
   state.answers = {};
@@ -52,9 +63,21 @@ async function loadDomain(id) {
   renderQuiz();
 }
 
+async function loadSharedResult(id, digits) {
+  const pack = await fetchPack(id);
+  if (!pack) return;
+  document.documentElement.lang = pack.meta.lang;
+  state.pack = pack;
+  state.answers = decodeAnswers(pack, digits);
+  state.index = 0;
+  state.view = 'compass';
+  renderResult();
+}
+
 function renderQuiz() {
   const pack = state.pack;
   state.screen = 'quiz';
+  document.title = `${HOME_UI.title} — ${pack.meta.name}`;
   app.innerHTML = quizHTML(pack, state.index, state.answers);
   if (live) live.textContent = `${state.index + 1} / ${pack.questions.length}: ${pack.questions[state.index].text}`;
 
@@ -78,6 +101,7 @@ function answer(value) {
 function renderResult() {
   const pack = state.pack;
   state.screen = 'result';
+  document.title = `${HOME_UI.title} — ${pack.meta.name}`;
   const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
   app.innerHTML = resultHTML(scores, pack, state.view);
   app.querySelectorAll('.tab').forEach(t =>
@@ -94,6 +118,18 @@ function renderResult() {
       row.classList.add('flash');
     })
   );
+
+  const digits = encodeAnswers(pack, state.answers);
+  history.replaceState(null, '', shareHash(pack.meta.id, digits));
+  const sl = SHARE_UI[pack.meta.lang] || SHARE_UI.en;
+  const shareLabel = app.querySelector('.share-label');
+  if (shareLabel) shareLabel.textContent = sl.share;
+  const shareBtn = app.querySelector('.share');
+  if (shareBtn) shareBtn.addEventListener('click', async () => {
+    const url = location.origin + location.pathname + shareHash(pack.meta.id, digits);
+    try { await navigator.clipboard.writeText(url); } catch (_) { /* clipboard unavailable */ }
+    if (shareLabel) { shareLabel.textContent = sl.copied; setTimeout(() => { shareLabel.textContent = sl.share; }, 1600); }
+  });
 }
 
 function onKey(e) {
@@ -109,6 +145,12 @@ function onKey(e) {
 }
 
 document.addEventListener('keydown', onKey);
-renderHome();
+
+const shared = parseHash(location.hash);
+if (shared && DOMAINS.some(d => d.id === shared.id && d.enabled)) {
+  loadSharedResult(shared.id, shared.digits);
+} else {
+  renderHome();
+}
 
 export { state, renderHome, renderQuiz, renderResult };
