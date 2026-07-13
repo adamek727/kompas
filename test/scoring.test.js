@@ -66,3 +66,34 @@ test('horseshoeAngle is monotonic: left tip > top > right tip', () => {
   assert.equal(horseshoeAngle({ economic: 0 }, { axis: 'economic' }), 90);
   assert.equal(horseshoeAngle({ economic: 1 }, { axis: 'economic' }), -70);
 });
+
+import { validatePack } from '../js/scoring.js';
+
+const goodPack = {
+  meta: { id: 't', name: 'T', lang: 'en', flag: '🏳️' },
+  axes: { economic: { min: 'L', max: 'R' }, social: { min: 'F', max: 'O' }, system: { min: 'S', max: 'A' } },
+  scale: { points: 5, labels: ['a', 'b', 'c', 'd', 'e'] },
+  questions: [{ id: 'q1', text: 'x', weights: { economic: 1 } }],
+  personas: [{ id: 'p1', name: 'P', blurb: 'b', coords: { economic: 0, social: 0, system: 0 } }],
+  views: {
+    compass: { x: 'economic', y: 'social' },
+    triangle: { poles: [{ label: 'A', coords: {} }, { label: 'B', coords: {} }, { label: 'C', coords: {} }] },
+    horseshoe: { axis: 'economic', radical: 'system' },
+  },
+};
+
+test('validatePack accepts a well-formed pack', () => {
+  assert.deepEqual(validatePack(goodPack), []);
+});
+
+test('validatePack flags unknown axis in a question weight', () => {
+  const bad = structuredClone(goodPack);
+  bad.questions[0].weights = { nonsense: 1 };
+  assert.ok(validatePack(bad).some(e => e.includes('nonsense')));
+});
+
+test('validatePack flags a persona missing an axis coord', () => {
+  const bad = structuredClone(goodPack);
+  bad.personas[0].coords = { economic: 0 };
+  assert.ok(validatePack(bad).some(e => e.includes('social')));
+});
