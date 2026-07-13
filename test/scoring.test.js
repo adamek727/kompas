@@ -62,9 +62,9 @@ test('trianglePoint is the weighted average of vertices', () => {
 });
 
 test('horseshoeAngle is monotonic: left tip > top > right tip', () => {
-  assert.equal(horseshoeAngle({ economic: -1 }, { axis: 'economic' }), 250);
+  assert.equal(horseshoeAngle({ economic: -1 }, { axis: 'economic' }), 220);
   assert.equal(horseshoeAngle({ economic: 0 }, { axis: 'economic' }), 90);
-  assert.equal(horseshoeAngle({ economic: 1 }, { axis: 'economic' }), -70);
+  assert.equal(horseshoeAngle({ economic: 1 }, { axis: 'economic' }), -40);
 });
 
 import { validatePack } from '../js/scoring.js';

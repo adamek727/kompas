@@ -60,7 +60,7 @@ export function horseshoeAngle(scores, cfg) {
   const radical = cfg.radical ? Math.abs(scores[cfg.radical] ?? 0) : 0;
   const RADICAL_PUSH = 0.4;
   const amplified = Math.max(-1, Math.min(1, t * (1 + RADICAL_PUSH * radical)));
-  const START = 250, END = -70;
+  const START = 220, END = -40;
   return START + (END - START) * ((amplified + 1) / 2);
 }
 

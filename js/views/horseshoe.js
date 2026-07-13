@@ -1,6 +1,6 @@
 import { horseshoeAngle } from '../scoring.js';
 
-const START = 250, END = -70;
+const START = 220, END = -40;
 
 function polar(cx, cy, r, deg) {
   const rad = (deg * Math.PI) / 180;
