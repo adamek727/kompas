@@ -1,5 +1,5 @@
 import { validatePack } from './scoring.js';
-import { homeHTML } from './render.js';
+import { homeHTML, quizHTML } from './render.js';
 
 const DOMAINS = [
   { id: 'cz', flag: '🇨🇿', name: 'Česko', enabled: true },
@@ -40,7 +40,26 @@ async function loadDomain(id) {
   renderQuiz();
 }
 
-function renderQuiz() {}
+function renderQuiz() {
+  const pack = state.pack;
+  app.innerHTML = quizHTML(pack, state.index, state.answers);
+
+  app.querySelectorAll('.answer').forEach(btn =>
+    btn.addEventListener('click', () => answer(Number(btn.dataset.value)))
+  );
+  const back = app.querySelector('.back');
+  if (back) back.addEventListener('click', () => { if (state.index > 0) { state.index--; renderQuiz(); } });
+  app.querySelectorAll('.bubble').forEach(b =>
+    b.addEventListener('click', () => { state.index = Number(b.dataset.idx); renderQuiz(); })
+  );
+}
+
+function answer(value) {
+  const pack = state.pack;
+  state.answers[pack.questions[state.index].id] = value;
+  if (state.index < pack.questions.length - 1) { state.index++; renderQuiz(); }
+  else renderResult();
+}
 
 function renderResult() {}
 
