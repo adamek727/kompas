@@ -3,3 +3,14 @@
 body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--fg); }
 #app { max-width: 640px; margin: 0 auto; padding: 24px; min-height: 100vh; }
 button { font: inherit; cursor: pointer; }
+.home h1 { margin: 8px 0; }
+.tagline { color: var(--muted); margin-top: 0; }
+.pick { margin-top: 32px; font-weight: 600; }
+.flags { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.flag { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 16px;
+  background: #1b1e2b; border: 1px solid #2a2f45; border-radius: 12px; color: var(--fg); }
+.flag:not([disabled]):hover { border-color: var(--accent); }
+.flag[disabled] { opacity: 0.4; cursor: not-allowed; }
+.flag .glyph { font-size: 40px; }
+.flag .soon { font-size: 11px; color: var(--muted); }
+.error { color: #ff6b6b; white-space: pre-wrap; }
