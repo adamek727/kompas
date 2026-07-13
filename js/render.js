@@ -17,7 +17,7 @@ export function homeHTML(domains, ui) {
 export function bubblesHTML(count, current, answers, questions) {
   let out = '';
   for (let i = 0; i < count; i++) {
-    const answered = questions ? answers[questions[i].id] != null : answers[`q${i}`] != null;
+    const answered = answers[questions[i].id] != null;
     const cls = ['bubble', i === current ? 'current' : '', answered ? 'answered' : ''].filter(Boolean).join(' ');
     out += `<button class="${cls}" data-idx="${i}">${i + 1}</button>`;
   }

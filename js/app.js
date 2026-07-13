@@ -27,13 +27,21 @@ function renderHome() {
 }
 
 async function loadDomain(id) {
-  const res = await fetch(`data/${id}.json`);
-  const pack = await res.json();
+  let pack;
+  try {
+    const res = await fetch(`data/${id}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    pack = await res.json();
+  } catch (e) {
+    app.innerHTML = `<pre class="error">Nepodařilo se načíst „${id}" (${e.message})</pre>`;
+    return;
+  }
   const errors = validatePack(pack);
   if (errors.length) {
     app.innerHTML = `<pre class="error">${errors.join('\n')}</pre>`;
     return;
   }
+  document.documentElement.lang = pack.meta.lang;
   state.pack = pack;
   state.answers = {};
   state.index = 0;

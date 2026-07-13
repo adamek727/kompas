@@ -16,7 +16,8 @@ test('homeHTML lists a button per domain and disables the disabled one', () => {
 });
 
 test('bubblesHTML marks current and answered', () => {
-  const html = bubblesHTML(3, 1, { q0: 5 });
+  const questions = [{ id: 'q0' }, { id: 'q1' }, { id: 'q2' }];
+  const html = bubblesHTML(3, 1, { q0: 5 }, questions);
   assert.ok(html.includes('data-idx="0"') && html.includes('answered'));
   assert.ok(html.includes('data-idx="1"') && html.includes('current'));
 });
