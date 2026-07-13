@@ -1,0 +1,126 @@
+{
+  "meta": { "id": "cz", "name": "Česko", "lang": "cs", "flag": "🇨🇿" },
+  "ui": {
+    "title": "Politický kompas",
+    "tagline": "Hra, ne věda.",
+    "pickDomain": "Vyber si zemi",
+    "comingSoon": "Už brzy",
+    "start": "Začít",
+    "back": "Zpět",
+    "restart": "Znovu",
+    "result": "Tvůj výsledek",
+    "match": "Nejblíž máš k",
+    "alsoClose": "Blízko máš i k",
+    "views": { "compass": "Kompas", "triangle": "Trojúhelník", "horseshoe": "Podkova" }
+  },
+  "scale": { "points": 5, "labels": ["Rozhodně ne", "Spíš ne", "Nevím", "Spíš ano", "Rozhodně ano"] },
+  "axes": {
+    "economic": { "min": "Stát a rovnost", "max": "Trh a jednotlivec" },
+    "social": { "min": "Svoboda a pokrok", "max": "Řád a tradice" },
+    "system": { "min": "Systém", "max": "Vzpoura" }
+  },
+  "questions": [
+    { "id": "q1", "text": "Bohatší by měli platit výrazně vyšší daně.", "weights": { "economic": -1 } },
+    { "id": "q2", "text": "Stát by měl přísněji regulovat ceny nájmů.", "weights": { "economic": -0.8 } },
+    { "id": "q3", "text": "Privatizace státních podniků ve 90. letech byla chyba.", "weights": { "economic": -0.8, "system": 0.4 } },
+    { "id": "q4", "text": "Minimální mzda by měla být výrazně vyšší, i za cenu vyšší nezaměstnanosti.", "weights": { "economic": -0.8 } },
+    { "id": "q5", "text": "Zdravotnictví by mělo zůstat primárně v rukou státu.", "weights": { "economic": -0.9 } },
+    { "id": "q6", "text": "Volný trh je nejlepší způsob, jak řídit ekonomiku.", "weights": { "economic": 1 } },
+    { "id": "q7", "text": "Nízké daně jsou klíčem k prosperitě.", "weights": { "economic": 0.9 } },
+    { "id": "q8", "text": "Podnikatelé tvoří bohatství, které pak přerozděluje stát — bez nich by nebylo co přerozdělovat.", "weights": { "economic": 0.8 } },
+    { "id": "q9", "text": "Stát by měl více investovat do bydlení a postavit víc obecních bytů.", "weights": { "economic": -0.8 } },
+    { "id": "q10", "text": "Důchody by měly být financovány průběžně ze státního systému, ne soukromým spořením.", "weights": { "economic": -0.7 } },
+    { "id": "q11", "text": "Tradiční rodina — matka, otec, děti — je základem zdravé společnosti.", "weights": { "social": 1 } },
+    { "id": "q12", "text": "Manželství by mělo být umožněno i párům stejného pohlaví.", "weights": { "social": -1 } },
+    { "id": "q13", "text": "Školy by měly klást větší důraz na národní historii a vlastenectví.", "weights": { "social": 0.7 } },
+    { "id": "q14", "text": "Potrat je věcí svobodné volby ženy, stát do ní nemá zasahovat.", "weights": { "social": -0.9 } },
+    { "id": "q15", "text": "Kouření marihuany by mělo být legální.", "weights": { "social": -0.8 } },
+    { "id": "q16", "text": "Imigranti obohacují českou kulturu.", "weights": { "social": -0.9 } },
+    { "id": "q17", "text": "Česko přijímá příliš mnoho cizinců.", "weights": { "social": 0.8 } },
+    { "id": "q18", "text": "Náboženské hodnoty by měly hrát větší roli ve veřejném životě.", "weights": { "social": 0.8 } },
+    { "id": "q19", "text": "Genderová rovnost je v Česku stále nedokončeným projektem.", "weights": { "social": -0.8 } },
+    { "id": "q20", "text": "Česká identita a kultura jsou ohroženy globalizací.", "weights": { "social": 0.7, "system": 0.3 } },
+    { "id": "q21", "text": "Politici slouží především sami sobě, ne občanům.", "weights": { "system": 0.9 } },
+    { "id": "q22", "text": "Členství v Evropské unii je pro Česko přínosné.", "weights": { "system": -1 } },
+    { "id": "q23", "text": "Česko by mělo v budoucnu přijmout euro.", "weights": { "system": -0.8 } },
+    { "id": "q24", "text": "Média v Česku jsou závislá na velkých zájmových skupinách a nelze jim věřit.", "weights": { "system": 0.8 } },
+    { "id": "q25", "text": "NATO je pro bezpečnost Česka nezbytné.", "weights": { "system": -0.9 } },
+    { "id": "q26", "text": "Česko by mělo přestat posílat zbraně na Ukrajinu.", "weights": { "system": 0.7, "social": 0.3 } },
+    { "id": "q27", "text": "Elity v Praze nerozumí běžným lidem z regionů.", "weights": { "system": 0.8 } },
+    { "id": "q28", "text": "Soudy a nezávislé instituce jsou důležitou zárukou demokracie.", "weights": { "system": -0.9 } },
+    { "id": "q29", "text": "EU regulací je příliš mnoho a zbytečně nám komplikují život.", "weights": { "system": 0.7 } },
+    { "id": "q30", "text": "Politické strany jsou všechny stejné a nestojí za volení.", "weights": { "system": 0.9 } },
+    { "id": "q31", "text": "Zelená energie je budoucnost a stát by do ní měl investovat.", "weights": { "economic": -0.4, "social": -0.6 } },
+    { "id": "q32", "text": "Klimatická politika EU poškozuje českou ekonomiku.", "weights": { "system": 0.5, "social": 0.5 } },
+    { "id": "q33", "text": "Sociální dávky jsou příliš štědré a odrazují lidi od práce.", "weights": { "economic": 0.8 } },
+    { "id": "q34", "text": "Veřejnoprávní média (ČT, ČRo) jsou důležitá pro demokracii.", "weights": { "system": -0.7 } },
+    { "id": "q35", "text": "Velké korporace mají příliš velkou moc nad politikou.", "weights": { "economic": -0.5, "system": 0.5 } }
+  ],
+  "personas": [
+    {
+      "id": "dezolat",
+      "name": "Dezolát",
+      "blurb": "Všichni lžou, EU podvádí, já mám pravdu — a YouTube to potvrdí.",
+      "coords": { "economic": -0.1, "social": 0.3, "system": 0.9 }
+    },
+    {
+      "id": "babisovec",
+      "name": "Babišovec",
+      "blurb": "Politiku přenechám odborníkům — nejlépe těm, co ji spravují jako firmu.",
+      "coords": { "economic": 0.2, "social": 0.2, "system": 0.5 }
+    },
+    {
+      "id": "kavárník",
+      "name": "Kavárník",
+      "blurb": "Oat milk latte, Piráti a víra, že se svět dá vysvětlit infografikou.",
+      "coords": { "economic": -0.5, "social": -0.7, "system": -0.5 }
+    },
+    {
+      "id": "rovnostar",
+      "name": "Rovnostář",
+      "blurb": "Stát nás nezajistil dost. Kapitál si bere příliš. Tohle nejde jinak.",
+      "coords": { "economic": -0.8, "social": -0.2, "system": 0.3 }
+    },
+    {
+      "id": "konzervativec",
+      "name": "Pragmatická konzerva",
+      "blurb": "Nízké daně, pořádek na ulicích, rodina jako základ. Nuda? Možná. Ale funguje to.",
+      "coords": { "economic": 0.7, "social": 0.5, "system": -0.3 }
+    },
+    {
+      "id": "zeleny_liberal",
+      "name": "Zelený liberál",
+      "blurb": "Elektromobil, solární panely a pevné přesvědčení, že ostatní žijí špatně.",
+      "coords": { "economic": 0.3, "social": -0.8, "system": -0.4 }
+    },
+    {
+      "id": "vlastenec_socan",
+      "name": "Vlastenec socan",
+      "blurb": "Národ především, sociální stát pro naše lidi, Brusel ven.",
+      "coords": { "economic": -0.4, "social": 0.7, "system": 0.7 }
+    },
+    {
+      "id": "slunickovy_byznysmen",
+      "name": "Sluníčkový byznysmen",
+      "blurb": "Diversity & inclusion ve firmě, Bruselu nadšeně tleskám, ČNB sleduji každé ráno.",
+      "coords": { "economic": 0.6, "social": -0.4, "system": -0.6 }
+    },
+    {
+      "id": "lidovec",
+      "name": "Lidovec",
+      "blurb": "Kostel v neděli, rodina v pátek, stát v pondělí — a všechno má své místo.",
+      "coords": { "economic": 0.1, "social": 0.8, "system": -0.2 }
+    }
+  ],
+  "views": {
+    "compass": { "x": "economic", "y": "social" },
+    "triangle": {
+      "poles": [
+        { "label": "Liberál", "coords": { "economic": 0.6, "social": -0.6, "system": -0.1 } },
+        { "label": "Konzervativec", "coords": { "economic": 0.3, "social": 0.7, "system": -0.1 } },
+        { "label": "Socialista", "coords": { "economic": -0.7, "social": 0.0, "system": 0.0 } }
+      ]
+    },
+    "horseshoe": { "axis": "economic", "radical": "system" }
+  }
+}
