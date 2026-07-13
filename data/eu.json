@@ -171,7 +171,26 @@
       "name": "The Federalist",
       "blurb": "Has memorised the Spinelli Manifesto and brings it up at dinner parties. Wants a United States of Europe by Tuesday.",
       "party": "Renew Europe",
-      "politician": "Guy Verhofstadt",
+      "politicians": [
+        {
+          "name": "Guy Verhofstadt",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Guy_Verhofstadt_June_2021_%28cropped%29.jpg/330px-Guy_Verhofstadt_June_2021_%28cropped%29.jpg",
+          "bio": "Guy Verhofstadt served as Prime Minister of Belgium from 1999 to 2008 and was subsequently elected to the European Parliament, where he led the liberal ALDE group for over a decade. A lifelong advocate of European federalism, he has championed the idea of a United States of Europe with a common government and shared constitution. He stepped down as EP group leader in 2019 but remains one of the EU's most prominent integrationists.",
+          "coords": { "economic": 0.3, "social": -0.7, "system": -1.0 }
+        },
+        {
+          "name": "Valérie Hayer",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Val%C3%A9rie_Hayer_at_a_Renew_Europe_meeting_in_European_Parliament_-_2024_%28P064202-298895%29_%28cropped%29.jpg/330px-Val%C3%A9rie_Hayer_at_a_Renew_Europe_meeting_in_European_Parliament_-_2024_%28P064202-298895%29_%28cropped%29.jpg",
+          "bio": "Valérie Hayer is a French MEP and has led the Renew Europe group in the European Parliament since 2023. A close ally of Emmanuel Macron, she represents the centrist, pro-integration wing of French liberalism and has pushed for deeper EU fiscal and defence cooperation. She was the lead candidate for the Renew Europe family in the 2024 European Parliament elections.",
+          "coords": { "economic": 0.2, "social": -0.6, "system": -0.85 }
+        },
+        {
+          "name": "Emmanuel Macron",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Emmanuel_Macron_2025_%28cropped%29.jpg/330px-Emmanuel_Macron_2025_%28cropped%29.jpg",
+          "bio": "Emmanuel Macron has been President of France since 2017 and is the most prominent European leader calling for a sovereign, federated Europe with its own defence capacity and budget. His 2017 Sorbonne speech laid out a detailed vision for EU reform including a common eurozone budget and joint investment capacity. He founded the centrist La République En Marche party, which is affiliated with Renew Europe.",
+          "coords": { "economic": 0.4, "social": -0.5, "system": -0.8 }
+        }
+      ],
       "coords": { "economic": 0.2, "social": -0.6, "system": -0.9 }
     },
     {
@@ -179,7 +198,26 @@
       "name": "The Christian Democrat",
       "blurb": "Believes in a strong Europe, sound money, and the family — roughly in that order. Comfortable with compromise.",
       "party": "European People's Party (EPP)",
-      "politician": "Ursula von der Leyen",
+      "politicians": [
+        {
+          "name": "Ursula von der Leyen",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ursula_von_der_Leyen_2024.jpg/330px-Ursula_von_der_Leyen_2024.jpg",
+          "bio": "Ursula von der Leyen is a German politician and has been President of the European Commission since 2019, re-elected for a second term in 2024. Previously Germany's Defence Minister, she is a member of the CDU and affiliated with the EPP, combining a commitment to European integration with centrist-conservative values. She shepherded the EU Green Deal, NextGenerationEU recovery fund, and the union's response to the war in Ukraine.",
+          "coords": { "economic": 0.2, "social": 0.2, "system": -0.5 }
+        },
+        {
+          "name": "Manfred Weber",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/EPP_-_EU_Enlargement_Study_Visit%2C_17_%26_18_March_2025_%2854391988832%29_%28cropped%29.jpg/330px-EPP_-_EU_Enlargement_Study_Visit%2C_17_%26_18_March_2025_%2854391988832%29_%28cropped%29.jpg",
+          "bio": "Manfred Weber is a Bavarian MEP and has led the European People's Party group in the European Parliament since 2014, making him one of the longest-serving EP group leaders. A member of the CSU, the Bavarian sister party to the CDU, he combines support for European integration with conservative social values and a tough line on migration. He was the EPP's Spitzenkandidat in the 2019 European elections but was passed over for the Commission presidency in favour of von der Leyen.",
+          "coords": { "economic": 0.3, "social": 0.4, "system": -0.3 }
+        },
+        {
+          "name": "Donald Tusk",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Donald_Tusk_2025_%282%29.jpg/330px-Donald_Tusk_2025_%282%29.jpg",
+          "bio": "Donald Tusk is a Polish politician who served as President of the European Council from 2014 to 2019, and returned to Polish politics to lead Civic Coalition back to government, becoming Prime Minister of Poland again in December 2023. A founding member of the EPP-affiliated Civic Platform party, he is a committed pro-European who clashed repeatedly with the PiS government over rule of law issues. His return to power marked a significant shift in Poland's relationship with EU institutions.",
+          "coords": { "economic": 0.4, "social": 0.1, "system": -0.4 }
+        }
+      ],
       "coords": { "economic": 0.3, "social": 0.3, "system": -0.4 }
     },
     {
@@ -187,7 +225,26 @@
       "name": "The Social Democrat",
       "blurb": "Wants Europe to be a social superpower — solidarity with everyone, austerity for no one.",
       "party": "Progressive Alliance of Socialists and Democrats (S&D)",
-      "politician": "Pedro Sánchez",
+      "politicians": [
+        {
+          "name": "Pedro Sánchez",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Pedro_S%C3%A1nchez_in_2026.jpg/330px-Pedro_S%C3%A1nchez_in_2026.jpg",
+          "bio": "Pedro Sánchez has been Prime Minister of Spain since 2018, leading the PSOE (Spanish Socialist Workers' Party), which is affiliated with the S&D group in the European Parliament. He championed the EU-wide recovery fund NextGenerationEU during the COVID-19 pandemic, arguing for fiscal solidarity across member states. A vocal advocate of a social Europe, he has pushed for stronger EU labour standards and greater redistribution between member states.",
+          "coords": { "economic": -0.7, "social": -0.2, "system": -0.6 }
+        },
+        {
+          "name": "Iratxe García Pérez",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/1720623927025_20240710_GARCIA_PEREZ_Iratxe_ES_014.jpg/330px-1720623927025_20240710_GARCIA_PEREZ_Iratxe_ES_014.jpg",
+          "bio": "Iratxe García Pérez is a Spanish MEP and has led the S&D group in the European Parliament since 2019. A member of the PSOE, she has been an MEP since 2004 and is a prominent voice on gender equality, workers' rights, and the fight against austerity within the EU. She has steered the S&D's position on the European Green Deal, insisting that climate action must be combined with robust social protection.",
+          "coords": { "economic": -0.6, "social": -0.3, "system": -0.5 }
+        },
+        {
+          "name": "Nicolas Schmit",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EU2024BE_240620_EPSCO_Council_European_Convention_Center_JNZT_0105_%2853803594482%29.jpg/330px-EU2024BE_240620_EPSCO_Council_European_Convention_Center_JNZT_0105_%2853803594482%29.jpg",
+          "bio": "Nicolas Schmit is a Luxembourgish politician who served as the EU Commissioner for Jobs and Social Rights from 2019 to 2024, overseeing the European Pillar of Social Rights action plan and the EU minimum wage directive. He was the S&D's lead candidate in the 2024 European Parliament elections. An MEP since 2024, he continues to advocate for stronger EU-level social standards and a fairer distribution of the burden of green transition.",
+          "coords": { "economic": -0.65, "social": -0.35, "system": -0.45 }
+        }
+      ],
       "coords": { "economic": -0.6, "social": -0.3, "system": -0.5 }
     },
     {
@@ -195,7 +252,26 @@
       "name": "The Liberal Centrist",
       "blurb": "Pro-market, pro-EU, pro-himself. Thinks big reforms are just around the corner — they have been for eight years.",
       "party": "Renew Europe",
-      "politician": "Emmanuel Macron",
+      "politicians": [
+        {
+          "name": "Emmanuel Macron",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Emmanuel_Macron_2025_%28cropped%29.jpg/330px-Emmanuel_Macron_2025_%28cropped%29.jpg",
+          "bio": "Emmanuel Macron has been President of France since 2017 and is the defining figure of European liberal centrism, combining pro-market economic reform with strong support for European integration. His domestic agenda has included pension reform, labour market liberalisation, and investments in technology and defence industry. He co-founded the Renew Europe political family through his La République En Marche movement.",
+          "coords": { "economic": 0.6, "social": -0.2, "system": -0.7 }
+        },
+        {
+          "name": "Valérie Hayer",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Val%C3%A9rie_Hayer_at_a_Renew_Europe_meeting_in_European_Parliament_-_2024_%28P064202-298895%29_%28cropped%29.jpg/330px-Val%C3%A9rie_Hayer_at_a_Renew_Europe_meeting_in_European_Parliament_-_2024_%28P064202-298895%29_%28cropped%29.jpg",
+          "bio": "Valérie Hayer is the leader of the Renew Europe group in the European Parliament, elected to that role in 2023. A French MEP from Macron's Renaissance party, she combines support for the single market with advocacy for EU-level industrial policy and deeper monetary union. She was the top candidate for Renew Europe in the 2024 EP elections, running on a platform of economic modernisation and European sovereignty.",
+          "coords": { "economic": 0.5, "social": -0.3, "system": -0.65 }
+        },
+        {
+          "name": "Guy Verhofstadt",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Guy_Verhofstadt_June_2021_%28cropped%29.jpg/330px-Guy_Verhofstadt_June_2021_%28cropped%29.jpg",
+          "bio": "Guy Verhofstadt is a Belgian liberal politician who served as Prime Minister of Belgium from 1999 to 2008 and later as ALDE group leader in the European Parliament for over ten years. A free-market liberal on economics and a federalist on European integration, he has consistently argued for completing the single market in services and capital while deepening EU governance. He authored the book 'Europe's Last Chance', calling for radical EU reform.",
+          "coords": { "economic": 0.55, "social": -0.35, "system": -0.85 }
+        }
+      ],
       "coords": { "economic": 0.5, "social": -0.3, "system": -0.6 }
     },
     {
@@ -203,7 +279,26 @@
       "name": "The Green",
       "blurb": "Would like to save the planet by 2030 but will settle for a binding climate law and more bike lanes in Brussels.",
       "party": "Greens/European Free Alliance",
-      "politician": "Terry Reintke",
+      "politicians": [
+        {
+          "name": "Terry Reintke",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/1720621149236_20240710_REINTKE_Terry_DE_011.jpg/330px-1720621149236_20240710_REINTKE_Terry_DE_011.jpg",
+          "bio": "Terry Reintke is a German MEP and has co-led the Greens/EFA group in the European Parliament since 2022, alongside Bas Eickhout. A member of the German Greens (Bündnis 90/Die Grünen), she has been an MEP since 2014 and is known for her work on LGBTQ+ rights, feminism, and climate justice. She was the Greens/EFA lead candidate in the 2024 European elections.",
+          "coords": { "economic": -0.5, "social": -0.8, "system": -0.5 }
+        },
+        {
+          "name": "Bas Eickhout",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/1718705148917_20240617_EICKHOUT_Bas_NL_002.jpg/330px-1718705148917_20240617_EICKHOUT_Bas_NL_002.jpg",
+          "bio": "Bas Eickhout is a Dutch MEP and co-leader of the Greens/EFA group in the European Parliament, a position he has held alongside Terry Reintke since 2022. A member of GroenLinks (Netherlands), he has been an MEP since 2009 and is one of the EU's most prominent voices on climate science, the European Green Deal, and sustainable finance regulation. He previously served as the Greens' Spitzenkandidat in the 2019 European elections.",
+          "coords": { "economic": -0.55, "social": -0.7, "system": -0.65 }
+        },
+        {
+          "name": "Philippe Lamberts",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/EU_budget_debate_ahead_of_crucial_summit_%2849524368993%29_%28cropped%29.jpg/330px-EU_budget_debate_ahead_of_crucial_summit_%2849524368993%29_%28cropped%29.jpg",
+          "bio": "Philippe Lamberts is a Belgian MEP who co-led the Greens/EFA group from 2014 to 2022. A member of Ecolo, the francophone Belgian green party, he is known for his outspoken criticism of financial industry deregulation and his advocacy for a social-ecological transformation of the European economy. He has been one of the most visible Green voices in EU financial regulation debates, pushing for strict rules on banks and capital markets.",
+          "coords": { "economic": -0.6, "social": -0.6, "system": -0.55 }
+        }
+      ],
       "coords": { "economic": -0.5, "social": -0.7, "system": -0.6 }
     },
     {
@@ -211,7 +306,26 @@
       "name": "The Radical Left",
       "blurb": "Sceptical of both Brussels bureaucrats and free-market dogma. Europe, yes — but only if it works for the workers.",
       "party": "The Left (GUE/NGL)",
-      "politician": "Manon Aubry",
+      "politicians": [
+        {
+          "name": "Manon Aubry",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/1720623827463_20190528_AUBRY_Manon_FR_9.jpg/330px-1720623827463_20190528_AUBRY_Manon_FR_9.jpg",
+          "bio": "Manon Aubry is a French MEP and has co-led the Left group (GUE/NGL) in the European Parliament since 2021. A member of La France Insoumise (LFI), she was elected to the EP in 2019 and previously worked for the international NGO Oxfam, campaigning against tax havens and wealth inequality. She is a prominent critic of EU austerity measures, free-trade deals, and what she describes as the neoliberal drift of European institutions.",
+          "coords": { "economic": -0.95, "social": -0.6, "system": 0.2 }
+        },
+        {
+          "name": "Martin Schirdewan",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Martin_Schirdewan_MEP_%282024%29.jpg/330px-Martin_Schirdewan_MEP_%282024%29.jpg",
+          "bio": "Martin Schirdewan is a German MEP and co-leader of the Left group in the European Parliament alongside Manon Aubry. A member of Die Linke (The Left), he was elected to the EP in 2017 and is known for his work on tax justice, corporate transparency, and workers' rights. He has been a consistent critic of EU fiscal rules that he argues impose unnecessary constraints on social spending in member states.",
+          "coords": { "economic": -0.9, "social": -0.5, "system": 0.35 }
+        },
+        {
+          "name": "Marc Botenga",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/1718636459516_20190528_BOTENGA_Marc_Johan_BE_13.jpg/330px-1718636459516_20190528_BOTENGA_Marc_Johan_BE_13.jpg",
+          "bio": "Marc Botenga is a Belgian MEP from the Workers' Party of Belgium (PTB/PVDA) and a member of the GUE/NGL group. He was elected to the European Parliament in 2019 and has focused on pharmaceutical pricing, public health, and holding Big Pharma accountable during the COVID-19 pandemic. A committed democratic socialist, he advocates for public ownership of strategic industries and an end to EU competition rules that he says prevent member states from investing in public services.",
+          "coords": { "economic": -0.85, "social": -0.45, "system": 0.4 }
+        }
+      ],
       "coords": { "economic": -0.9, "social": -0.5, "system": 0.3 }
     },
     {
@@ -219,7 +333,26 @@
       "name": "The National Conservative",
       "blurb": "Proud European — on her own terms. Wants a Europe of nations, not a nation called Europe.",
       "party": "European Conservatives and Reformists (ECR)",
-      "politician": "Giorgia Meloni",
+      "politicians": [
+        {
+          "name": "Giorgia Meloni",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Giorgia_Meloni_Official_2024_%28cropped%29.jpg/330px-Giorgia_Meloni_Official_2024_%28cropped%29.jpg",
+          "bio": "Giorgia Meloni has been Prime Minister of Italy since October 2022 and leads Fratelli d'Italia (Brothers of Italy), which is affiliated with the ECR group in the European Parliament. She is the most prominent national-conservative leader in the EU, advocating for a Europe of sovereign nations, strong external borders, and the protection of Christian heritage. While critical of EU federalism, she has maintained Italy's commitment to the euro and EU membership.",
+          "coords": { "economic": 0.2, "social": 0.75, "system": 0.65 }
+        },
+        {
+          "name": "Mateusz Morawiecki",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Mateusz_Morawiecki_official_portrait_%282023%29.jpg/330px-Mateusz_Morawiecki_official_portrait_%282023%29.jpg",
+          "bio": "Mateusz Morawiecki served as Prime Minister of Poland from 2017 to 2023, leading the Law and Justice (PiS) government that repeatedly clashed with EU institutions over judicial independence and rule of law. An economist and politician affiliated with the ECR family, he championed Polish sovereignty against what he described as Brussels overreach while also presiding over strong economic growth and expanded social programmes. He remains a leading figure in the ECR's national-conservative wing.",
+          "coords": { "economic": 0.1, "social": 0.8, "system": 0.7 }
+        },
+        {
+          "name": "Nicola Procaccini",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nicola_Procaccini_MEP_%282024%29.jpg/330px-Nicola_Procaccini_MEP_%282024%29.jpg",
+          "bio": "Nicola Procaccini is an Italian MEP and has co-chaired the ECR group in the European Parliament since 2022. A member of Fratelli d'Italia, he is a close ally of Prime Minister Giorgia Meloni and is the main ECR spokesperson on EU affairs. He advocates for a Europe of sovereign nations, stricter external border management, and subsidiarity over centralised EU governance.",
+          "coords": { "economic": 0.3, "social": 0.65, "system": 0.55 }
+        }
+      ],
       "coords": { "economic": 0.2, "social": 0.7, "system": 0.6 }
     },
     {
@@ -227,7 +360,26 @@
       "name": "The Sovereigntist",
       "blurb": "Believes Brussels is a swamp, globalists are in charge, and his nation's destiny should not be decided by unelected bureaucrats.",
       "party": "Patriots for Europe (PfE)",
-      "politician": "Viktor Orbán",
+      "politicians": [
+        {
+          "name": "Viktor Orbán",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Viktor_Orban_2025_%28cropped%29.jpg/330px-Viktor_Orban_2025_%28cropped%29.jpg",
+          "bio": "Viktor Orbán has been Prime Minister of Hungary since 2010 and is the founding figure of the Patriots for Europe alliance, which he launched in 2024. The leader of Fidesz, he has systematically restructured Hungarian institutions to consolidate power and has clashed repeatedly with the EU over rule of law, migration policy, and Hungary's relationship with Russia and China. He describes his political project as building an 'illiberal democracy' and positions himself as a champion of Christian civilisation against Brussels liberalism.",
+          "coords": { "economic": -0.1, "social": 0.85, "system": 0.95 }
+        },
+        {
+          "name": "Marine Le Pen",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Marine_Le_Pen_2025_%283x4_cropped%29.jpg/330px-Marine_Le_Pen_2025_%283x4_cropped%29.jpg",
+          "bio": "Marine Le Pen is the leader of France's Rassemblement National (National Rally) and has been a member of the French National Assembly since 2022. One of Europe's most prominent right-wing populist politicians, she has sought to detoxify her party's image while maintaining a platform of national sovereignty, strict immigration limits, and Euroscepticism. Her party joined the Patriots for Europe group in the European Parliament in 2024, where it constitutes the largest national delegation.",
+          "coords": { "economic": -0.2, "social": 0.8, "system": 0.9 }
+        },
+        {
+          "name": "Jordan Bardella",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/MEP_Jordan_Bardella.jpg/330px-MEP_Jordan_Bardella.jpg",
+          "bio": "Jordan Bardella is the President of France's Rassemblement National and an MEP who has led the Patriots for Europe group in the European Parliament since 2024. At 29 he became the youngest president of a major French political party in 2022, and his charismatic social media presence has made him the face of the new generation of French nationalist politics. He combines opposition to EU federalism and immigration with occasional heterodox economic positions including opposition to pension reform.",
+          "coords": { "economic": -0.15, "social": 0.85, "system": 0.85 }
+        }
+      ],
       "coords": { "economic": -0.1, "social": 0.8, "system": 0.9 }
     },
     {
@@ -235,7 +387,26 @@
       "name": "The Technocrat",
       "blurb": "Has read every impact assessment the Commission ever published. Believes in evidence, expertise, and very long footnotes.",
       "party": "European People's Party (EPP)",
-      "politician": "Mario Draghi",
+      "politicians": [
+        {
+          "name": "Mario Draghi",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mario_Draghi%2C_2022.03.07_%28cropped%29.jpg/330px-Mario_Draghi%2C_2022.03.07_%28cropped%29.jpg",
+          "bio": "Mario Draghi served as President of the European Central Bank from 2011 to 2019, famous for his 2012 pledge to do 'whatever it takes' to save the euro, and as Prime Minister of Italy from 2021 to 2022. In 2024 he authored a landmark report for the European Commission on the future of EU competitiveness, calling for massive investment in strategic industries, completing the capital markets union, and reducing regulatory fragmentation. An archetypal technocrat, he is associated with the EPP family but is broadly respected across the political spectrum.",
+          "coords": { "economic": 0.5, "social": -0.1, "system": -0.25 }
+        },
+        {
+          "name": "Roberta Metsola",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Official_portrait_of_Roberta_Metsola_%283x4_cropped%29.jpg/330px-Official_portrait_of_Roberta_Metsola_%283x4_cropped%29.jpg",
+          "bio": "Roberta Metsola has been President of the European Parliament since January 2022 and is a Maltese MEP from the Nationalist Party, affiliated with the EPP. A lawyer by training, she has focused on institutional reform, the rule of law, and combating corruption in the Parliament, particularly in the wake of the Qatargate scandal. She is regarded as a skilled proceduralist and institutional manager who prioritises the Parliament's legislative credibility.",
+          "coords": { "economic": 0.3, "social": 0.2, "system": -0.35 }
+        },
+        {
+          "name": "Ursula von der Leyen",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ursula_von_der_Leyen_2024.jpg/330px-Ursula_von_der_Leyen_2024.jpg",
+          "bio": "Ursula von der Leyen is the President of the European Commission, re-elected in 2024, and brings a technocratic management style to what is the EU's most powerful executive role. Trained as a physician, she has overseen an unusually active Commission legislative agenda including the Green Deal, Digital Services Act, AI Act, and the unprecedented use of EU borrowing for pandemic recovery. Her approach is characterised by data-driven policymaking and coalition-building across EU institutions.",
+          "coords": { "economic": 0.4, "social": 0.0, "system": -0.3 }
+        }
+      ],
       "coords": { "economic": 0.4, "social": -0.1, "system": -0.3 }
     },
     {
@@ -243,7 +414,26 @@
       "name": "The Far-Right Populist",
       "blurb": "Wants to put the nation back in the European project — borders, culture and all. Schengen is a choice, not a sacrament.",
       "party": "Europe of Sovereign Nations (ESN)",
-      "politician": "Stanisław Tyszka",
+      "politicians": [
+        {
+          "name": "Stanisław Tyszka",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Stanis%C5%82aw_Tyszka_MEP_%282024%29.jpg/330px-Stanis%C5%82aw_Tyszka_MEP_%282024%29.jpg",
+          "bio": "Stanisław Tyszka is a Polish MEP and one of the leading figures in the Europe of Sovereign Nations group in the European Parliament, elected in 2024. A member of Konfederacja (Confederation Liberty and Independence), Poland's far-right libertarian-nationalist alliance, he combines opposition to EU federalism with hostility to immigration and cultural progressivism. He advocates for a radically reduced EU budget, an end to mandatory migration quotas, and restoration of full national sovereignty over borders and law.",
+          "coords": { "economic": 0.1, "social": 0.9, "system": 0.95 }
+        },
+        {
+          "name": "Harald Vilimsky",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/1718294427862_20240613_VILIMSKY_Harald_AT_005.jpg/330px-1718294427862_20240613_VILIMSKY_Harald_AT_005.jpg",
+          "bio": "Harald Vilimsky is an Austrian MEP from the Freedom Party of Austria (FPÖ) and serves as general secretary of the ESN group in the European Parliament. He has been an MEP since 2014 and is a veteran of the Austrian far right, combining fierce opposition to immigration and Islamic influence with Euroscepticism and a broadly pro-Russia foreign policy stance. He has been one of the most vocal critics of EU sanctions on Russia and of asylum-seeker relocation schemes.",
+          "coords": { "economic": -0.05, "social": 0.9, "system": 0.88 }
+        },
+        {
+          "name": "Roberto Vannacci",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Roberto_Vannacci_in_the_EP_in_Strasbourg_%2812%29_%28cropped%29.jpg/330px-Roberto_Vannacci_in_the_EP_in_Strasbourg_%2812%29_%28cropped%29.jpg",
+          "bio": "Roberto Vannacci is an Italian MEP elected in 2024 with the Lega party and joined the ESN group in the European Parliament. A retired Italian Army general, he became a controversial public figure after self-publishing a book in 2023 attacking immigration, LGBTQ+ rights, and multiculturalism, which became a bestseller in Italy. His entry into politics exemplifies the ESN's combination of military nationalism, social traditionalism, and hostility to Brussels.",
+          "coords": { "economic": 0.05, "social": 0.95, "system": 0.9 }
+        }
+      ],
       "coords": { "economic": 0.0, "social": 0.9, "system": 0.9 }
     }
   ],

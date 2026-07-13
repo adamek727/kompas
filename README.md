@@ -4,14 +4,16 @@ A tiny static web app: answer ~30 simple statements and it places you on a
 political map. The twist over a classic compass — you can flip the **same
 result** between three lenses: a 2-axis **compass**, a
 liberal/conservative/socialist **triangle**, and a **horseshoe** ("podkova").
-It also names the persona, **party, and politician** you land closest to, and
-colour-codes the result by political family (conservative blue, socialist red,
-liberal amber).
+It names the party you land closest to **and the closest politician within that
+party** — shown with a round Wikimedia photo and a short bio — and plots every
+party as an avatar on the compass so you can see where you sit among them. The
+compass corners are colour-coded the classic way (authoritarian-left red,
+libertarian-left green, authoritarian-right blue, libertarian-right amber).
 
-Four domains ship today, each domain-specific and in its own language: Czech 🇨🇿,
-Polish 🇵🇱, the EU 🇪🇺 (English, future/structure of the Union), and the USA 🇺🇸
-(English). Every domain is just one JSON file — adding one is a data task, not a
-code change.
+Five domains ship today, each domain-specific and in its own language: Czech 🇨🇿,
+Polish 🇵🇱, the EU 🇪🇺 (English), the USA 🇺🇸 (English) and the UK 🇬🇧 (English).
+Each party carries three real politicians; the quiz picks the best-matching one.
+Every domain is just one JSON file — adding one is a data task, not a code change.
 
 **A game, not sociology.**
 
@@ -74,6 +76,14 @@ screen are covered by pure unit tests; data packs are validated automatically.
 
 Design and implementation notes live in `docs/superpowers/`.
 
+## Credits
+
+Politician photos are hotlinked thumbnails from **Wikimedia Commons** (various
+free licences, mostly CC BY-SA / public domain), resolved per person via the
+Wikipedia REST API. They are used illustratively for a non-commercial game; if a
+thumbnail is missing or fails to load, the UI falls back to coloured initials.
+
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). The bundled code and question/persona text are
+MIT; linked photos remain under their respective Wikimedia licences.

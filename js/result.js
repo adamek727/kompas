@@ -5,9 +5,13 @@ import { horseshoeSVG } from './views/horseshoe.js';
 
 const VIEWS = { compass: compassSVG, triangle: triangleSVG, horseshoe: horseshoeSVG };
 
-function dominantFamily(scores, pack, axisNames) {
+function initials(s) {
+  return (s || '').trim().split(/\s+/).map(w => w[0] || '').join('').slice(0, 2).toUpperCase();
+}
+
+function familyPole(coords, pack, axisNames) {
   const poles = pack.views.triangle.poles;
-  const w = triangleWeights(scores, poles, axisNames);
+  const w = triangleWeights(coords, poles, axisNames);
   let idx = 0;
   for (let i = 1; i < w.length; i++) if (w[i] > w[idx]) idx = i;
   return poles[idx];
@@ -26,32 +30,62 @@ function axisBars(scores, pack) {
 
 export function resultHTML(scores, pack, view) {
   const axisNames = axisNamesFromPack(pack);
-  const { top, runnerUp } = matchPersonas(scores, pack.personas, axisNames);
-  const family = dominantFamily(scores, pack, axisNames);
-  const accent = family?.color || 'var(--primary)';
-  const svg = (VIEWS[view] || compassSVG)(scores, pack);
+  const { top: party, runnerUp } = matchPersonas(scores, pack.personas, axisNames);
+  const famPole = familyPole(scores, pack, axisNames);
+  const accent = famPole?.color || 'var(--primary)';
+  const pol = (party.politicians && party.politicians.length)
+    ? matchPersonas(scores, party.politicians, axisNames).top
+    : null;
+
+  const parties = pack.personas.map(p => ({
+    coords: p.coords,
+    name: `${p.party || p.name}${p.politicians?.[0]?.name ? ' — ' + p.politicians[0].name : ''}`,
+    photo: p.politicians?.[0]?.photo || null,
+    initials: initials(p.party || p.name),
+    color: familyPole(p.coords, pack, axisNames)?.color || '#5c6579',
+    matched: p.id === party.id,
+  }));
+
+  const svg = view === 'compass'
+    ? compassSVG(scores, pack, 320, { parties })
+    : (VIEWS[view] || compassSVG)(scores, pack);
+
   const tabs = Object.keys(VIEWS).map(v =>
     `<button class="tab${v === view ? ' active' : ''}" data-view="${v}">${pack.ui.views[v]}</button>`
   ).join('');
-  const also = runnerUp ? `<p class="also">${pack.ui.alsoClose}: <strong>${runnerUp.name}</strong></p>` : '';
-  const fam = family ? `<span class="fam" style="--f:${accent}">${family.label}</span>` : '';
-  const tags = (top.party || top.politician) ? `<div class="tags">
-      ${top.party ? `<span class="tag">🏛 ${top.party}</span>` : ''}
-      ${top.politician ? `<span class="tag">👤 ${top.politician}</span>` : ''}
+
+  const avatar = pol ? `<div class="avatar${pol.photo ? '' : ' noimg'}" style="--f:${accent}">
+        ${pol.photo ? `<img src="${pol.photo}" alt="${pol.name}" onerror="this.closest('.avatar').classList.add('noimg')">` : ''}
+        <span class="mono">${initials(pol.name)}</span>
+      </div>` : '';
+  const fam = famPole ? `<span class="fam" style="--f:${accent}">${famPole.label}</span>` : '';
+  const partyChip = party.party ? `<span class="party-chip">🏛 ${party.party}</span>` : '';
+  const polBlock = pol ? `<div class="pol">
+      <p class="pol-name">👤 ${pol.name}</p>
+      <p class="pol-bio">${pol.bio || ''}</p>
     </div>` : '';
+  const also = runnerUp ? `<p class="also">${pack.ui.alsoClose}: <strong>${runnerUp.name}</strong></p>` : '';
+  const credit = parties.some(p => p.photo) || pol?.photo ? `<p class="credit">Photos: Wikimedia Commons</p>` : '';
+
   return `<section class="result" style="--accent-family:${accent}">
     <p class="result-title">${pack.ui.result}</p>
     <div class="persona">
-      <p class="matchlabel">${pack.ui.match}</p>
-      <h3>${top.name}</h3>
-      ${fam}
-      <p class="blurb">${top.blurb}</p>
-      ${tags}
+      <div class="persona-head">
+        ${avatar}
+        <div class="pid">
+          <p class="matchlabel">${pack.ui.match}</p>
+          <h3>${party.name}</h3>
+          <div class="chips">${fam}${partyChip}</div>
+        </div>
+      </div>
+      <p class="blurb">${party.blurb}</p>
+      ${polBlock}
       ${also}
     </div>
     <div class="tabs">${tabs}</div>
     <div class="vizwrap">${svg}</div>
     <div class="bars">${axisBars(scores, pack)}</div>
+    ${credit}
     <button class="restart">${pack.ui.restart}</button>
   </section>`;
 }

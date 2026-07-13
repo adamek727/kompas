@@ -62,72 +62,243 @@
       "name": "Progressive",
       "blurb": "Medicare for All, Green New Deal, tax the billionaires — and maybe eat them too.",
       "party": "Democratic",
-      "politician": "Bernie Sanders",
-      "coords": { "economic": -0.85, "social": -0.8, "system": 0.4 }
+      "coords": { "economic": -0.85, "social": -0.8, "system": 0.4 },
+      "politicians": [
+        {
+          "name": "Bernie Sanders",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Bernie_Sanders_February_2026_%28cropped%29.jpg/330px-Bernie_Sanders_February_2026_%28cropped%29.jpg",
+          "bio": "Bernie Sanders is an independent senator from Vermont who has served in Congress since 1991, making him the longest-serving independent in U.S. congressional history. He ran for the Democratic presidential nomination in 2016 and 2020, championing Medicare for All, free public college, and a $15 federal minimum wage. A self-described democratic socialist, Sanders has long positioned himself as a champion of the working class against the power of billionaires and large corporations.",
+          "coords": { "economic": -0.87, "social": -0.78, "system": 0.45 }
+        },
+        {
+          "name": "Elizabeth Warren",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Elizabeth_Warren_by_Gage_Skidmore.jpg/330px-Elizabeth_Warren_by_Gage_Skidmore.jpg",
+          "bio": "Elizabeth Warren is a Democratic senator from Massachusetts and former Harvard Law professor who ran for president in 2020. She is known for her consumer protection advocacy, having proposed the creation of the Consumer Financial Protection Bureau and championing wealth taxes on billionaires. Warren's policy platform centers on breaking up large corporations, canceling student debt, and expanding social programs through targeted taxation of the ultra-wealthy.",
+          "coords": { "economic": -0.82, "social": -0.82, "system": 0.35 }
+        },
+        {
+          "name": "Pramila Jayapal",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Pramila_Jayapal%2C_official_portrait%2C_116th_Congress.jpg/330px-Pramila_Jayapal%2C_official_portrait%2C_116th_Congress.jpg",
+          "bio": "Pramila Jayapal is a Democratic congresswoman from Washington state and chair of the Congressional Progressive Caucus, the largest caucus in the House Democratic Conference. Born in India, she became a prominent immigrant rights activist before winning election to Congress in 2016. Jayapal is the lead sponsor of the Medicare for All Act in the House and has been a consistent voice for expanding labor rights, affordable housing, and progressive immigration reform.",
+          "coords": { "economic": -0.88, "social": -0.83, "system": 0.38 }
+        }
+      ]
     },
     {
       "id": "democratic_socialist",
       "name": "Democratic Socialist",
       "blurb": "Workers of the world unite — preferably in a unionized congressional district.",
       "party": "Democratic",
-      "politician": "Alexandria Ocasio-Cortez",
-      "coords": { "economic": -0.9, "social": -0.85, "system": 0.6 }
+      "coords": { "economic": -0.9, "social": -0.85, "system": 0.6 },
+      "politicians": [
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alexandria_Ocasio-Cortez_Official_Portrait.jpg/330px-Alexandria_Ocasio-Cortez_Official_Portrait.jpg",
+          "bio": "Alexandria Ocasio-Cortez, commonly known as AOC, is a Democratic congresswoman representing New York's 14th district and a member of the Democratic Socialists of America. She became the youngest woman ever elected to Congress in 2018 after defeating a longtime incumbent in the Democratic primary. AOC co-authored the Green New Deal resolution and is a prominent advocate for Medicare for All, tuition-free public college, and a federal jobs guarantee.",
+          "coords": { "economic": -0.92, "social": -0.87, "system": 0.62 }
+        },
+        {
+          "name": "Rashida Tlaib",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tlaib_Rashida_119th_Congress_%283x4_cropped%29.jpg/330px-Tlaib_Rashida_119th_Congress_%283x4_cropped%29.jpg",
+          "bio": "Rashida Tlaib is a Democratic congresswoman from Michigan and one of the first two Muslim women elected to Congress, serving since 2019. A member of the Democratic Socialists of America and part of the progressive \"Squad,\" she has been an outspoken advocate for workers' rights, Medicare for All, and criminal justice reform. Tlaib has also been a prominent voice challenging corporate power and calling for major structural changes to the American economic system.",
+          "coords": { "economic": -0.91, "social": -0.84, "system": 0.65 }
+        },
+        {
+          "name": "Ilhan Omar",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ilhan_Omar%2C_official_portrait%2C_116th_Congress_%28cropped%29_A.jpg/330px-Ilhan_Omar%2C_official_portrait%2C_116th_Congress_%28cropped%29_A.jpg",
+          "bio": "Ilhan Omar is a Democratic congresswoman from Minnesota and one of the first two Muslim women elected to Congress, having fled Somalia as a refugee before becoming a U.S. citizen. A democratic socialist and member of the progressive Squad, she supports Medicare for All, the Green New Deal, and canceling all student debt. Omar has been a leading progressive critic of U.S. foreign policy, corporate lobbying, and the influence of money in American politics.",
+          "coords": { "economic": -0.89, "social": -0.86, "system": 0.58 }
+        }
+      ]
     },
     {
       "id": "establishment_democrat",
       "name": "Establishment Democrat",
       "blurb": "Build back better, protect democracy, and please stop scaring the swing-state voters.",
       "party": "Democratic",
-      "politician": "Joe Biden",
-      "coords": { "economic": -0.4, "social": -0.4, "system": -0.65 }
+      "coords": { "economic": -0.4, "social": -0.4, "system": -0.65 },
+      "politicians": [
+        {
+          "name": "Joe Biden",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/330px-Joe_Biden_presidential_portrait.jpg",
+          "bio": "Joe Biden served as the 46th President of the United States from 2021 to 2025, having previously been a U.S. senator from Delaware for 36 years and Vice President under Barack Obama. His presidency was marked by the American Rescue Plan, the Bipartisan Infrastructure Law, and the Inflation Reduction Act, which together represented the largest domestic investment in decades. Biden positioned himself as a moderate institutionalist focused on restoring democratic norms and rebuilding international alliances fractured during the Trump years.",
+          "coords": { "economic": -0.42, "social": -0.38, "system": -0.68 }
+        },
+        {
+          "name": "Chuck Schumer",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Chuck_Schumer_official_photo.jpg/330px-Chuck_Schumer_official_photo.jpg",
+          "bio": "Chuck Schumer is a Democratic senator from New York who has served as Senate Majority Leader since 2021, previously serving as Minority Leader. He has represented New York in Congress since 1981, first in the House and then in the Senate, becoming one of the most influential figures in Democratic politics. Schumer is known as a skilled legislative tactician who shepherded major legislation including the Inflation Reduction Act and the CHIPS and Science Act through a closely divided Senate.",
+          "coords": { "economic": -0.38, "social": -0.42, "system": -0.70 }
+        },
+        {
+          "name": "Hakeem Jeffries",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Rep-Hakeem-Jeffries-Official-Portrait_%28cropped%29.jpg/330px-Rep-Hakeem-Jeffries-Official-Portrait_%28cropped%29.jpg",
+          "bio": "Hakeem Jeffries is a Democratic congressman from New York who became House Minority Leader in January 2023, succeeding Nancy Pelosi as leader of House Democrats. He is the first Black American to lead a major political party in Congress, having built a reputation as a pragmatic moderate who can bridge the gap between progressive and centrist Democrats. Jeffries is a strong defender of democratic institutions, voting rights, and law enforcement, and is widely seen as the future face of the Democratic Party.",
+          "coords": { "economic": -0.37, "social": -0.40, "system": -0.62 }
+        }
+      ]
     },
     {
       "id": "moderate",
       "name": "Moderate / Centrist",
       "blurb": "Both sides make good points — now can everyone please calm down a little?",
       "party": "Independent",
-      "politician": "Joe Manchin",
-      "coords": { "economic": 0.1, "social": 0.1, "system": -0.1 }
+      "coords": { "economic": 0.1, "social": 0.1, "system": -0.1 },
+      "politicians": [
+        {
+          "name": "Joe Manchin",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Senator_Manchin.jpg/330px-Senator_Manchin.jpg",
+          "bio": "Joe Manchin served as a Democratic senator from West Virginia from 2010 to 2025, consistently being the most conservative Democrat in the Senate chamber. His pivotal swing vote gave him outsized influence over the Biden administration's legislative agenda, as he forced significant reductions to the Build Back Better plan and the Inflation Reduction Act. Manchin left the Democratic Party in 2024 and briefly explored an independent presidential run before retiring from the Senate, positioning himself as a champion of bipartisan deal-making over ideological purity.",
+          "coords": { "economic": 0.15, "social": 0.2, "system": -0.05 }
+        },
+        {
+          "name": "Kyrsten Sinema",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kyrsten_Sinema_in_2020_%28cropped%29.jpg/330px-Kyrsten_Sinema_in_2020_%28cropped%29.jpg",
+          "bio": "Kyrsten Sinema served as a U.S. senator from Arizona, first as a Democrat before switching to independent status in 2022, and did not seek re-election in 2024. She rose to national prominence as one of two Democratic senators whose votes were essential to passing the Inflation Reduction Act, after pushing back significantly on its original scope and price tag. A former social worker and progressive state legislator, Sinema pivoted sharply toward the political center in the Senate, opposing the elimination of the filibuster and championing bipartisan infrastructure legislation.",
+          "coords": { "economic": 0.12, "social": 0.05, "system": -0.12 }
+        },
+        {
+          "name": "Mitt Romney",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mitt_Romney_official_US_Senate_portrait.jpg/330px-Mitt_Romney_official_US_Senate_portrait.jpg",
+          "bio": "Mitt Romney is a former Republican senator from Utah and the 2012 Republican presidential nominee who became one of the most prominent critics of Donald Trump within the GOP. He was the only Republican senator to vote to convict Trump in both impeachment trials, and he announced his retirement from the Senate in 2023 citing the dysfunction of American politics. Romney's center-right politics, rooted in fiscal conservatism and internationalism, placed him far from the MAGA wing of the Republican Party.",
+          "coords": { "economic": 0.55, "social": 0.3, "system": -0.55 }
+        }
+      ]
     },
     {
       "id": "establishment_republican",
       "name": "Establishment Republican",
       "blurb": "Free markets, strong alliances, and a deep nostalgia for when the party wore neckties.",
       "party": "Republican",
-      "politician": "Mitt Romney",
-      "coords": { "economic": 0.7, "social": 0.4, "system": -0.6 }
+      "coords": { "economic": 0.7, "social": 0.4, "system": -0.6 },
+      "politicians": [
+        {
+          "name": "Mitt Romney",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mitt_Romney_official_US_Senate_portrait.jpg/330px-Mitt_Romney_official_US_Senate_portrait.jpg",
+          "bio": "Mitt Romney is a former Republican senator from Utah and the 2012 Republican presidential nominee, known for his institutionalist brand of conservatism emphasizing free markets, fiscal responsibility, and a robust role for America in global affairs. He was the founder of Bain Capital and served as Governor of Massachusetts, where he signed a state health insurance mandate that became the model for the Affordable Care Act. Romney consistently opposed Donald Trump's style of politics, voting to convict him in both Senate impeachment trials and decrying the erosion of democratic norms within the Republican Party.",
+          "coords": { "economic": 0.72, "social": 0.38, "system": -0.65 }
+        },
+        {
+          "name": "Mitch McConnell",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mitch_McConnell_2016_official_photo_%281%29_%28cropped%29.jpg/330px-Mitch_McConnell_2016_official_photo_%281%29_%28cropped%29.jpg",
+          "bio": "Mitch McConnell served as a U.S. senator from Kentucky for over four decades, becoming the longest-serving Senate Republican leader in history and one of the most influential figures in modern American conservatism. His most consequential act was blocking President Obama's Supreme Court nominee Merrick Garland in 2016, holding the seat open for Donald Trump to fill, ultimately reshaping the federal judiciary for a generation. McConnell was a traditional establishment Republican who prioritized judicial appointments and tax cuts while maintaining a hawkish foreign policy stance, though he eventually broke with Trump over the January 6th Capitol attack.",
+          "coords": { "economic": 0.75, "social": 0.45, "system": -0.58 }
+        },
+        {
+          "name": "Liz Cheney",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Liz_Cheney_official_116th_Congress_portrait.jpg/330px-Liz_Cheney_official_116th_Congress_portrait.jpg",
+          "bio": "Liz Cheney is a former Republican congresswoman from Wyoming and daughter of former Vice President Dick Cheney, who served as House Republican Conference Chair before being ousted for her vote to impeach Donald Trump following January 6th. She served as vice chair of the House Select Committee investigating the January 6th Capitol attack, becoming one of the most prominent Republican critics of Trump's continued influence on the party. Cheney's political career ended when she lost her 2022 primary by a wide margin, having traded short-term political survival for a principled stand on democratic accountability.",
+          "coords": { "economic": 0.68, "social": 0.48, "system": -0.72 }
+        }
+      ]
     },
     {
       "id": "religious_conservative",
       "name": "Religious Conservative",
       "blurb": "God, family, and the conviction that America was founded as a Christian nation.",
       "party": "Republican",
-      "politician": "Mike Pence",
-      "coords": { "economic": 0.5, "social": 0.9, "system": -0.2 }
+      "coords": { "economic": 0.5, "social": 0.9, "system": -0.2 },
+      "politicians": [
+        {
+          "name": "Mike Pence",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Mike_Pence_official_Vice_Presidential_portrait.jpg/330px-Mike_Pence_official_Vice_Presidential_portrait.jpg",
+          "bio": "Mike Pence served as the 48th Vice President of the United States under Donald Trump and previously as Governor of Indiana, where he signed one of the nation's most restrictive religious freedom laws. A devout evangelical Christian, Pence has been a lifelong advocate for restricting abortion rights, opposing same-sex marriage, and promoting the role of faith in public life. He ran unsuccessfully for the 2024 Republican presidential nomination, distinguishing himself from Trump primarily by defending his constitutional refusal to block certification of the 2020 election results on January 6th.",
+          "coords": { "economic": 0.52, "social": 0.92, "system": -0.22 }
+        },
+        {
+          "name": "Ted Cruz",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Ted_Cruz_official_116th_portrait_%283x4_cropped%29.jpg/330px-Ted_Cruz_official_116th_portrait_%283x4_cropped%29.jpg",
+          "bio": "Ted Cruz is a Republican senator from Texas and former Supreme Court litigator who ran for president in 2016, finishing second to Donald Trump in the Republican primary. A movement conservative, Cruz combines strong social conservatism — including opposition to abortion and same-sex marriage — with free-market economics and an originalist interpretation of the Constitution. He has become one of the most prominent evangelical conservatives in Congress, frequently speaking at faith-based events and positioning himself as a defender of traditional Judeo-Christian values in public life.",
+          "coords": { "economic": 0.58, "social": 0.88, "system": -0.15 }
+        },
+        {
+          "name": "Rick Santorum",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Abascal_Santorum_%28cropped%29.jpg/330px-Abascal_Santorum_%28cropped%29.jpg",
+          "bio": "Rick Santorum is a former Republican senator from Pennsylvania and two-time presidential candidate who built his political identity around a deeply Catholic social conservatism, opposing abortion, same-sex marriage, and what he described as the erosion of the traditional family. He won eleven states in the 2012 Republican presidential primary, positioning himself as the leading social conservative alternative to Mitt Romney and championing a vision of America as a faith-grounded nation. Santorum has been a consistent voice for integrating religious values into public policy, arguing that secularism poses an existential threat to America's founding principles.",
+          "coords": { "economic": 0.48, "social": 0.93, "system": -0.18 }
+        }
+      ]
     },
     {
       "id": "maga_populist",
       "name": "MAGA Populist",
       "blurb": "Drain the swamp, build the wall, and make the mainstream media cry again.",
       "party": "Republican",
-      "politician": "Donald Trump",
-      "coords": { "economic": 0.2, "social": 0.75, "system": 0.9 }
+      "coords": { "economic": 0.2, "social": 0.75, "system": 0.9 },
+      "politicians": [
+        {
+          "name": "Donald Trump",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29_%28cropped%29%282%29.jpg",
+          "bio": "Donald Trump is the 45th and 47th President of the United States, the first person in American history to serve non-consecutive presidential terms, winning in 2016 and again in 2024. He is the founder of the MAGA movement, which blends economic nationalism — including heavy use of tariffs and trade protectionism — with cultural traditionalism and a deep skepticism of government institutions and the media. Trump's presidency fundamentally reshaped the Republican Party around his personality and populist anti-establishment brand, surviving two impeachments and a criminal conviction to return to the White House.",
+          "coords": { "economic": 0.22, "social": 0.78, "system": 0.92 }
+        },
+        {
+          "name": "JD Vance",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/March_2026_Official_Vice_Presidential_Portrait_of_JD_Vance_%28head-and-shoulders_cropped%29.jpg/330px-March_2026_Official_Vice_Presidential_Portrait_of_JD_Vance_%28head-and-shoulders_cropped%29.jpg",
+          "bio": "JD Vance is the 50th Vice President of the United States, having previously served as a Republican senator from Ohio and authored the bestselling memoir \"Hillbilly Elegy\" about working-class life in Appalachia. A former venture capitalist who converted from Never-Trump skeptic to ardent MAGA loyalist, Vance has become one of the most articulate voices of national populism, blending economic protectionism with hard-line immigration restriction and a critique of America's coastal elite. He is widely seen as a leading candidate to carry the MAGA torch in a post-Trump Republican Party.",
+          "coords": { "economic": 0.18, "social": 0.76, "system": 0.88 }
+        },
+        {
+          "name": "Marjorie Taylor Greene",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Marjorie_Taylor_Greene_%28cropped%29.jpg/330px-Marjorie_Taylor_Greene_%28cropped%29.jpg",
+          "bio": "Marjorie Taylor Greene is a Republican congresswoman from Georgia and one of the most prominent figures of the far-right MAGA wing of the Republican Party, known for her confrontational style and willingness to push fringe positions into the mainstream. She was stripped of her committee assignments in 2021 following revelations of her past promotion of QAnon conspiracy theories, but remained a powerful fundraiser and media presence within the movement. Greene has been among the most vociferous opponents of foreign aid, particularly to Ukraine, and a champion of aggressive anti-immigration enforcement and border security measures.",
+          "coords": { "economic": 0.25, "social": 0.82, "system": 0.95 }
+        }
+      ]
     },
     {
       "id": "libertarian",
       "name": "Libertarian",
       "blurb": "Legalize everything, tax nothing, and the government can mind its own business.",
       "party": "Libertarian",
-      "politician": "Rand Paul",
-      "coords": { "economic": 0.95, "social": -0.3, "system": 0.7 }
+      "coords": { "economic": 0.95, "social": -0.3, "system": 0.7 },
+      "politicians": [
+        {
+          "name": "Rand Paul",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Rand_Paul_Portrait.jpg/330px-Rand_Paul_Portrait.jpg",
+          "bio": "Rand Paul is a Republican senator from Kentucky and ophthalmologist who is the most prominent libertarian-leaning politician in the U.S. Senate, frequently invoking the ideas of his father, former congressman Ron Paul. He is known for his filibusters and holds on legislation he considers unconstitutional or fiscally irresponsible, opposing both the surveillance state and foreign interventionism with equal vigor. Paul ran for the Republican presidential nomination in 2016 on a platform of auditing the Federal Reserve, ending the war on drugs, and dramatically reducing the size and scope of the federal government.",
+          "coords": { "economic": 0.96, "social": -0.32, "system": 0.72 }
+        },
+        {
+          "name": "Thomas Massie",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Massie_Thomas_119th_Congress_%28cropped_2%29.jpg/330px-Massie_Thomas_119th_Congress_%28cropped_2%29.jpg",
+          "bio": "Thomas Massie is a Republican congressman from Kentucky and MIT-trained engineer who is widely regarded as the most consistently libertarian member of Congress, often casting the sole \"no\" vote on legislation he deems unconstitutional. He has opposed nearly every expansion of government spending, surveillance, foreign aid, and executive power regardless of which party is in the White House. Massie is a strong proponent of gun rights, cryptocurrency, homeschooling, and local self-governance, and lives off-grid on a farm he built himself in rural Kentucky.",
+          "coords": { "economic": 0.97, "social": -0.25, "system": 0.75 }
+        },
+        {
+          "name": "Justin Amash",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Justin_Amash_official_photo_%28cropped_2%29.jpg/330px-Justin_Amash_official_photo_%28cropped_2%29.jpg",
+          "bio": "Justin Amash is a former congressman from Michigan who represented the libertarian wing of the Republican Party before resigning from the GOP in 2019 to become the first sitting member of Congress to join the Libertarian Party. He was a co-founder of the House Freedom Caucus and was known for voting against nearly all legislation he deemed unconstitutional, consistently opposing government surveillance, foreign interventionism, corporate bailouts, and the drug war. Amash ran briefly for the 2020 Libertarian presidential nomination, arguing that both major parties had abandoned the principles of limited government, individual liberty, and constitutional restraint.",
+          "coords": { "economic": 0.94, "social": -0.28, "system": 0.68 }
+        }
+      ]
     },
     {
       "id": "never_trump",
       "name": "Never-Trump Conservative",
       "blurb": "Small government, rule of law, and a principled refusal to join the cult of personality.",
       "party": "Republican",
-      "politician": "Liz Cheney",
-      "coords": { "economic": 0.65, "social": 0.5, "system": -0.75 }
+      "coords": { "economic": 0.65, "social": 0.5, "system": -0.75 },
+      "politicians": [
+        {
+          "name": "Liz Cheney",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Liz_Cheney_official_116th_Congress_portrait.jpg/330px-Liz_Cheney_official_116th_Congress_portrait.jpg",
+          "bio": "Liz Cheney is a former Republican congresswoman from Wyoming who sacrificed her political career — including her position as House Republican Conference Chair — by voting to impeach Donald Trump after January 6th and then co-leading the House investigation into the Capitol attack. The daughter of former Vice President Dick Cheney, she represents a hawkish, institutionalist strain of conservatism that prioritizes the rule of law and constitutional checks and balances over partisan loyalty. After losing her 2022 primary by 37 points, Cheney has continued to speak out against Trump and what she sees as the authoritarian drift of the modern Republican Party.",
+          "coords": { "economic": 0.66, "social": 0.52, "system": -0.78 }
+        },
+        {
+          "name": "Adam Kinzinger",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Adam_Kinzinger_-_117th_Congress_%283x4_cropped%29.jpg/330px-Adam_Kinzinger_-_117th_Congress_%283x4_cropped%29.jpg",
+          "bio": "Adam Kinzinger is a former Republican congressman from Illinois and Air Force combat veteran who was one of only ten House Republicans to vote to impeach Donald Trump following the January 6th Capitol attack. He served on the House Select Committee alongside Liz Cheney and has been a consistent voice within the GOP warning about the dangers of Trump's brand of politics to American democracy and the conservative movement. After choosing not to seek re-election in 2022, Kinzinger co-founded the Country First political action committee and has become a regular media presence arguing for a return to principled conservatism.",
+          "coords": { "economic": 0.62, "social": 0.45, "system": -0.70 }
+        },
+        {
+          "name": "Mitt Romney",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mitt_Romney_official_US_Senate_portrait.jpg/330px-Mitt_Romney_official_US_Senate_portrait.jpg",
+          "bio": "Mitt Romney is a former Republican senator from Utah and 2012 Republican presidential nominee who became the only Senate Republican to vote to convict Donald Trump in both impeachment trials. A former private equity executive and Massachusetts governor who pioneered state-level health insurance reform, Romney represents the pre-Trump GOP consensus of free trade, entitlement reform, and American global leadership. He announced his retirement from the Senate in 2023, citing frustration with the state of American politics and the unwillingness of leaders in both parties to make difficult decisions.",
+          "coords": { "economic": 0.68, "social": 0.52, "system": -0.76 }
+        }
+      ]
     }
   ],
   "views": {

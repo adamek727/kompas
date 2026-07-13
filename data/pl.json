@@ -58,7 +58,26 @@
       "blurb": "Bóg, honor, ojczyzna — i 800+ na konto pierwszego każdego miesiąca.",
       "coords": { "economic": -0.3, "social": 0.85, "system": 0.4 },
       "party": "PiS",
-      "politician": "Jarosław Kaczyński"
+      "politicians": [
+        {
+          "name": "Jarosław Kaczyński",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Jaros%C5%82aw_Kaczy%C5%84ski%2C_wicepremier_%28cropped%29.png/330px-Jaros%C5%82aw_Kaczy%C5%84ski%2C_wicepremier_%28cropped%29.png",
+          "bio": "Jarosław Kaczyński jest współzałożycielem i prezesem Prawa i Sprawiedliwości, partii, którą kieruje od jej powstania w 2001 roku. Przez dwie kadencje 2005–2007 pełnił funkcję premiera, a brat bliźniak Lech Kaczyński był prezydentem RP. Jest uznawany za najważniejszą postać polskiej prawicy i architekta reform wymiaru sprawiedliwości przeprowadzonych po 2015 roku.",
+          "coords": { "economic": -0.3, "social": 0.85, "system": 0.4 }
+        },
+        {
+          "name": "Mateusz Morawiecki",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Mateusz_Morawiecki_official_portrait_%282023%29.jpg/330px-Mateusz_Morawiecki_official_portrait_%282023%29.jpg",
+          "bio": "Mateusz Morawiecki pełnił funkcję Prezesa Rady Ministrów w latach 2017–2023, stając się jednym z najdłużej urzędujących premierów po 1989 roku. Przed wejściem do polityki był wieloletnim prezesem Banku Zachodniego WBK. Pod jego rządami wprowadzono program 500+, a następnie jego rozszerzoną wersję 800+.",
+          "coords": { "economic": -0.35, "social": 0.8, "system": 0.3 }
+        },
+        {
+          "name": "Mariusz Błaszczak",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mariusz_B%C5%82aszczak_2015.jpg/330px-Mariusz_B%C5%82aszczak_2015.jpg",
+          "bio": "Mariusz Błaszczak jest wieloletnim działaczem PiS i posłem na Sejm RP od 2005 roku. Pełnił funkcję ministra spraw wewnętrznych i administracji (2015–2018), a następnie ministra obrony narodowej (2018–2023). Jako szef MON nadzorował znaczące zwiększenie wydatków na obronność i modernizację polskich sił zbrojnych.",
+          "coords": { "economic": -0.25, "social": 0.9, "system": 0.45 }
+        }
+      ]
     },
     {
       "id": "tulskista",
@@ -66,7 +85,26 @@
       "blurb": "Europa, praworządność i wiara, że dobre rządzenie wystarczy, by naprawić Polskę.",
       "coords": { "economic": 0.2, "social": -0.4, "system": -0.7 },
       "party": "KO / PO",
-      "politician": "Donald Tusk"
+      "politicians": [
+        {
+          "name": "Donald Tusk",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Donald_Tusk_2025_%282%29.jpg/330px-Donald_Tusk_2025_%282%29.jpg",
+          "bio": "Donald Tusk jest przewodniczącym Platformy Obywatelskiej i od 2023 roku pełni urząd Prezesa Rady Ministrów. W latach 2007–2014 kierował rządem RP, a następnie przez pięć lat był Przewodniczącym Rady Europejskiej. Jest twarzą koalicji 15 Października, która w 2023 roku odsunęła PiS od władzy.",
+          "coords": { "economic": 0.2, "social": -0.4, "system": -0.7 }
+        },
+        {
+          "name": "Bronisław Komorowski",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bronis%C5%82aw_Komorowski_%282%29.jpg/330px-Bronis%C5%82aw_Komorowski_%282%29.jpg",
+          "bio": "Bronisław Komorowski pełnił urząd Prezydenta Rzeczypospolitej Polskiej w latach 2010–2015 z ramienia Platformy Obywatelskiej. Wcześniej był Marszałkiem Sejmu i p.o. Prezydenta RP po katastrofie smoleńskiej. Jest jednym z twórców nowoczesnej centroprawicowej tożsamości PO.",
+          "coords": { "economic": 0.15, "social": -0.25, "system": -0.65 }
+        },
+        {
+          "name": "Ewa Kopacz",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Official_portrait_of_Ewa_Kopacz_4_%28cropped%29.jpg/330px-Official_portrait_of_Ewa_Kopacz_4_%28cropped%29.jpg",
+          "bio": "Ewa Kopacz była Prezesem Rady Ministrów w latach 2014–2015, jako pierwsza kobieta na tym stanowisku w Polsce. Wcześniej sprawowała urząd Ministra Zdrowia przez sześć lat i była Marszałkiem Sejmu. Jako lekarka i polityczka PO aktywnie angażowała się w reformy systemu ochrony zdrowia.",
+          "coords": { "economic": 0.1, "social": -0.45, "system": -0.75 }
+        }
+      ]
     },
     {
       "id": "konfederatka",
@@ -74,7 +112,26 @@
       "blurb": "Zero podatków, zero regulacji, zero UE — wolność albo śmierć (gospodarcza).",
       "coords": { "economic": 0.9, "social": 0.5, "system": 0.9 },
       "party": "Konfederacja",
-      "politician": "Sławomir Mentzen"
+      "politicians": [
+        {
+          "name": "Sławomir Mentzen",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/S%C5%82awomir_Mentzen_2_%28cropped%29.jpg/330px-S%C5%82awomir_Mentzen_2_%28cropped%29.jpg",
+          "bio": "Sławomir Mentzen jest współprzewodniczącym Konfederacji i liderem partii Nowa Nadzieja (dawniej KORWiN). Ekonomista i doradca podatkowy z wykształcenia, znany z postulatu \"5 x nie\" — przeciw aborcji, UE, podatkom, euro i islamowi. W wyborach prezydenckich 2025 roku zajął trzecie miejsce z wynikiem ponad 14% głosów.",
+          "coords": { "economic": 0.95, "social": 0.55, "system": 0.9 }
+        },
+        {
+          "name": "Janusz Korwin-Mikke",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Janusz_Korwin-Mikke_Sejm_2016.JPG/330px-Janusz_Korwin-Mikke_Sejm_2016.JPG",
+          "bio": "Janusz Korwin-Mikke jest założycielem i wieloletnim liderem polskiego ruchu libertariańskiego, twórcą partii KORWiN i jej poprzedniczek. Wielokrotny poseł na Sejm RP i poseł do Parlamentu Europejskiego, znany z radykalnych poglądów wolnorynkowych i kontrowersyjnych wypowiedzi publicznych. Przez dekady kształtował ideologiczną tożsamość prawicowo-libertariańskiego skrzydła polskiej polityki.",
+          "coords": { "economic": 1.0, "social": 0.6, "system": 0.95 }
+        },
+        {
+          "name": "Grzegorz Braun",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Grzegorz_Braun_MEP_%282024%29.jpg/330px-Grzegorz_Braun_MEP_%282024%29.jpg",
+          "bio": "Grzegorz Braun jest posłem na Sejm RP i od 2024 roku posłem do Parlamentu Europejskiego z ramienia Konfederacji. Reżyser filmowy z wykształcenia, znany z narodowo-katolickich i eurosceptycznych poglądów oraz licznych kontrowersyjnych akcji medialnych w Sejmie. Jest jedną z najbardziej rozpoznawalnych i polaryzujących postaci polskiej prawicy.",
+          "coords": { "economic": 0.75, "social": 0.8, "system": 0.85 }
+        }
+      ]
     },
     {
       "id": "lewicowiec",
@@ -82,7 +139,26 @@
       "blurb": "Aborcja, prawa LGBT, klimat — i solidny podatek od bogaczy na to wszystko.",
       "coords": { "economic": -0.7, "social": -0.85, "system": -0.3 },
       "party": "Lewica",
-      "politician": "Adrian Zandberg"
+      "politicians": [
+        {
+          "name": "Adrian Zandberg",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Adrian_Zandberg_Sejm_2020.jpg/330px-Adrian_Zandberg_Sejm_2020.jpg",
+          "bio": "Adrian Zandberg jest liderem partii Razem i posłem na Sejm RP od 2019 roku. Historyk z wykształcenia, znany z radykalnych postulatów ekonomicznych — m.in. progresywnego opodatkowania i nacjonalizacji strategicznych gałęzi przemysłu. Jest twarzą lewicowej opozycji wobec zarówno PiS, jak i centroprawicowej Platformy Obywatelskiej.",
+          "coords": { "economic": -0.8, "social": -0.85, "system": -0.2 }
+        },
+        {
+          "name": "Włodzimierz Czarzasty",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/W%C5%82odzimierz_Czarzasty_2025_%28cropped%29.jpg/330px-W%C5%82odzimierz_Czarzasty_2025_%28cropped%29.jpg",
+          "bio": "Włodzimierz Czarzasty jest przewodniczącym Sojuszu Lewicy Demokratycznej i wicemarszałkiem Sejmu RP od 2023 roku. Wieloletni działacz lewicy, były prezes TVN, doprowadził do zjednoczenia partii lewicowych w koalicję wyborczą. Jest kluczową postacią w negocjacjach koalicji rządzącej i głównym architektem obecności Lewicy w rządzie Tuska.",
+          "coords": { "economic": -0.6, "social": -0.8, "system": -0.4 }
+        },
+        {
+          "name": "Magdalena Biejat",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Magdalena_Biejat-5_%28cropped%29.jpg/330px-Magdalena_Biejat-5_%28cropped%29.jpg",
+          "bio": "Magdalena Biejat jest senatorką RP i kandydatką Lewicy w wyborach prezydenckich 2025 roku. Działaczka społeczna i feministka, zaangażowana w walkę o prawa kobiet i dostęp do aborcji. Reprezentuje młodsze pokolenie polskiej lewicy, łączące postulaty socjalne z progresywnym programem obyczajowym.",
+          "coords": { "economic": -0.65, "social": -0.9, "system": -0.3 }
+        }
+      ]
     },
     {
       "id": "ludowiec",
@@ -90,7 +166,26 @@
       "blurb": "Wieś, rolnik, rodzina i dotacje unijne — tak, te europejskie też.",
       "coords": { "economic": -0.3, "social": 0.4, "system": -0.1 },
       "party": "PSL / Trzecia Droga",
-      "politician": "Władysław Kosiniak-Kamysz"
+      "politicians": [
+        {
+          "name": "Władysław Kosiniak-Kamysz",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/W%C5%82adys%C5%82aw_Kosiniak-Kamysz%2C_Pose%C5%82_na_Sejm_RP%2C_Prezes_Polskiego_Stronnictwa_Ludowego.jpg/330px-W%C5%82adys%C5%82aw_Kosiniak-Kamysz%2C_Pose%C5%82_na_Sejm_RP%2C_Prezes_Polskiego_Stronnictwa_Ludowego.jpg",
+          "bio": "Władysław Kosiniak-Kamysz jest Prezesem Polskiego Stronnictwa Ludowego i od 2023 roku wicepremierem oraz ministrem obrony narodowej. Lekarz z wykształcenia, kieruje PSL od 2012 roku i doprowadził partię do koalicji Trzeciej Drogi z Szymonem Hołownią. Jest zwolennikiem silnej Polski w Unii Europejskiej przy zachowaniu tradycyjnych wartości wiejskich.",
+          "coords": { "economic": -0.3, "social": 0.4, "system": -0.1 }
+        },
+        {
+          "name": "Piotr Zgorzelski",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Piotr_Zgorzelski_2023.jpg/330px-Piotr_Zgorzelski_2023.jpg",
+          "bio": "Piotr Zgorzelski jest wiceprzewodniczącym PSL i wicemarszałkiem Sejmu RP od 2023 roku. Wieloletni samorządowiec i poseł, znany z pracy na rzecz społeczności wiejskich i rolników. Jeden z najbliższych współpracowników Kosiniaka-Kamysza i ważny głos w sprawach polityki rolnej.",
+          "coords": { "economic": -0.35, "social": 0.45, "system": -0.05 }
+        },
+        {
+          "name": "Michał Kołodziejczak",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Micha%C5%82_Ko%C5%82odziejczak_2023a.jpg/330px-Micha%C5%82_Ko%C5%82odziejczak_2023a.jpg",
+          "bio": "Michał Kołodziejczak jest liderem AGROunii i wiceministrem rolnictwa w rządzie Donalda Tuska. Założyciel ruchu protestu rolniczego, który zdobył ogólnopolską rozpoznawalność organizując blokady dróg w obronie interesów polskich rolników. Reprezentuje radykalniejsze, antyestablishmentowe skrzydło ruchu ludowego.",
+          "coords": { "economic": -0.4, "social": 0.5, "system": 0.3 }
+        }
+      ]
     },
     {
       "id": "wolnorynkowy_liberal",
@@ -98,7 +193,26 @@
       "blurb": "Płaski podatek, mała biurokracja, wielka wolność — ale nikomu nic nie damy za darmo.",
       "coords": { "economic": 0.85, "social": 0.1, "system": 0.1 },
       "party": "KO / PO",
-      "politician": "Radosław Sikorski"
+      "politicians": [
+        {
+          "name": "Radosław Sikorski",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Min._Rados%C5%82aw_Sikorski_2024_%283x4_cropped%29.jpg/330px-Min._Rados%C5%82aw_Sikorski_2024_%283x4_cropped%29.jpg",
+          "bio": "Radosław Sikorski jest Ministrem Spraw Zagranicznych RP od 2023 roku i wieloletnim politykiem PO ze skrzydłem atlantyckim. Wcześniej pełnił funkcję ministra obrony (2005–2007) i ministra spraw zagranicznych (2007–2014), a następnie Marszałka Sejmu. Absolwent Oksfordu, znany z liberalno-konserwatywnych poglądów i silnego atlantyzmu.",
+          "coords": { "economic": 0.85, "social": 0.1, "system": 0.1 }
+        },
+        {
+          "name": "Tomasz Siemoniak",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tomasz_Siemoniak_2024.png/330px-Tomasz_Siemoniak_2024.png",
+          "bio": "Tomasz Siemoniak jest Ministrem Spraw Wewnętrznych i Administracji w rządzie Donalda Tuska od 2024 roku oraz byłym szefem MSWiA i wicepremierem w rządach PO-PSL (2013–2015). Wcześniej przez pięć lat kierował resortem obrony narodowej i nadzorował modernizację armii. Jest ceniony za pragmatyczne i propaństwowe podejście do kwestii bezpieczeństwa.",
+          "coords": { "economic": 0.75, "social": 0.15, "system": -0.05 }
+        },
+        {
+          "name": "Sławomir Nitras",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/S%C5%82awomir_Nitras.jpg/330px-S%C5%82awomir_Nitras.jpg",
+          "bio": "Sławomir Nitras jest Ministrem Sportu i Turystyki w rządzie Donalda Tuska i posłem PO od 2007 roku. Znany z bezkompromisowej postawy wobec PiS i głośnych wystąpień sejmowych, był jednym z liderów opozycji parlamentarnej w latach 2015–2023. Reprezentuje liberalne, proeuropejskie skrzydło Platformy Obywatelskiej.",
+          "coords": { "economic": 0.7, "social": -0.1, "system": 0.15 }
+        }
+      ]
     },
     {
       "id": "narodowy_katolik",
@@ -106,7 +220,26 @@
       "blurb": "Polska Chrystusem narodów — i niech ktoś spróbuje z tym polemizować.",
       "coords": { "economic": -0.1, "social": 0.9, "system": 0.5 },
       "party": "PiS",
-      "politician": "Zbigniew Ziobro"
+      "politicians": [
+        {
+          "name": "Zbigniew Ziobro",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Min._Zbigniew_Ziobro_2022.jpg/330px-Min._Zbigniew_Ziobro_2022.jpg",
+          "bio": "Zbigniew Ziobro jest byłym Ministrem Sprawiedliwości i Prokuratorem Generalnym (2015–2023) oraz liderem partii Solidarna Polska, wchodzącej w skład Zjednoczonej Prawicy. Architekt kontrowersyjnych reform wymiaru sprawiedliwości, stawianych przez UE jako naruszenie praworządności. Jest jedną z najbardziej bezkompromisowych postaci polskiej prawicy narodowo-konserwatywnej.",
+          "coords": { "economic": -0.1, "social": 0.9, "system": 0.55 }
+        },
+        {
+          "name": "Ryszard Legutko",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/State_of_the_EU_MEPs_debate_measures_to_improve_Europe_%2850349452707%29_%28cropped%29_%28cropped%29.jpg/330px-State_of_the_EU_MEPs_debate_measures_to_improve_Europe_%2850349452707%29_%28cropped%29_%28cropped%29.jpg",
+          "bio": "Ryszard Legutko jest wieloletnim posłem do Parlamentu Europejskiego z ramienia PiS i filozofem politycznym. Autor głośnej książki \"Triumf człowieka pospolitego\" — krytyki liberalnej demokracji — przetłumaczonej na wiele języków. Jeden z głównych ideologów konserwatywno-narodowego nurtu w PiS i współprzewodniczący grupy EKR w PE.",
+          "coords": { "economic": -0.05, "social": 0.95, "system": 0.4 }
+        },
+        {
+          "name": "Elżbieta Witek",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/El%C5%BCbieta_Witek.jpg/330px-El%C5%BCbieta_Witek.jpg",
+          "bio": "Elżbieta Witek pełniła funkcje Ministra Spraw Wewnętrznych i Administracji (2019–2020) oraz Marszałka Sejmu (2020–2023) z ramienia PiS. Wcześniej była szefową Gabinetu Politycznego Prezesa Rady Ministrów Mateusza Morawieckiego. Uznawana za jedną z najbliższych współpracowniczek Jarosława Kaczyńskiego i lojalną rzeczniczkę jego polityki.",
+          "coords": { "economic": -0.2, "social": 0.88, "system": 0.45 }
+        }
+      ]
     },
     {
       "id": "eurokrata_miejski",
@@ -114,7 +247,26 @@
       "blurb": "Rower, flat white i niezachwiana wiara w instytucje — unijne oczywiście.",
       "coords": { "economic": 0.3, "social": -0.7, "system": -0.85 },
       "party": "Polska 2050",
-      "politician": "Szymon Hołownia"
+      "politicians": [
+        {
+          "name": "Szymon Hołownia",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Szymon_Ho%C5%82ownia_sejm%2C_2026_%28cropped2%29.jpg/330px-Szymon_Ho%C5%82ownia_sejm%2C_2026_%28cropped2%29.jpg",
+          "bio": "Szymon Hołownia jest założycielem i liderem partii Polska 2050 oraz Marszałkiem Sejmu RP od 2023 roku. Były dziennikarz i prezenter telewizyjny, kandydował w wyborach prezydenckich 2020 roku, uzyskując ponad 13% głosów jako niezależny kandydat. Jego partia weszła w koalicję Trzeciej Drogi z PSL, stając się częścią rządu Donalda Tuska.",
+          "coords": { "economic": 0.3, "social": -0.7, "system": -0.85 }
+        },
+        {
+          "name": "Michał Kobosko",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/1718288389061_20240611_KOBOSKO_Michal_PL_004.jpg/330px-1718288389061_20240611_KOBOSKO_Michal_PL_004.jpg",
+          "bio": "Michał Kobosko jest przewodniczącym Polski 2050 i posłem na Sejm RP od 2023 roku. Były dziennikarz i publicysta, pracował m.in. dla Newsweek Polska i Wprost, zanim związał się z ruchem Szymona Hołowni. Jako szef partii koordynuje jej działalność w koalicji rządzącej i pracuje nad poszerzeniem elektoratu centrum.",
+          "coords": { "economic": 0.25, "social": -0.65, "system": -0.8 }
+        },
+        {
+          "name": "Paulina Hennig-Kloska",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Paulina_Hennig-Kloska_%28cropped%29.jpg/330px-Paulina_Hennig-Kloska_%28cropped%29.jpg",
+          "bio": "Paulina Hennig-Kloska jest Ministrą Klimatu i Środowiska w rządzie Donalda Tuska i posłanką Polski 2050. Ekonomistka z wykształcenia i przedsiębiorczyni, zaangażowana w transformację energetyczną i politykę klimatyczną Polski. Reprezentuje proeuropejskie, centroliberalne skrzydło ruchu Hołowni.",
+          "coords": { "economic": 0.35, "social": -0.75, "system": -0.82 }
+        }
+      ]
     },
     {
       "id": "patriota_socjalny",
@@ -122,7 +274,26 @@
       "blurb": "Nasz naród, nasz socjal, nasze granice. Bruksela niech się nie wtrąca.",
       "coords": { "economic": -0.5, "social": 0.65, "system": 0.85 },
       "party": "Konfederacja",
-      "politician": "Krzysztof Bosak"
+      "politicians": [
+        {
+          "name": "Krzysztof Bosak",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Krzysztof_Bosak.jpg/330px-Krzysztof_Bosak.jpg",
+          "bio": "Krzysztof Bosak jest wicemarszałkiem Sejmu RP od 2023 roku i współprzewodniczącym Konfederacji z ramienia Ruchu Narodowego. W wyborach prezydenckich 2020 roku uzyskał ponad 6% głosów, promując narodowo-konserwatywny program. Łączy socjalny konserwatyzm ekonomiczny z twardym sprzeciwem wobec polityki unijnej i imigracyjnej.",
+          "coords": { "economic": -0.5, "social": 0.65, "system": 0.85 }
+        },
+        {
+          "name": "Marek Jakubiak",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Marek_Jakubiak_2019_%28cropped%29.jpg/330px-Marek_Jakubiak_2019_%28cropped%29.jpg",
+          "bio": "Marek Jakubiak jest posłem na Sejm RP z ramienia Konfederacji i wieloletnim działaczem prawicy narodowej. Przedsiębiorca i samorządowiec, znany z eurosceptycznych i antyimigranckich poglądów oraz obrony suwerenności Polski wobec Brukseli. Reprezentuje konserwatywno-ekonomiczne skrzydło Konfederacji.",
+          "coords": { "economic": -0.4, "social": 0.75, "system": 0.8 }
+        },
+        {
+          "name": "Witold Tumanowicz",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Witold_Tumanowicz_2023.jpg/330px-Witold_Tumanowicz_2023.jpg",
+          "bio": "Witold Tumanowicz jest posłem na Sejm RP z ramienia Konfederacji i działaczem Ruchu Narodowego. Historyk z wykształcenia, znany z radykalnych poglądów narodowych, sprzeciwu wobec przyjmowania uchodźców i krytyki liberalnych wartości Zachodu. Należy do twardego, ideologicznego jądra polskiego nacjonalizmu parlamentarnego.",
+          "coords": { "economic": -0.55, "social": 0.8, "system": 0.9 }
+        }
+      ]
     },
     {
       "id": "zielona_aktywistka",
@@ -130,7 +301,26 @@
       "blurb": "Klimat, prawa kobiet i przekonanie, że każdy protest można wygrać.",
       "coords": { "economic": -0.5, "social": -0.9, "system": 0.2 },
       "party": "Lewica",
-      "politician": "Robert Biedroń"
+      "politicians": [
+        {
+          "name": "Robert Biedroń",
+          "photo": null,
+          "bio": "Robert Biedroń jest posłem do Parlamentu Europejskiego i byłym liderem partii Wiosna, którą założył w 2019 roku. Pierwszy otwarcie gejowski prezydent polskiego miasta (Słupsk, 2014–2019), stał się symbolem walki o prawa LGBT w Polsce. Aktywnie zabiega o prawa kobiet, politykę klimatyczną i postępowe wartości społeczne na forum unijnym.",
+          "coords": { "economic": -0.45, "social": -0.9, "system": 0.15 }
+        },
+        {
+          "name": "Anna Maria Żukowska",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Anna_Maria_%C5%BBukowska_2023_%28cropped%29.jpg/330px-Anna_Maria_%C5%BBukowska_2023_%28cropped%29.jpg",
+          "bio": "Anna Maria Żukowska jest przewodniczącą Sojuszu Lewicy Demokratycznej i posłanką na Sejm RP. Zaangażowana feministka i rzeczniczka praw reprodukcyjnych, jedna z twarzy protestów Strajku Kobiet po wyroku TK w 2020 roku. Aktywnie promuje zieloną transformację energetyczną i prawa osób LGBTQ+.",
+          "coords": { "economic": -0.55, "social": -0.95, "system": 0.2 }
+        },
+        {
+          "name": "Joanna Senyszyn",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Joanna_Senyszyn_Sejm_2019.jpg/330px-Joanna_Senyszyn_Sejm_2019.jpg",
+          "bio": "Joanna Senyszyn jest posłanką SLD i wieloletnią działaczką lewicy, zasiadającą w Sejmie od 2001 roku. Ekonomistka i profesorka akademicka, znana z bezkompromisowej obrony świeckości państwa, praw kobiet i środowisk LGBT. Jedna z najdłużej służących posłanek polskiej lewicy, konsekwentnie reprezentująca progresywne wartości społeczne.",
+          "coords": { "economic": -0.6, "social": -0.88, "system": 0.25 }
+        }
+      ]
     }
   ],
   "views": {
