@@ -7,6 +7,7 @@ const DOMAINS = [
   { id: 'pl', flag: '🇵🇱', name: 'Polska', enabled: true },
   { id: 'eu', flag: '🇪🇺', name: 'EU', enabled: true },
   { id: 'us', flag: '🇺🇸', name: 'USA', enabled: true },
+  { id: 'uk', flag: '🇬🇧', name: 'UK', enabled: true },
 ];
 
 const HOME_UI = {
