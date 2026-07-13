@@ -121,6 +121,9 @@ export function resultHTML(scores, pack, view) {
     ${rankingBlock}
     ${nearbyBlock}
     ${credit}
-    <button class="restart">${pack.ui.restart}</button>
+    <div class="result-actions">
+      <button class="restart">${pack.ui.restart}</button>
+      <button class="share" type="button">🔗 <span class="share-label"></span></button>
+    </div>
   </section>`;
 }
