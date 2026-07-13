@@ -103,7 +103,7 @@ function renderResult() {
   state.screen = 'result';
   document.title = `${HOME_UI.title} — ${pack.meta.name}`;
   const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
-  app.innerHTML = resultHTML(scores, pack, state.view);
+  app.innerHTML = resultHTML(scores, pack, state.view, state.answers);
   app.querySelectorAll('.tab').forEach(t =>
     t.addEventListener('click', () => { state.view = t.dataset.view; renderResult(); })
   );
