@@ -1,0 +1,308 @@
+{
+  "meta": { "id": "uk", "name": "United Kingdom", "lang": "en", "flag": "🇬🇧" },
+  "ui": {
+    "title": "Political compass",
+    "tagline": "A game, not science.",
+    "pickDomain": "Choose your arena",
+    "comingSoon": "Coming soon",
+    "start": "Start",
+    "back": "Back",
+    "restart": "Restart",
+    "result": "Your result",
+    "match": "Closest to",
+    "alsoClose": "Also close to",
+    "views": { "compass": "Compass", "triangle": "Triangle", "horseshoe": "Horseshoe" }
+  },
+  "scale": { "points": 5, "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"] },
+  "axes": {
+    "economic": { "min": "State & equality", "max": "Free market" },
+    "social": { "min": "Progressive", "max": "Traditional" },
+    "system": { "min": "Establishment", "max": "Anti-establishment" }
+  },
+  "questions": [
+    { "id": "q1", "text": "The NHS should be fully publicly funded and never opened up to private providers.", "weights": { "economic": -1 } },
+    { "id": "q2", "text": "Raising income tax on the highest earners is the fairest way to fund public services.", "weights": { "economic": -0.9 } },
+    { "id": "q3", "text": "Rail, water, and energy companies should be brought back into public ownership.", "weights": { "economic": -0.9 } },
+    { "id": "q4", "text": "A wealth tax on assets above £10 million would help reduce inequality without harming growth.", "weights": { "economic": -0.8 } },
+    { "id": "q5", "text": "University tuition fees should be abolished and higher education funded through general taxation.", "weights": { "economic": -0.7 } },
+    { "id": "q6", "text": "The two-child benefit cap is a cruel policy that punishes children for decisions made by their parents.", "weights": { "economic": -0.7 } },
+    { "id": "q7", "text": "The state pension triple lock — rising by whichever is highest of earnings, inflation, or 2.5% — is unaffordable and should be scrapped.", "weights": { "economic": 0.6 } },
+    { "id": "q8", "text": "Free markets and deregulation will do more to grow the UK economy than government investment ever could.", "weights": { "economic": 1 } },
+    { "id": "q9", "text": "Non-domicile tax status should be abolished — wealthy foreign residents should pay full UK taxes.", "weights": { "economic": -0.7 } },
+    { "id": "q10", "text": "VAT should be applied to private school fees just as it is to other services.", "weights": { "economic": -0.5, "social": -0.3 } },
+    { "id": "q11", "text": "Grammar schools select the brightest pupils and give them opportunities they deserve — we should build more of them.", "weights": { "economic": 0.3, "social": 0.6 } },
+    { "id": "q12", "text": "Britain should rejoin the European Single Market to boost trade and growth.", "weights": { "economic": -0.3, "system": -0.5 } },
+    { "id": "q13", "text": "The British people should have a second referendum on Brexit now that the full consequences are clear.", "weights": { "system": -0.4, "social": -0.4 } },
+    { "id": "q14", "text": "Britain must control its own borders — the small-boats crisis shows that current immigration policy has completely failed.", "weights": { "social": 0.7, "system": 0.4 } },
+    { "id": "q15", "text": "Offshore processing of asylum seekers — like the Rwanda scheme — is a legitimate way to deter dangerous Channel crossings.", "weights": { "social": 0.7, "system": 0.3 } },
+    { "id": "q16", "text": "Britain should leave the European Convention on Human Rights to take back control of its borders and justice system.", "weights": { "social": 0.5, "system": 0.6 } },
+    { "id": "q17", "text": "Scotland should have the right to hold an independence referendum if its parliament votes for one.", "weights": { "system": 0.5, "social": -0.3 } },
+    { "id": "q18", "text": "The monarchy is a national institution worth preserving and celebrating.", "weights": { "social": 0.5, "system": -0.4 } },
+    { "id": "q19", "text": "The House of Lords is an undemocratic relic — it should be replaced by an elected second chamber.", "weights": { "system": 0.7 } },
+    { "id": "q20", "text": "First-past-the-post elections should be replaced with proportional representation.", "weights": { "system": 0.6 } },
+    { "id": "q21", "text": "Britain must reach net zero carbon emissions by 2050 — the costs to the economy are worth it.", "weights": { "economic": -0.4, "social": -0.5 } },
+    { "id": "q22", "text": "Workers should have the right to strike without the threat of being replaced by agency staff.", "weights": { "economic": -0.7 } },
+    { "id": "q23", "text": "Transgender people should be able to legally change their gender without a medical diagnosis.", "weights": { "social": -0.8 } },
+    { "id": "q24", "text": "The legal definition of 'woman' should be based solely on biological sex, not gender identity.", "weights": { "social": 0.7 } },
+    { "id": "q25", "text": "Drug possession for personal use should be decriminalised rather than treated as a criminal matter.", "weights": { "social": -0.7 } },
+    { "id": "q26", "text": "Greater devolution of power to English regions, not just Scotland and Wales, would make the UK more democratic.", "weights": { "system": 0.5 } },
+    { "id": "q27", "text": "The BBC should be fully funded by the licence fee and kept free from commercial pressures.", "weights": { "economic": -0.4, "system": -0.3 } },
+    { "id": "q28", "text": "Westminster politicians are out of touch with ordinary people — we need a completely fresh political class.", "weights": { "system": 0.9 } },
+    { "id": "q29", "text": "Britain's foreign aid budget should be restored and protected — it is in our national interest to help the world's poorest.", "weights": { "economic": -0.3, "system": -0.4 } },
+    { "id": "q30", "text": "Housing is unaffordable because planning laws block development — we should build far more homes, including on the greenbelt.", "weights": { "economic": 0.4, "system": 0.3 } }
+  ],
+  "personas": [
+    {
+      "id": "one_nation_tory",
+      "name": "The One-Nation Wet",
+      "blurb": "Paternalistic, pro-NHS, vaguely pro-European, and appalled by the current state of the Conservative Party. Owns a Barbour jacket and describes Thatcher as 'complicated'.",
+      "party": "Conservative",
+      "coords": { "economic": 0.3, "social": 0.4, "system": -0.5 },
+      "politicians": [
+        {
+          "name": "Rishi Sunak",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Portrait_of_Prime_Minister_Rishi_Sunak_%28cropped%29.jpg/330px-Portrait_of_Prime_Minister_Rishi_Sunak_%28cropped%29.jpg",
+          "bio": "Rishi Sunak served as Prime Minister from October 2022 to July 2024, becoming the UK's first British-Asian head of government. He previously served as Chancellor of the Exchequer under Boris Johnson and is a former Goldman Sachs banker. He led the Conservatives to their worst general election defeat in modern history in 2024.",
+          "coords": { "economic": 0.5, "social": 0.3, "system": -0.4 }
+        },
+        {
+          "name": "Jeremy Hunt",
+          "photo": null,
+          "bio": "Jeremy Hunt served as Chancellor of the Exchequer under Rishi Sunak from 2022 to 2024. He previously held senior Cabinet roles including Foreign Secretary and Health Secretary over more than a decade in government. He is regarded as a moderate, pro-business One-Nation Conservative.",
+          "coords": { "economic": 0.6, "social": 0.2, "system": -0.5 }
+        },
+        {
+          "name": "Damian Green",
+          "photo": null,
+          "bio": "Damian Green is a veteran Conservative MP who served as de facto Deputy Prime Minister under Theresa May before resigning in 2017. He is a leading voice for moderate, One-Nation Conservatism and a co-founder of the Tory Reform Group. He has been a consistent critic of his party's drift toward hard Brexit and populism.",
+          "coords": { "economic": 0.3, "social": 0.3, "system": -0.6 }
+        }
+      ]
+    },
+    {
+      "id": "thatcherite",
+      "name": "The Thatcherite Shock Jock",
+      "blurb": "Believes the 1970s never ended and that what Britain really needs is another dose of privatisation and union-busting. Has a signed photo of Hayek on the wall. Once cried at a Liz Truss budget.",
+      "party": "Conservative",
+      "coords": { "economic": 0.85, "social": 0.6, "system": 0.2 },
+      "politicians": [
+        {
+          "name": "Kemi Badenoch",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Official_portrait_of_Kemi_Badenoch_MP%2C_2024_%283x4_cropped%29.jpg/330px-Official_portrait_of_Kemi_Badenoch_MP%2C_2024_%283x4_cropped%29.jpg",
+          "bio": "Kemi Badenoch became leader of the Conservative Party in November 2024 following their catastrophic 2024 general election defeat. She previously served as Business and Trade Secretary and is known for her combative style and scepticism of progressive social policies. She is a committed free-marketeer and critic of 'woke' ideology in public institutions.",
+          "coords": { "economic": 0.8, "social": 0.7, "system": 0.1 }
+        },
+        {
+          "name": "Liz Truss",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Official_portrait_of_Liz_Truss_%283x4_cropped_b%29.jpg/330px-Official_portrait_of_Liz_Truss_%283x4_cropped_b%29.jpg",
+          "bio": "Liz Truss served as Prime Minister for just 45 days in 2022, the shortest tenure in British history, after her unfunded tax-cutting mini-budget crashed the pound and gilt markets. She is a committed Thatcherite and libertarian who believes the British establishment conspired to stop her low-tax revolution. She has since positioned herself as a leader of the international nationalist right.",
+          "coords": { "economic": 0.95, "social": 0.5, "system": 0.5 }
+        },
+        {
+          "name": "Boris Johnson",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Boris_Johnson_official_portrait_%28cropped%29.jpg/330px-Boris_Johnson_official_portrait_%28cropped%29.jpg",
+          "bio": "Boris Johnson served as Prime Minister from 2019 to 2022 and led the Conservatives to an 80-seat majority in the 2019 general election on a 'Get Brexit Done' platform. He was forced to resign following a series of ethics scandals including the Partygate affair during Covid lockdowns. He remains a hugely divisive figure: beloved by the Conservative membership and loathed by much of the establishment.",
+          "coords": { "economic": 0.5, "social": 0.6, "system": 0.6 }
+        }
+      ]
+    },
+    {
+      "id": "starmerite",
+      "name": "The Starmerite Centrist",
+      "blurb": "Voted Remain, shops at Waitrose, and genuinely believes competent managerialism is a political vision. Thinks the last Labour government was basically fine, actually, if you think about it properly.",
+      "party": "Labour",
+      "coords": { "economic": -0.2, "social": -0.1, "system": -0.5 },
+      "politicians": [
+        {
+          "name": "Keir Starmer",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Prime_Minister_Keir_Starmer_Portrait_%28cropped%29.jpg/330px-Prime_Minister_Keir_Starmer_Portrait_%28cropped%29.jpg",
+          "bio": "Keir Starmer became Prime Minister in July 2024 after Labour's landslide general election victory, ending 14 years of Conservative government. He previously served as Director of Public Prosecutions and knighted for his public service before becoming an MP. He moved Labour decisively to the centre, expelling Jeremy Corbyn and dropping many of the left's signature policies.",
+          "coords": { "economic": -0.2, "social": -0.1, "system": -0.5 }
+        },
+        {
+          "name": "Rachel Reeves",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Rachel_Reeves_Official_Cabinet_Portrait%2C_July_2024_%28cropped_2%29_%28cropped%29.jpg/330px-Rachel_Reeves_Official_Cabinet_Portrait%2C_July_2024_%28cropped_2%29_%28cropped%29.jpg",
+          "bio": "Rachel Reeves became Chancellor of the Exchequer in July 2024, the first woman ever to hold that office. A former Bank of England economist, she has championed fiscal discipline and economic stability as the twin pillars of Labour's economic credibility. Her 2024 autumn budget raised employer National Insurance contributions and broke some of Labour's pre-election commitments on tax.",
+          "coords": { "economic": 0.1, "social": -0.1, "system": -0.5 }
+        },
+        {
+          "name": "Wes Streeting",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wes_Streeting_Official_Cabinet_Portrait%2C_July_2024_%28cropped%29_2.jpg/330px-Wes_Streeting_Official_Cabinet_Portrait%2C_July_2024_%28cropped%29_2.jpg",
+          "bio": "Wes Streeting is Secretary of State for Health and Social Care and one of the most prominent modernisers in the Labour Party. He has controversially argued that the NHS needs reform and that the party must engage with private providers rather than treating the health service as a 'religion'. He is widely seen as a likely future Labour leader.",
+          "coords": { "economic": 0.0, "social": 0.0, "system": -0.4 }
+        }
+      ]
+    },
+    {
+      "id": "socialist_left",
+      "name": "The Socialist Firebrand",
+      "blurb": "Thinks Keir Starmer sold out in the first 48 hours, wants to tax the billionaires out of existence, and still has a faint hope that this time the people's will cannot be stopped. Owns a tote bag from a cancelled indie bookshop.",
+      "party": "Labour",
+      "coords": { "economic": -0.85, "social": -0.5, "system": 0.3 },
+      "politicians": [
+        {
+          "name": "Jeremy Corbyn",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Official_portrait_of_Jeremy_Corbyn_MP%2C_2024_%283x4_cropped%29.jpg/330px-Official_portrait_of_Jeremy_Corbyn_MP%2C_2024_%283x4_cropped%29.jpg",
+          "bio": "Jeremy Corbyn led the Labour Party from 2015 to 2020, taking it to its most left-wing platform in decades with pledges to renationalise rail, water, and energy and massively expand public spending. He was expelled from the Labour Party by Keir Starmer in 2024 but won re-election as an independent MP for Islington North with a substantial majority. He remains the figurehead of the British socialist left.",
+          "coords": { "economic": -0.95, "social": -0.6, "system": 0.4 }
+        },
+        {
+          "name": "Diane Abbott",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Official_portrait_of_Ms_Diane_Abbott_crop_2.jpg/330px-Official_portrait_of_Ms_Diane_Abbott_crop_2.jpg",
+          "bio": "Diane Abbott is a veteran left-wing Labour MP and a close ally of Jeremy Corbyn who became the first Black woman elected to the UK Parliament in 1987. She was suspended from the Labour whip in 2023 over a letter about racism and eventually allowed to stand as a Labour candidate in 2024, retaining her Hackney North seat. She is a prominent critic of British foreign policy and austerity.",
+          "coords": { "economic": -0.9, "social": -0.5, "system": 0.3 }
+        },
+        {
+          "name": "Anna Turley",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Official_portrait_of_Anna_Turley_MP_crop_2%2C_2024.jpg/330px-Official_portrait_of_Anna_Turley_MP_crop_2%2C_2024.jpg",
+          "bio": "Anna Turley is the MP for Redcar, a seat in the traditional industrial heartlands of Teesside which Labour won back in the 2024 landslide. She is a strong advocate for workers' rights, public ownership, and investment in post-industrial communities. She represents a Labour left that is focused on economic redistribution and union rights rather than culture war issues.",
+          "coords": { "economic": -0.7, "social": -0.2, "system": 0.2 }
+        }
+      ]
+    },
+    {
+      "id": "lib_dem",
+      "name": "The Orange Book Liberal",
+      "blurb": "Pro-European, pro-NHS, pro-PR, and stridently opposed to whatever the Tories just did. Will describe themselves as 'actually quite radical' before supporting a policy that wouldn't alarm a 1990s Blairite.",
+      "party": "Liberal Democrats",
+      "coords": { "economic": 0.0, "social": -0.6, "system": -0.2 },
+      "politicians": [
+        {
+          "name": "Ed Davey",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Official_portrait_of_Ed_Davey_MP_crop_2%2C_2024.jpg/330px-Official_portrait_of_Ed_Davey_MP_crop_2%2C_2024.jpg",
+          "bio": "Ed Davey has led the Liberal Democrats since 2020 and presided over the party's best ever general election result in 2024, winning 72 seats. He served as Secretary of State for Energy and Climate Change in the 2010–15 Coalition government and has made mental health and social care signature issues. His party won dozens of traditionally safe Conservative seats in the south of England.",
+          "coords": { "economic": 0.1, "social": -0.5, "system": -0.2 }
+        },
+        {
+          "name": "Daisy Cooper",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Official_portrait_of_Daisy_Cooper_MP%2C_2025_%28cropped%29.jpg/330px-Official_portrait_of_Daisy_Cooper_MP%2C_2025_%28cropped%29.jpg",
+          "bio": "Daisy Cooper is the Liberal Democrats' Deputy Leader and MP for St Albans, a seat she won from the Conservatives in 2019. She has been a prominent voice on NHS reform, housing, and electoral reform. She represents the party's more socially liberal and pro-European wing.",
+          "coords": { "economic": -0.1, "social": -0.6, "system": -0.1 }
+        },
+        {
+          "name": "Layla Moran",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Official_portrait_of_Layla_Moran_MP_crop_2%2C_2024.jpg/330px-Official_portrait_of_Layla_Moran_MP_crop_2%2C_2024.jpg",
+          "bio": "Layla Moran is the Liberal Democrat MP for Oxford West and Abingdon and the party's foreign affairs spokesperson. She is of Palestinian descent and has been a prominent voice on the conflict in Gaza, calling for an immediate ceasefire. She stood for the Lib Dem leadership in 2020 on a bold progressive platform including a closer relationship with the European Union.",
+          "coords": { "economic": -0.2, "social": -0.7, "system": 0.1 }
+        }
+      ]
+    },
+    {
+      "id": "reform_populist",
+      "name": "The Reform Renegade",
+      "blurb": "Believes the BBC, the civil service, the NHS, and the judiciary are all conspiring against the British people — and he can prove it, because he read it in a newsletter. Voted Leave twice in his head.",
+      "party": "Reform UK",
+      "coords": { "economic": 0.6, "social": 0.8, "system": 0.9 },
+      "politicians": [
+        {
+          "name": "Nigel Farage",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Official_portrait_of_Nigel_Farage_MP_%283x4_cropped%29.jpg/330px-Official_portrait_of_Nigel_Farage_MP_%283x4_cropped%29.jpg",
+          "bio": "Nigel Farage is the leader of Reform UK and finally became an MP in 2024 at his eighth attempt, winning Clacton. He was the driving force behind the Brexit referendum, having led UKIP and then the Brexit Party for decades, and is widely credited — or blamed — for forcing the 2016 vote. He is the most influential British politician never to have held government office.",
+          "coords": { "economic": 0.7, "social": 0.8, "system": 0.9 }
+        },
+        {
+          "name": "Richard Tice",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Official_portrait_of_Richard_Tice_MP_crop_2.jpg/330px-Official_portrait_of_Richard_Tice_MP_crop_2.jpg",
+          "bio": "Richard Tice is the MP for Boston and Skegness and a former chairman of Reform UK, having co-founded the Brexit Party with Nigel Farage. He is a property developer and businessman who champions low taxes, zero net immigration, and scrapping net-zero climate targets. He has been a consistent critic of the mainstream media and what he sees as elite groupthink.",
+          "coords": { "economic": 0.8, "social": 0.7, "system": 0.8 }
+        },
+        {
+          "name": "Zia Yusuf",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Zia_Yusuf_addresses_Reform_UK_30th_June_2024_-_Birmingham_NEC_%28cropped_3x4%29.jpg/330px-Zia_Yusuf_addresses_Reform_UK_30th_June_2024_-_Birmingham_NEC_%28cropped_3x4%29.jpg",
+          "bio": "Zia Yusuf is the chairman of Reform UK and a former tech entrepreneur who joined the party in 2023. He has been instrumental in building Reform's digital infrastructure, fundraising, and grassroots membership to over 100,000 members. He represents a younger, more tech-savvy strand of right-wing populism within the party.",
+          "coords": { "economic": 0.7, "social": 0.6, "system": 0.8 }
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "The Ecologically Earnest",
+      "blurb": "Wants to save the planet, tax the rich, and dismantle capitalism — possibly in that order. Cycles everywhere, eats no meat, and is the most morally consistent person in any room they enter, as they will eventually point out.",
+      "party": "Green Party",
+      "coords": { "economic": -0.7, "social": -0.8, "system": 0.4 },
+      "politicians": [
+        {
+          "name": "Carla Denyer",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Official_portrait_of_Carla_Denyer_MP_crop_2.jpg/330px-Official_portrait_of_Carla_Denyer_MP_crop_2.jpg",
+          "bio": "Carla Denyer is co-leader of the Green Party of England and Wales and MP for Bristol Central, which she won in the 2024 general election. An engineer by training, she has championed radical climate action, a Green New Deal, and a four-day working week. She is regarded as one of the most effective communicators of left-wing green politics in Britain.",
+          "coords": { "economic": -0.7, "social": -0.8, "system": 0.4 }
+        },
+        {
+          "name": "Adrian Ramsay",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Official_portrait_of_Adrian_Ramsay_MP_crop_2.jpg/330px-Official_portrait_of_Adrian_Ramsay_MP_crop_2.jpg",
+          "bio": "Adrian Ramsay is co-leader of the Green Party and MP for Waveney Valley, a rural Norfolk seat he won from the Conservatives in 2024. He has a background in local government and community campaigning. He represents the Greens' appeal beyond urban strongholds to rural communities concerned about the environment, local services, and democratic reform.",
+          "coords": { "economic": -0.6, "social": -0.7, "system": 0.3 }
+        },
+        {
+          "name": "Mark Ferguson",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Official_portrait_of_Mark_Ferguson_MP_crop_2.jpg/330px-Official_portrait_of_Mark_Ferguson_MP_crop_2.jpg",
+          "bio": "Mark Ferguson is the Green Party MP for Brighton Pavilion, winning the seat vacated by Caroline Lucas — the party's former sole MP — in the 2024 general election. He has a background in arts and community work and is an advocate for renters' rights, public ownership, and electoral reform. Brighton Pavilion remains the heartland of Green politics in England.",
+          "coords": { "economic": -0.75, "social": -0.85, "system": 0.5 }
+        }
+      ]
+    },
+    {
+      "id": "scottish_nationalist",
+      "name": "The Tartan Independence Dreamer",
+      "blurb": "Believes an independent Scotland will be a Nordic-style social democracy with oil wealth and universal free prescriptions. Has not fully worked out the currency question but is confident it'll sort itself out.",
+      "party": "SNP",
+      "coords": { "economic": -0.5, "social": -0.4, "system": 0.5 },
+      "politicians": [
+        {
+          "name": "John Swinney",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/First_Minister_John_Swinney_%28cropped%29.jpg/330px-First_Minister_John_Swinney_%28cropped%29.jpg",
+          "bio": "John Swinney became First Minister of Scotland in May 2024 after Humza Yousaf's resignation, returning to frontline leadership after years as a senior minister and deputy first minister. He is a cautious, experienced political operator who has been central to SNP government for over two decades. He faces the challenge of renewing the independence movement while managing the pressures of governing Scotland through a minority administration.",
+          "coords": { "economic": -0.4, "social": -0.3, "system": 0.4 }
+        },
+        {
+          "name": "Angus Robertson",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Angus_Robertson_-_53727242996_%28cropped%29.jpg/330px-Angus_Robertson_-_53727242996_%28cropped%29.jpg",
+          "bio": "Angus Robertson is the Scottish Government's Cabinet Secretary for Constitution, External Affairs and Culture and was for many years the SNP's leader at Westminster. He is regarded as one of the more moderate and pro-European voices within the SNP leadership. He lost his Westminster seat of Moray in 2017 before returning to frontline politics at Holyrood.",
+          "coords": { "economic": -0.4, "social": -0.4, "system": 0.3 }
+        },
+        {
+          "name": "Stephen Flynn",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Economy%2C_Tourism_and_Transport_Secretary_-_55282960771_%28cropped%29.jpg/330px-Economy%2C_Tourism_and_Transport_Secretary_-_55282960771_%28cropped%29.jpg",
+          "bio": "Stephen Flynn is the SNP's leader at Westminster and MP for Aberdeen South. He became the Westminster group leader in 2022 at the age of 31, making him one of the youngest leaders of a parliamentary group at Westminster. He is a vocal critic of the UK government's economic policies and a passionate advocate for Scottish independence and North Sea oil revenues.",
+          "coords": { "economic": -0.6, "social": -0.4, "system": 0.6 }
+        }
+      ]
+    },
+    {
+      "id": "red_wall",
+      "name": "The Red Wall Traditionalist",
+      "blurb": "Voted Labour for decades out of habit, then Brexit out of principle, and now genuinely isn't sure. Works in a trade or the public sector, thinks the politicians don't care about people like him, and is probably right.",
+      "party": "Reform UK",
+      "coords": { "economic": -0.3, "social": 0.7, "system": 0.7 },
+      "politicians": [
+        {
+          "name": "Nigel Farage",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Official_portrait_of_Nigel_Farage_MP_%283x4_cropped%29.jpg/330px-Official_portrait_of_Nigel_Farage_MP_%283x4_cropped%29.jpg",
+          "bio": "Nigel Farage is the leader of Reform UK and finally became an MP in 2024 at his eighth attempt, winning Clacton. He was the driving force behind the Brexit referendum, having led UKIP and then the Brexit Party for decades, and is widely credited — or blamed — for forcing the 2016 vote. He is the most influential British politician never to have held government office.",
+          "coords": { "economic": 0.7, "social": 0.8, "system": 0.9 }
+        },
+        {
+          "name": "Richard Tice",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Official_portrait_of_Richard_Tice_MP_crop_2.jpg/330px-Official_portrait_of_Richard_Tice_MP_crop_2.jpg",
+          "bio": "Richard Tice is the MP for Boston and Skegness and a former chairman of Reform UK, having co-founded the Brexit Party with Nigel Farage. He is a property developer and businessman who champions low taxes, zero net immigration, and scrapping net-zero climate targets. He has been a consistent critic of the mainstream media and what he sees as elite groupthink.",
+          "coords": { "economic": 0.8, "social": 0.7, "system": 0.8 }
+        },
+        {
+          "name": "Zia Yusuf",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Zia_Yusuf_addresses_Reform_UK_30th_June_2024_-_Birmingham_NEC_%28cropped_3x4%29.jpg/330px-Zia_Yusuf_addresses_Reform_UK_30th_June_2024_-_Birmingham_NEC_%28cropped_3x4%29.jpg",
+          "bio": "Zia Yusuf is the chairman of Reform UK and a former tech entrepreneur who joined the party in 2023. He has been instrumental in building Reform's digital infrastructure, fundraising, and grassroots membership to over 100,000 members. He represents a younger, more tech-savvy strand of right-wing populism within the party.",
+          "coords": { "economic": 0.7, "social": 0.6, "system": 0.8 }
+        }
+      ]
+    }
+  ],
+  "views": {
+    "compass": { "x": "economic", "y": "social" },
+    "triangle": { "poles": [
+      { "label": "Liberal", "color": "#E1A200", "coords": { "economic": 0.0, "social": -0.7, "system": -0.2 } },
+      { "label": "Conservative", "color": "#2563EB", "coords": { "economic": 0.6, "social": 0.7, "system": 0.0 } },
+      { "label": "Socialist", "color": "#E5484D", "coords": { "economic": -0.8, "social": -0.2, "system": 0.0 } }
+    ] },
+    "horseshoe": { "axis": "economic", "radical": "system" }
+  }
+}
