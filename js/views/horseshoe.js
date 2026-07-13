@@ -29,7 +29,7 @@ export function horseshoeSVG(scores, pack, size = 320, opts = {}) {
   return `<svg viewBox="0 0 ${size} ${size}" class="viz horseshoe" role="img">
   <defs><linearGradient id="hsgrad" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#e5484d"/>
-    <stop offset="0.5" stop-color="#b9c0cf"/>
+    <stop offset="0.5" stop-color="#e1a200"/>
     <stop offset="1" stop-color="#2563eb"/>
   </linearGradient></defs>
   <path d="${arc}" class="arc" fill="none" style="stroke:url(#hsgrad)"/>

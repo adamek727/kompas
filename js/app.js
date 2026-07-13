@@ -103,7 +103,7 @@ function renderResult() {
   state.screen = 'result';
   document.title = `${HOME_UI.title} — ${pack.meta.name}`;
   const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
-  app.innerHTML = resultHTML(scores, pack, state.view);
+  app.innerHTML = resultHTML(scores, pack, state.view, state.answers);
   app.querySelectorAll('.tab').forEach(t =>
     t.addEventListener('click', () => { state.view = t.dataset.view; renderResult(); })
   );
@@ -127,6 +127,9 @@ function renderResult() {
   const shareBtn = app.querySelector('.share');
   if (shareBtn) shareBtn.addEventListener('click', async () => {
     const url = location.origin + location.pathname + shareHash(pack.meta.id, digits);
+    if (navigator.share) {
+      try { await navigator.share({ title: document.title, text: HOME_UI.title, url }); return; } catch (_) { /* cancelled or unsupported */ }
+    }
     try { await navigator.clipboard.writeText(url); } catch (_) { /* clipboard unavailable */ }
     if (shareLabel) { shareLabel.textContent = sl.copied; setTimeout(() => { shareLabel.textContent = sl.share; }, 1600); }
   });

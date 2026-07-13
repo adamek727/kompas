@@ -118,3 +118,19 @@ export function rankPoliticians(scores, personas, axisNames, limit = 3) {
 export function isCentrist(scores, axisNames, threshold = 0.2) {
   return axisNames.every(n => Math.abs(scores[n] ?? 0) < threshold);
 }
+
+export function axisContributions(answers, questions, axisNames, points = 5) {
+  const byAxis = {};
+  for (const name of axisNames) byAxis[name] = [];
+  for (const q of questions) {
+    const a = answers[q.id];
+    if (a == null) continue;
+    const n = normalizeAnswer(a, points);
+    for (const [axis, w] of Object.entries(q.weights || {})) {
+      if (!(axis in byAxis)) continue;
+      byAxis[axis].push({ question: q, contribution: n * w });
+    }
+  }
+  for (const name of axisNames) byAxis[name].sort((x, y) => Math.abs(y.contribution) - Math.abs(x.contribution));
+  return byAxis;
+}
