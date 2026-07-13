@@ -30,6 +30,7 @@ const state = { pack: null, answers: {}, index: 0, view: 'compass', screen: 'hom
 
 function renderHome() {
   state.screen = 'home';
+  document.title = HOME_UI.title;
   if (location.hash) history.replaceState(null, '', location.pathname + location.search);
   app.innerHTML = homeHTML(DOMAINS, HOME_UI);
   app.querySelectorAll('.flag:not([disabled])').forEach(btn =>
@@ -76,6 +77,7 @@ async function loadSharedResult(id, digits) {
 function renderQuiz() {
   const pack = state.pack;
   state.screen = 'quiz';
+  document.title = `${HOME_UI.title} — ${pack.meta.name}`;
   app.innerHTML = quizHTML(pack, state.index, state.answers);
   if (live) live.textContent = `${state.index + 1} / ${pack.questions.length}: ${pack.questions[state.index].text}`;
 
@@ -99,6 +101,7 @@ function answer(value) {
 function renderResult() {
   const pack = state.pack;
   state.screen = 'result';
+  document.title = `${HOME_UI.title} — ${pack.meta.name}`;
   const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
   app.innerHTML = resultHTML(scores, pack, state.view);
   app.querySelectorAll('.tab').forEach(t =>
