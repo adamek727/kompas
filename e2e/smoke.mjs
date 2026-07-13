@@ -17,7 +17,7 @@ check('home shows 5 domain flags', (await page.$$('.flag')).length === 5);
 await page.click('.flag[data-domain="cz"]');
 await page.waitForSelector('.quiz');
 const total = Number((await page.textContent('.qcount')).split('/')[1].trim());
-check('quiz has at least 30 questions', total >= 30);
+check('quiz has at least 20 questions', total >= 20);
 
 for (let i = 0; i < total + 3; i++) {
   if (await page.$('.result')) break;

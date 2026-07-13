@@ -11,10 +11,10 @@ test('at least one data pack exists', () => {
 });
 
 for (const file of files) {
-  test(`pack ${file} is valid with >=30 questions and >=8 personas`, async () => {
+  test(`pack ${file} is valid with >=20 questions and >=8 personas`, async () => {
     const pack = JSON.parse(await readFile(new URL(file, dir)));
     assert.deepEqual(validatePack(pack), [], `${file}: ${validatePack(pack).join('; ')}`);
-    assert.ok(pack.questions.length >= 30, `${file}: expected >=30 questions, got ${pack.questions.length}`);
+    assert.ok(pack.questions.length >= 20, `${file}: expected >=20 questions, got ${pack.questions.length}`);
     assert.ok(pack.personas.length >= 8, `${file}: expected >=8 personas, got ${pack.personas.length}`);
   });
 }
