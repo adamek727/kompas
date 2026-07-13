@@ -3,13 +3,13 @@ export function normalizeAnswer(a, points = 5) {
   return (a - mid) / (mid - 1);
 }
 
-export function scoreAxes(answers, questions, axisNames) {
+export function scoreAxes(answers, questions, axisNames, points = 5) {
   const sum = {}, wsum = {};
   for (const name of axisNames) { sum[name] = 0; wsum[name] = 0; }
   for (const q of questions) {
     const a = answers[q.id];
     if (a == null) continue;
-    const n = normalizeAnswer(a);
+    const n = normalizeAnswer(a, points);
     for (const [axis, w] of Object.entries(q.weights || {})) {
       if (!(axis in sum)) continue;
       sum[axis] += n * w;
@@ -57,8 +57,11 @@ export function trianglePoint(weights, vertices) {
 
 export function horseshoeAngle(scores, cfg) {
   const t = scores[cfg.axis] ?? 0;
+  const radical = cfg.radical ? Math.abs(scores[cfg.radical] ?? 0) : 0;
+  const RADICAL_PUSH = 0.4;
+  const amplified = Math.max(-1, Math.min(1, t * (1 + RADICAL_PUSH * radical)));
   const START = 250, END = -70;
-  return START + (END - START) * ((t + 1) / 2);
+  return START + (END - START) * ((amplified + 1) / 2);
 }
 
 export function validatePack(pack) {
@@ -68,7 +71,7 @@ export function validatePack(pack) {
   if (!pack.questions?.length) errors.push('pack has no questions');
 
   for (const q of pack.questions || []) {
-    if (!q.id) errors.push('a question is missing id');
+    if (q.id === undefined || q.id === null || q.id === '') errors.push('a question is missing id');
     if (!q.text) errors.push(`question ${q.id}: missing text`);
     for (const axis of Object.keys(q.weights || {})) {
       if (!axisNames.includes(axis)) errors.push(`question ${q.id}: unknown axis "${axis}"`);

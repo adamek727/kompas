@@ -107,3 +107,22 @@ test('axisNamesFromPack returns declared axis names', () => {
 test('axisNamesFromPack returns [] when pack has no axes', () => {
   assert.deepEqual(axisNamesFromPack({}), []);
 });
+
+test('scoreAxes respects a non-5-point scale', () => {
+  const q = [{ id: 'q1', weights: { economic: 1 } }];
+  assert.equal(scoreAxes({ q1: 7 }, q, ['economic'], 7).economic, 1);
+  assert.equal(scoreAxes({ q1: 4 }, q, ['economic'], 7).economic, 0);
+});
+
+test('horseshoeAngle: radical magnitude pushes a moderate lean toward its tip', () => {
+  const cfg = { axis: 'economic', radical: 'system' };
+  const calm = horseshoeAngle({ economic: 0.5, system: 0 }, cfg);
+  const radicalized = horseshoeAngle({ economic: 0.5, system: 1 }, cfg);
+  assert.ok(radicalized < calm);
+});
+
+test('validatePack accepts a question whose id is 0', () => {
+  const p = structuredClone(goodPack);
+  p.questions[0].id = 0;
+  assert.deepEqual(validatePack(p), []);
+});
