@@ -11,6 +11,12 @@ const METHOD = {
   en: { title: 'How this works', note: 'Each answer (1–5) nudges the axes by the question’s weight. These shaped your result the most:' },
 };
 
+const LEGEND = {
+  cs: { socialist: 'Socialista', green: 'Zelený', conservative: 'Konzervativec', liberal: 'Liberál' },
+  pl: { socialist: 'Socjalista', green: 'Zielony', conservative: 'Konserwatysta', liberal: 'Liberał' },
+  en: { socialist: 'Socialist', green: 'Green', conservative: 'Conservative', liberal: 'Liberal' },
+};
+
 function initials(s) {
   return (s || '').trim().split(/\s+/).map(w => w[0] || '').join('').slice(0, 2).toUpperCase();
 }
@@ -65,6 +71,14 @@ export function resultHTML(scores, pack, view, answers) {
   }));
 
   const svg = (VIEWS[view] || compassSVG)(scores, pack, undefined, { parties });
+
+  const LG = LEGEND[pack.meta?.lang] || LEGEND.en;
+  const legendBlock = view === 'compass' ? `<div class="viz-legend">
+    <span class="lg"><i style="background:#e5484d"></i>${LG.socialist}</span>
+    <span class="lg"><i style="background:#16a34a"></i>${LG.green}</span>
+    <span class="lg"><i style="background:#2563eb"></i>${LG.conservative}</span>
+    <span class="lg"><i style="background:#e1a200"></i>${LG.liberal}</span>
+  </div>` : '';
 
   const tabs = Object.keys(VIEWS).map(v =>
     `<button class="tab${v === view ? ' active' : ''}" data-view="${v}">${pack.ui.views[v]}</button>`
@@ -137,6 +151,7 @@ export function resultHTML(scores, pack, view, answers) {
     </div>
     <div class="tabs">${tabs}</div>
     <div class="vizwrap">${svg}</div>
+    ${legendBlock}
     <div class="bars">${axisBars(scores, pack)}</div>
     ${rankingBlock}
     ${nearbyBlock}

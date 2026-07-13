@@ -12,6 +12,10 @@ export function triangleSVG(scores, pack, size = 300, opts = {}) {
   ];
   const p = trianglePoint(triangleWeights(scores, poles, axisNames), verts);
   const poly = verts.map(v => `${v.x},${v.y}`).join(' ');
+  const grads = verts.map((v, i) =>
+    `<radialGradient id="tg${i}" gradientUnits="userSpaceOnUse" cx="${v.x}" cy="${v.y}" r="${(size * 0.72).toFixed(0)}"><stop offset="0" stop-color="${poles[i].color || '#1f5cff'}" stop-opacity=".24"/><stop offset="1" stop-color="${poles[i].color || '#1f5cff'}" stop-opacity="0"/></radialGradient>`
+  ).join('\n    ');
+  const tints = verts.map((v, i) => `<rect x="0" y="0" width="${size}" height="${size}" fill="url(#tg${i})"/>`).join('\n    ');
   const dots = verts.map((v, i) =>
     `<circle cx="${v.x}" cy="${v.y}" r="7" class="pole" style="fill:${poles[i].color || '#1f5cff'}"/>`
   ).join('\n  ');
@@ -29,7 +33,14 @@ export function triangleSVG(scores, pack, size = 300, opts = {}) {
   const hits = partyHits(pts, parties);
 
   return `<svg viewBox="0 0 ${size} ${size}" class="viz triangle" role="img">
+  <defs>
+    <clipPath id="triclip"><polygon points="${poly}"/></clipPath>
+    ${grads}
+  </defs>
   <polygon points="${poly}" class="tri"/>
+  <g clip-path="url(#triclip)">
+    ${tints}
+  </g>
   ${dots}
   ${labels}
   ${bodies}
