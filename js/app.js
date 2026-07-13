@@ -1,4 +1,5 @@
-import { validatePack } from './scoring.js';
+import { validatePack, scoreAxes, axisNamesFromPack } from './scoring.js';
+import { resultHTML } from './result.js';
 import { homeHTML, quizHTML } from './render.js';
 
 const DOMAINS = [
@@ -61,7 +62,15 @@ function answer(value) {
   else renderResult();
 }
 
-function renderResult() {}
+function renderResult() {
+  const pack = state.pack;
+  const scores = scoreAxes(state.answers, pack.questions, axisNamesFromPack(pack), pack.scale?.points ?? 5);
+  app.innerHTML = resultHTML(scores, pack, state.view);
+  app.querySelectorAll('.tab').forEach(t =>
+    t.addEventListener('click', () => { state.view = t.dataset.view; renderResult(); })
+  );
+  app.querySelector('.restart').addEventListener('click', renderHome);
+}
 
 renderHome();
 
