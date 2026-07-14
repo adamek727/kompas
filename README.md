@@ -1,6 +1,6 @@
 # Kompas — a data-driven political compass
 
-A tiny static web app: answer ~30 simple statements and it places you on a
+A tiny static web app: answer 20 simple statements and it places you on a
 political map. The twist over a classic compass — you can flip the **same
 result** between three lenses: a 2-axis **compass**, a
 liberal/conservative/socialist **triangle**, and a **horseshoe** ("podkova").
@@ -10,9 +10,11 @@ party as an avatar on the compass so you can see where you sit among them. The
 compass corners are colour-coded the classic way (authoritarian-left red,
 libertarian-left green, authoritarian-right blue, libertarian-right amber).
 
-Five domains ship today, each domain-specific and in its own language: Czech 🇨🇿,
-Polish 🇵🇱, the EU 🇪🇺 (English), the USA 🇺🇸 (English) and the UK 🇬🇧 (English).
-Each party carries three real politicians; the quiz picks the best-matching one.
+Seven domains ship today, each domain-specific and in its own language: Czech 🇨🇿,
+Polish 🇵🇱, the EU 🇪🇺 (English), the USA 🇺🇸 (English), the UK 🇬🇧 (English),
+Ukraine 🇺🇦 (Ukrainian) and France 🇫🇷 (French). Party and politician positions are
+calibrated from the Chapel Hill Expert Survey and DW-NOMINATE (see the docs). Each
+party carries three real politicians; the quiz picks the best-matching one.
 Every domain is just one JSON file — adding one is a data task, not a code change.
 
 **A game, not sociology.**
@@ -53,10 +55,10 @@ screen are covered by pure unit tests; data packs are validated automatically.
 ## Add a domain
 
 1. Copy `data/cz.json` to `data/<id>.json`. Translate `ui`, `scale`, `axes`;
-   write ≥30 `questions` (each `weights` key must be a declared axis) and ≥8
-   `personas` (a numeric `coords` for every axis, plus optional `party` and
-   `politician` shown on the result); set the three `views` (give each triangle
-   pole a `color`).
+   write 20 `questions` (each `weights` key must be a declared axis) and ≥8
+   `personas` (a numeric `coords` for every axis, a `party`, and 3 `politicians`
+   each with `name`/`photo`/`bio`/`coords`); set the three `views` (give each
+   triangle pole a `color`).
 2. Add `{ id, flag, name, enabled: true }` to `DOMAINS` in `js/app.js`.
 3. `node --test` — the pack test validates every `data/*.json` (structure,
    ≥30 questions, ≥8 personas).
@@ -75,6 +77,13 @@ screen are covered by pure unit tests; data packs are validated automatically.
     docs/                  design spec, implementation plan, assets
 
 Design and implementation notes live in `docs/superpowers/`.
+
+## Docs
+
+- [Architecture](docs/architecture.md) — how the system works.
+- [Development](docs/development.md) — how it was built.
+- [Security](docs/security.md) — the basic defense wall.
+- [Stats collector](docs/stats-collector.md) — optional, opt-in session collection.
 
 ## Credits
 
